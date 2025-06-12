@@ -4,8 +4,7 @@ import PorQueElegirnos from "@/components/PorQueElegirnos";
 import Destinos from "@/components/Destinos";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";  // Importa el footer
-
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -13,26 +12,26 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section id="hero" >
+      <section id="hero">
         <Hero />
       </section>
 
       {/* Misión y Visión */}
-      <section id="mision" className="pt-24">
+      <section id="mision" className="pt-24 bg-[#cbd7e6]">
         <MisionVision />
       </section>
 
       {/* Por qué elegirnos */}
-      <section id="porque" className="pt-24">
+      <section id="porque" className="pt-24 bg-[#cbd7e6]">
         <PorQueElegirnos />
       </section>
 
       {/* Destinos */}
-      <section id="destinos" className="pt-24">
+      <section id="destinos" className="pt-24 bg-[#cbd7e6]">
         <Destinos />
       </section>
 
-      {/* Botón de WhatsApp flotante (sin scroll) */}
+      {/* Botón de WhatsApp flotante */}
       <WhatsAppButton />
 
       {/* Footer al final */}
