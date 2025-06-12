@@ -1,0 +1,467 @@
+[
+  {
+    "nombre": "Arbolets Coveñas",
+    "descripcion": "Disfruta un viaje inolvidable a Arbolets, el Disney Colombiano, con todo incluido para vivir momentos mágicos en familia.",
+    "precio": 1850000,
+    "fechaDisponible": "2025-06-20",
+    "ubicacion": { "ciudad": "Arbolets", "departamento": "Antioquia" },
+    "tipo": "Terrestre",
+    "modalidad": "Nacional",
+    "flyerLocalPath": "/flyers/ARBOLETS COVEÑAS 20 JUN 360XX1.jpg"
+  },
+  
+  {
+    "nombre": "Guatapé y Nápoles",
+    "descripcion": "Explora la belleza de Guatapé y el fascinante Nápoles con paisajes impresionantes y aventuras para todos.",
+    "precio": 1850000,
+    "fechaDisponible": "2025-06-21",
+    "ubicacion": { "ciudad": "Guatapé", "departamento": "Antioquia" },
+    "tipo": "Terrestre",
+    "modalidad": "Nacional",
+    "flyerLocalPath": "/flyers/GUATAPE Y NAPOLES 2 DIAS JUNIO  360X1.jpg"
+  },
+
+{
+  "nombre": "Piscilago",
+  "descripcion": "Sumérgete en la diversión acuática de Piscilago, el parque ideal para un día lleno de emociones y relax.",
+  "precio": 150000,
+  "fechaDisponible": "2025-06-15",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PISCILAGO JUNIO 360.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Disfruta una escapada perfecta con salida el 6 de julio a Piscilago, diversión y naturaleza en un solo lugar.",
+  "precio": 150000,
+  "fechaDisponible": "2025-07-06",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PISCILAGO JULIO 360.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Vive la emoción y relajación que solo Piscilago puede ofrecerte, salida especial el 13 de julio.",
+  "precio": 150000,
+  "fechaDisponible": "2025-07-13",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PISCILAGO JULIO 360.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "No te pierdas la última salida del mes a Piscilago el 27 de julio, diversión garantizada para toda la familia.",
+  "precio": 150000,
+  "fechaDisponible": "2025-07-27",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PISCILAGO JULIO 360.jpg"
+},
+{
+  "nombre": "Lago Calima",
+  "descripcion": "Recorre el Lago Calima y sus alrededores con visitas a Buga, zoológico de Cali y el Cristo Rey, un tour imperdible el 12 de julio.",
+  "precio": 530000,
+  "fechaDisponible": "2025-07-12",
+  "ubicacion": { "ciudad": "Calima", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PLAN BUGA Y CALI julio 360xx1.jpg"
+},
+{
+  "nombre": "Parque Jaime Duque",
+  "descripcion": "Diversión y cultura se unen en el Parque Jaime Duque, disfruta un día lleno de aventura el 13 de julio.",
+  "precio": 640000,
+  "fechaDisponible": "2025-07-13",
+  "ubicacion": { "ciudad": "Facatativá", "departamento": "Cundinamarca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PARQ JAIME DUQUE 13 JULIO 360X1.jpg"
+},
+{
+  "nombre": "Guatapé y Nápoles",
+  "descripcion": "Revive la magia de Guatapé y Nápoles en este viaje programado para el 5 de julio, ¡paisajes que te enamorarán!",
+  "precio": 630000,
+  "fechaDisponible": "2025-07-05",
+  "ubicacion": { "ciudad": "Guatapé", "departamento": "Antioquia" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/MEDELLIN Y GUATAPE 4 JULIO 360X1.jpg"
+},
+{
+  "nombre": "Villa de Leyva",
+  "descripcion": "Descubre el encanto colonial de Villa de Leyva con su arquitectura única y calles empedradas, salida el 19 de julio.",
+  "precio": 560000,
+  "fechaDisponible": "2025-07-19",
+  "ubicacion": { "ciudad": "Villa de Leyva", "departamento": "Boyacá" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/BOYACA 20 JULIO 360X1.jpg"
+},
+{
+  "nombre": "Parque del Café",
+  "descripcion": "Disfruta un día lleno de diversión y cultura cafetera en el Parque del Café, salida programada para el 26 de julio.",
+  "precio": 560000,
+  "fechaDisponible": "2025-07-26",
+  "ubicacion": { "ciudad": "Montenegro", "departamento": "Quindío" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/PLANES EJE CAFETERO JULIO 360X1.jpg"
+},
+{
+  "nombre": "San Agustín",
+  "descripcion": "Viaja a San Agustín y explora sus misteriosos monumentos arqueológicos, un plan cultural y aventurero el 20 de julio.",
+  "precio": 260000,
+  "fechaDisponible": "2025-07-20",
+  "ubicacion": { "ciudad": "San Agustín", "departamento": "Huila" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/SAN AGUSTIN 20 JULIO 360X1.jpg"
+},
+{
+  "nombre": "Feria de las Flores",
+  "descripcion": "Vive la magia y el color de Medellín en su tradicional Feria de las Flores. Un espectáculo cultural lleno de vida el 7 de agosto.",
+  "precio": 999999,
+  "fechaDisponible": "2025-08-07",
+  "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago1.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Escápate a Piscilago este 3 de agosto y disfruta de un día refrescante entre toboganes y naturaleza.",
+  "precio": 150000,
+  "fechaDisponible": "2025-08-03",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago2.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Piscilago te espera el 10 de agosto para un día inolvidable lleno de aventuras acuáticas y diversión familiar.",
+  "precio": 150000,
+  "fechaDisponible": "2025-08-10",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago2.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Celebra el festivo del 18 de agosto en Piscilago, el parque ideal para disfrutar en familia sin salir del país.",
+  "precio": 150000,
+  "fechaDisponible": "2025-08-18",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago2.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Cierra el mes con un viaje a Piscilago el 31 de agosto. ¡Toboganes, piscinas y diversión asegurada!",
+  "precio": 150000,
+  "fechaDisponible": "2025-08-31",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago2.jpg"
+},
+{
+  "nombre": "Avistamiento de Ballenas - Pacífico",
+  "descripcion": "Conéctate con la naturaleza en un tour único de avistamiento de ballenas en Juanchaco y Ladrilleros este 16 de agosto.",
+  "precio": 1325000,
+  "fechaDisponible": "2025-08-16",
+  "ubicacion": { "ciudad": "Juanchaco", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago3.jpg"
+},
+{
+  "nombre": "Cafam Melgar",
+  "descripcion": "Relájate y pásala increíble en Cafam Melgar el 3 de agosto. ¡El lugar perfecto para desconectar de la rutina!",
+  "precio": 160000,
+  "fechaDisponible": "2025-08-03",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago4.jpg"
+},
+{
+  "nombre": "Santuario de Las Lajas",
+  "descripcion": "Vive una experiencia espiritual y arquitectónica en el majestuoso Santuario de Las Lajas este 7 de agosto.",
+  "precio": 819000,
+  "fechaDisponible": "2025-08-07",
+  "ubicacion": { "ciudad": "Ipiales", "departamento": "Nariño" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago5.jpg"
+},
+{
+  "nombre": "Eje Cafetero con Ukumarí",
+  "descripcion": "Disfruta lo mejor del Eje Cafetero con visita al bioparque Ukumarí. Cultura, naturaleza y diversión el 16 de agosto.",
+  "precio": 790000,
+  "fechaDisponible": "2025-08-16",
+  "ubicacion": { "ciudad": "Pereira", "departamento": "Risaralda" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago6.jpg"
+},
+{
+  "nombre": "Playa Hawai - Ibagué",
+  "descripcion": "Una escapada tropical sin ir al mar: Playa Hawai en Ibagué te espera el 31 de agosto para un día lleno de sol y piscina.",
+  "precio": 260000,
+  "fechaDisponible": "2025-08-31",
+  "ubicacion": { "ciudad": "Ibagué", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/ago7.jpg"
+},
+{
+  "nombre": "Cafam Melgar",
+  "descripcion": "Una escapada romántica para dos en Cafam Melgar. Relájate y disfruta con tu pareja el 28 de septiembre.",
+  "precio": 300000,
+  "fechaDisponible": "2025-09-28",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept1.jpg"
+},
+{
+  "nombre": "Villa de Leyva",
+  "descripcion": "Descubre la magia colonial de Villa de Leyva este 19 de septiembre. Un viaje lleno de historia y encanto.",
+  "precio": 560000,
+  "fechaDisponible": "2025-09-19",
+  "ubicacion": { "ciudad": "Villa de Leyva", "departamento": "Boyacá" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept2.jpg"
+},
+{
+  "nombre": "Parque del Café + Termales de Santa Rosa",
+  "descripcion": "Una experiencia que combina emoción y relajación: Parque del Café y Termales de Santa Rosa el 26 de septiembre.",
+  "precio": 630000,
+  "fechaDisponible": "2025-09-26",
+  "ubicacion": { "ciudad": "Armenia", "departamento": "Quindío" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept3.jpg"
+},
+{
+  "nombre": "Parque Jaime Duque",
+  "descripcion": "Una experiencia completa para compartir en pareja. Cultura, historia y entretenimiento el 14 de septiembre.",
+  "precio": 640000,
+  "fechaDisponible": "2025-09-14",
+  "ubicacion": { "ciudad": "Tocancipá", "departamento": "Cundinamarca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept4.jpg"
+},
+{
+  "nombre": "Hacienda Nápoles",
+  "descripcion": "Aventura, naturaleza y mucha diversión en la icónica Hacienda Nápoles este 5 de septiembre.",
+  "precio": 599000,
+  "fechaDisponible": "2025-09-05",
+  "ubicacion": { "ciudad": "Puerto Triunfo", "departamento": "Antioquia" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept5.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "¡Regresa la diversión en Piscilago! Toboganes y aventuras te esperan este 7 de septiembre.",
+  "precio": 150000,
+  "fechaDisponible": "2025-09-07",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept6.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Domingo de descanso y aventura en Piscilago el 21 de septiembre. ¡Ideal para toda la familia!",
+  "precio": 150000,
+  "fechaDisponible": "2025-09-21",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept6.jpg"
+},
+{
+  "nombre": "Lago Calima",
+  "descripcion": "Vive un recorrido inolvidable por Buga, el zoológico de Cali y Cristo Rey. Lago Calima te espera este 12 de septiembre.",
+  "precio": 530000,
+  "fechaDisponible": "2025-09-12",
+  "ubicacion": { "ciudad": "Calima", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/sept7.jpg"
+},
+{
+  "nombre": "Avistamiento de Ballenas - Pacífico",
+  "descripcion": "Vive una experiencia mágica en Juanchaco y Ladrilleros con el avistamiento de ballenas. ¡Naturaleza en su máxima expresión este 10 de octubre!",
+  "precio": 1325000,
+  "fechaDisponible": "2025-10-10",
+  "ubicacion": { "ciudad": "Juanchaco", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct1.jpg"
+},
+{
+  "nombre": "Pasadía Las Bailarinas",
+  "descripcion": "Un día de conexión y descanso en Montenegro, Quindío. Disfrútalo en pareja el 26 de octubre.",
+  "precio": 580000,
+  "fechaDisponible": "2025-10-26",
+  "ubicacion": { "ciudad": "Montenegro", "departamento": "Quindío" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct2.jpg"
+},
+{
+  "nombre": "Peregrinación a Buga",
+  "descripcion": "Únete a una experiencia espiritual el 13 de octubre en la tradicional Peregrinación a Buga.",
+  "precio": 130000,
+  "fechaDisponible": "2025-10-13",
+  "ubicacion": { "ciudad": "Buga", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct3.jpg"
+},
+{
+  "nombre": "Coveñas - Isla Múcura",
+  "descripcion": "Un paraíso caribeño te espera: playas cristalinas, sol y aventura el 5 de octubre.",
+  "precio": 1699000,
+  "fechaDisponible": "2025-10-05",
+  "ubicacion": { "ciudad": "Coveñas", "departamento": "Sucre" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct4.jpg"
+},
+{
+  "nombre": "Guatapé, Medellín y Hacienda Nápoles",
+  "descripcion": "Recorre lo mejor de Antioquia en un solo viaje: Guatapé, Medellín y Hacienda Nápoles el 31 de octubre.",
+  "precio": 870000,
+  "fechaDisponible": "2025-10-31",
+  "ubicacion": { "ciudad": "Guatapé", "departamento": "Antioquia" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct5.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Diversión sin límites para toda la familia. Ven a Piscilago el 5 de octubre y vive un día inolvidable.",
+  "precio": 150000,
+  "fechaDisponible": "2025-10-05",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct6.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Otra oportunidad para disfrutar Piscilago te espera este 19 de octubre. ¡No te lo pierdas!",
+  "precio": 150000,
+  "fechaDisponible": "2025-10-19",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct6.jpg"
+},
+{
+  "nombre": "Eje Cafetero con Ukumarí",
+  "descripcion": "Explora el corazón del Eje Cafetero y maravíllate en el bioparque Ukumarí este 11 de octubre.",
+  "precio": 850000,
+  "fechaDisponible": "2025-10-11",
+  "ubicacion": { "ciudad": "Pereira", "departamento": "Risaralda" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/oct7.jpg"
+},
+{
+  "nombre": "Santa Misa Señor de los Milagros",
+  "descripcion": "Vive un momento de fe y reflexión con la Santa Misa del Señor de los Milagros este 14 de diciembre.",
+  "precio": 130000,
+  "fechaDisponible": "2025-12-14",
+  "ubicacion": { "ciudad": "Buga", "departamento": "Valle del Cauca" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic1.jpg"
+},
+{
+  "nombre": "Excursión Navideña - Costa Caribe",
+  "descripcion": "Celebra la magia de la Navidad en las playas del Caribe colombiano. ¡Una experiencia inolvidable desde el 16 de diciembre!",
+  "precio": 1790000,
+  "fechaDisponible": "2025-12-16",
+  "ubicacion": { "ciudad": "Cartagena", "departamento": "Bolívar" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic2.jpg"
+},
+{
+  "nombre": "Alumbrado Navideño Medellín",
+  "descripcion": "Disfruta el espectáculo de luces más famoso de Colombia en Medellín este 20 de diciembre. ¡Navidad llena de color!",
+  "precio": 899000,
+  "fechaDisponible": "2025-12-20",
+  "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic3.jpg"
+},
+{
+  "nombre": "Festival de Luces Boyacá",
+  "descripcion": "Descubre la tradición y belleza del Festival de Luces en Boyacá el 6 de diciembre. ¡Una experiencia mágica!",
+  "precio": 799000,
+  "fechaDisponible": "2025-12-06",
+  "ubicacion": { "ciudad": "Tunja", "departamento": "Boyacá" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic4.jpg"
+},
+{
+  "nombre": "Festival de Velas y Faroles",
+  "descripcion": "Vive el encanto de uno de los eventos más hermosos del año: el Festival de Velas y Faroles, el 6 de diciembre.",
+  "precio": 790000,
+  "fechaDisponible": "2025-12-06",
+  "ubicacion": { "ciudad": "Quimbaya", "departamento": "Quindío" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic5.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Disfruta de una navidad llena de aventuras acuáticas en Piscilago este 8 de diciembre.",
+  "precio": 160000,
+  "fechaDisponible": "2025-12-08",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic6.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Celebra en familia con un refrescante día en Piscilago este 14 de diciembre. ¡Diversión garantizada!",
+  "precio": 160000,
+  "fechaDisponible": "2025-12-14",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic6.jpg"
+},
+{
+  "nombre": "Piscilago",
+  "descripcion": "Cierra el año con un gran chapuzón. Te esperamos el 21 de diciembre en Piscilago.",
+  "precio": 160000,
+  "fechaDisponible": "2025-12-21",
+  "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
+  "tipo": "Terrestre",
+  "modalidad": "Nacional",
+  "flyerLocalPath": "/flyers/dic6.jpg"
+}
+
+
+
+]
