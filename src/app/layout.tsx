@@ -9,7 +9,6 @@ const quicksand = Quicksand({
   variable: '--font-quicksand',
 });
 
-
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,6 +22,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Conexiones360",
   description: "Agencia turística",
+  icons: {
+    icon: "/favicon-32x32.png",
+  },
 };
 
 export default function RootLayout({
@@ -31,12 +33,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${quicksand.variable} antialiased`}
       >
         {children}
-
       </body>
     </html>
   );
