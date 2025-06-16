@@ -5,6 +5,7 @@ import Destinos from "@/components/Destinos";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import NuestrasAventuras from "@/components/NuestrasAventuras";
 
 export default function Home() {
   return (
@@ -25,6 +26,8 @@ export default function Home() {
       <section id="porque" className="pt-24 bg-[#cbd7e6]">
         <PorQueElegirnos />
       </section>
+
+      <NuestrasAventuras/>
 
       {/* Destinos */}
       <section id="destinos" className="pt-24 bg-[#cbd7e6]">

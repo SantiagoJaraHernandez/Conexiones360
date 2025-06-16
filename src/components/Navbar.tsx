@@ -57,9 +57,7 @@ export default function Navbar() {
 
   return (
     <motion.nav
-      initial={{ y: -100 }}
-      animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      // Eliminamos la animación inicial para que aparezca instantáneamente
       className={`fixed top-0 w-full z-50 ${
         scrolled ? "bg-white/80 shadow-md text-gray-900" : "bg-transparent text-white"
       } transition-all duration-300 backdrop-blur-md`}
@@ -84,9 +82,7 @@ export default function Navbar() {
                 activeSection === section ? "text-blue-600" : ""
               }`}
             >
-              <span className="pb-1">
-                {LABELS[section]}
-              </span>
+              <span className="pb-1">{LABELS[section]}</span>
               {/* Underline hover effect */}
               <span
                 className={`absolute left-0 bottom-0 h-0.5 w-full bg-blue-600 transform scale-x-0 origin-left transition-transform duration-300 ${
