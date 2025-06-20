@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import Modal from "react-modal";
@@ -11,11 +11,15 @@ import { FaWhatsapp } from "react-icons/fa";
 
 dayjs.locale("es");
 
+/* ───────────────────────────────
+   Tipado
+─────────────────────────────── */
 interface Destino {
   nombre: string;
   descripcion: string;
   precio: number;
   fechasDisponibles: string[];
+  fechasRango?: string[];
   incluye: string[];
   tipo: string;
   modalidad: string;
@@ -24,24 +28,28 @@ interface Destino {
   ubicacion: { ciudad: string; departamento: string };
 }
 
+/* react‑modal: accesibilidad */
 if (typeof window !== "undefined") {
   Modal.setAppElement(document.getElementById("__next") || document.body);
 }
 
+/* ───────────────────────────────
+   Helpers
+─────────────────────────────── */
 const getProximaFecha = (d: Destino) => {
-  const fechas = d.fechasDisponibles
+  const futuras = d.fechasDisponibles
     .map((f) => dayjs(f))
     .filter((f) => f.isAfter(dayjs(), "day"))
     .sort((a, b) => a.valueOf() - b.valueOf());
-  return fechas.length > 0 ? fechas[0] : null;
+  return futuras.length ? futuras[0] : null;
 };
 
 const buildGallery = (d: Destino) =>
-  Array.from(
-    { length: d.galleryCount ?? 5 },
-    (_, i) => `${d.galeriaPath}/${i + 1}.jpg`
-  );
+  Array.from({ length: d.galleryCount ?? 5 }, (_, i) => `${d.galeriaPath}/${i + 1}.jpg`);
 
+/* ───────────────────────────────
+   Tarjeta
+─────────────────────────────── */
 function DestinoCard({
   destino,
   abrirModal,
@@ -50,18 +58,22 @@ function DestinoCard({
   abrirModal: (d: Destino) => void;
 }) {
   const hoy = dayjs();
-  const imgPrincipal = buildGallery(destino)[0];
-  const proximasFechas = destino.fechasDisponibles
-    .filter((f) => dayjs(f).isAfter(hoy, "day"))
-    .sort()
-    .slice(0, 3);
+  const portada = buildGallery(destino)[0];
+
+  const fechasMostrar = destino.fechasRango?.length
+    ? destino.fechasRango.slice(0, 3)
+    : destino.fechasDisponibles
+        .filter((f) => dayjs(f).isAfter(hoy, "day"))
+        .sort()
+        .slice(0, 3)
+        .map((f) => dayjs(f).format("D MMM"));
 
   return (
     <motion.article
       whileHover={{ y: -6 }}
       transition={{ type: "spring", stiffness: 120 }}
       onClick={() => abrirModal(destino)}
-      className="cursor-pointer bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl overflow-hidden flex flex-col"
+      className="cursor-pointer bg-white dark:bg-gray-800 rounded-2xl shadow-xl hover:shadow-2xl overflow-hidden flex flex-col h-[420px]"
       role="button"
       tabIndex={0}
       onKeyDown={(e) => {
@@ -69,9 +81,10 @@ function DestinoCard({
       }}
       aria-label={`Ver detalles del destino ${destino.nombre}`}
     >
-      <div className="relative w-full h-[280px] bg-slate-200">
+      {/* Imagen */}
+      <div className="relative w-full h-[240px] bg-slate-200 shrink-0">
         <Image
-          src={imgPrincipal}
+          src={portada}
           alt={destino.nombre}
           fill
           className="object-cover"
@@ -80,28 +93,27 @@ function DestinoCard({
         />
       </div>
 
-      <div className="p-6 flex flex-col gap-3 flex-1 text-left">
-        <h3 className="text-xl font-bold text-blue-700 dark:text-white">
-          {destino.nombre}
-        </h3>
-        <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
-          {destino.descripcion}
-        </p>
-        <div className="flex flex-wrap gap-2 text-xs mt-auto" aria-label="Próximas fechas disponibles">
-          {proximasFechas.length > 0 ? (
-            proximasFechas.map((f) => (
+      {/* Contenido */}
+      <div className="p-4 flex flex-col flex-1 text-left">
+        <h3 className="text-lg font-bold text-blue-700 dark:text-white line-clamp-2">{destino.nombre}</h3>
+        <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">{destino.descripcion}</p>
+
+        <div className="flex flex-wrap gap-2 text-xs mt-auto pt-2">
+          {fechasMostrar.length ? (
+            fechasMostrar.map((f, i) => (
               <span
-                key={f}
+                key={f + i}
                 className="bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-3 py-1 rounded-full"
               >
-                {dayjs(f).format("D MMM")}
+                {f}
               </span>
             ))
           ) : (
             <span className="text-gray-500 dark:text-gray-400">Sin fechas próximas</span>
           )}
         </div>
-        <p className="text-lg font-bold text-green-600 dark:text-green-400 mt-2">
+
+        <p className="text-base font-bold text-green-600 dark:text-green-400 mt-2">
           Desde ${destino.precio.toLocaleString()} COP
         </p>
       </div>
@@ -109,36 +121,37 @@ function DestinoCard({
   );
 }
 
+/* ───────────────────────────────
+   Componente principal
+─────────────────────────────── */
 export default function Destinos() {
   const hoy = dayjs();
-
   const [modalAbierto, setModalAbierto] = useState(false);
-  const [destinoSeleccionado, setDestinoSeleccionado] = useState<Destino | null>(
-    null
-  );
-  const [fotoIndex, setFotoIndex] = useState(0);
+  const [destinoSel, setDestinoSel] = useState<Destino | null>(null);
+  const [fotoIdx, setFotoIdx] = useState(0);
 
-  const destinosFiltrados = (destinosData as unknown as Destino[])
-    .map((d) => ({ destino: d, proximaFecha: getProximaFecha(d) }))
-    .filter(({ proximaFecha }) => proximaFecha !== null)
-    .sort((a, b) => a.proximaFecha!.valueOf() - b.proximaFecha!.valueOf())
-    .map(({ destino }) => destino);
+  const destinosOrdenados = (destinosData as Destino[])
+    .map((d) => ({ d, prox: getProximaFecha(d) }))
+    .filter(({ prox }) => prox)
+    .sort((a, b) => a.prox!.valueOf() - b.prox!.valueOf())
+    .map(({ d }) => d);
 
+  /* handlers */
   const abrirModal = (d: Destino) => {
-    setDestinoSeleccionado(d);
-    setFotoIndex(0);
+    setDestinoSel(d);
+    setFotoIdx(0);
     setModalAbierto(true);
   };
 
   const cerrarModal = () => {
     setModalAbierto(false);
-    setDestinoSeleccionado(null);
+    setDestinoSel(null);
   };
 
   const cambiarFoto = (dir: "prev" | "next" | number) => {
-    if (!destinoSeleccionado) return;
-    const total = buildGallery(destinoSeleccionado).length;
-    setFotoIndex((prev) =>
+    if (!destinoSel) return;
+    const total = buildGallery(destinoSel).length;
+    setFotoIdx((prev) =>
       typeof dir === "number"
         ? dir
         : dir === "prev"
@@ -147,17 +160,23 @@ export default function Destinos() {
     );
   };
 
-  const fotoActual = () =>
-    destinoSeleccionado ? buildGallery(destinoSeleccionado)[fotoIndex] : "";
+  const fotoActual = () => (destinoSel ? buildGallery(destinoSel)[fotoIdx] : "");
 
+  /* Carrusel auto‑play */
+  useEffect(() => {
+    if (!modalAbierto || !destinoSel) return;
+    const timer = setInterval(() => cambiarFoto("next"), 5000);
+    return () => clearInterval(timer);
+  }, [modalAbierto, destinoSel]);
+
+  /* ─────────── render ─────────── */
   return (
     <section
       className="py-20 px-4 -mt-20 bg-cover bg-center relative"
       style={{
         backgroundImage:
-          "url('https://images.pexels.com/photos/17125428/pexels-photo-17125428/free-photo-of-a-sunset-over-a-valley-with-mountains-and-clouds.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')",
+          "url('https://images.pexels.com/photos/370799/pexels-photo-370799.jpeg')",
       }}
-      aria-label="Sección de destinos programados"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/50 dark:from-gray-900/50 dark:to-gray-900/40" />
 
@@ -168,57 +187,46 @@ export default function Destinos() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-blue-700 dark:text-white mb-12"
         >
-          Nuestros destinos programados
+          Nuestros Planes Programados
         </motion.h2>
 
         {/* Grid de tarjetas */}
-        <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {destinosFiltrados.length === 0 ? (
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[1fr]">
+          {destinosOrdenados.length ? (
+            destinosOrdenados.map((d) => (
+              <DestinoCard key={`${d.nombre}-${d.precio}`} destino={d} abrirModal={abrirModal} />
+            ))
+          ) : (
             <p className="text-gray-600 dark:text-gray-300 col-span-full">
               No hay destinos próximos.
             </p>
-          ) : (
-            destinosFiltrados.map((destino) => (
-              <DestinoCard
-                key={destino.nombre}
-                destino={destino}
-                abrirModal={abrirModal}
-              />
-            ))
           )}
         </div>
 
         {/* Modal */}
         <AnimatePresence>
-          {modalAbierto && destinoSeleccionado && (
+          {modalAbierto && destinoSel && (
             <Modal
               isOpen={modalAbierto}
               onRequestClose={cerrarModal}
-              className="
-                relative
-                w-full sm:w-[95%] max-w-6xl
-                bg-white dark:bg-gray-900
-                rounded-2xl p-6 md:p-10
-                shadow-2xl
-                flex flex-col lg:flex-row gap-6 lg:gap-8
-              "
-              overlayClassName="
-                fixed inset-0 bg-black/60 backdrop-blur-sm
-                flex justify-center md:items-center
-                px-2 py-6 md:py-0 overflow-y-auto z-50
-              "
-              contentLabel={`Detalles del destino ${destinoSeleccionado.nombre}`}
+              className="relative w-full sm:w-[95%] max-w-6xl max-h-[90vh] bg-white/80 dark:bg-gray-900/70 rounded-2xl p-6 md:p-10 shadow-2xl flex flex-col lg:flex-row gap-6 lg:gap-8 overflow-visible"
+              overlayClassName="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center md:items-center px-2 py-6 md:py-0 overflow-y-auto z-50"
+              contentLabel={`Detalles del destino ${destinoSel.nombre}`}
             >
-              <button
-                onClick={cerrarModal}
-                className="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-3xl font-bold"
-                aria-label="Cerrar modal"
-              >
-                &times;
-              </button>
-
               {/* Carrusel */}
-              <div className="relative flex-shrink-0 w-full aspect-[4/3] lg:w-1/2 rounded-xl overflow-hidden shadow-md bg-slate-200">
+              <div className="relative z-10 flex-shrink-0 w-full lg:w-1/2 max-h-[80vh] aspect-[4/3] rounded-xl overflow-hidden shadow-md">
+                {/* Imagen de fondo blur para cubrir márgenes */}
+                <div className="absolute inset-0">
+                  <Image
+                    src={fotoActual()}
+                    alt=""
+                    fill
+                    className="object-cover blur-xl scale-110"
+                    loading="lazy"
+                  />
+                </div>
+
+                {/* Imagen principal */}
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={fotoActual()}
@@ -226,19 +234,19 @@ export default function Destinos() {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.45 }}
-                    className="absolute inset-0"
+                    className="relative w-full h-full"
                   >
                     <Image
                       src={fotoActual()}
-                      alt={destinoSeleccionado.nombre}
+                      alt={destinoSel.nombre}
                       fill
-                      className="object-cover"
+                      className="object-contain"
                       loading="lazy"
                     />
                   </motion.div>
                 </AnimatePresence>
 
-                {buildGallery(destinoSeleccionado).length > 1 && (
+                {buildGallery(destinoSel).length > 1 && (
                   <>
                     <button
                       onClick={() => cambiarFoto("prev")}
@@ -256,12 +264,12 @@ export default function Destinos() {
                     </button>
 
                     <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-                      {buildGallery(destinoSeleccionado).map((_, i) => (
+                      {buildGallery(destinoSel).map((_, i) => (
                         <span
                           key={i}
                           onClick={() => cambiarFoto(i)}
                           className={`w-3 h-3 rounded-full cursor-pointer ${
-                            i === fotoIndex ? "bg-white" : "bg-white/50"
+                            i === fotoIdx ? "bg-white" : "bg-white/50"
                           }`}
                           aria-label={`Ir a imagen ${i + 1}`}
                           role="button"
@@ -277,70 +285,91 @@ export default function Destinos() {
               </div>
 
               {/* Información */}
-              <div className="flex flex-col gap-6 flex-1 text-left text-gray-800 dark:text-gray-300">
-                <h2 className="text-3xl font-bold text-blue-700 dark:text-white">
-                  {destinoSeleccionado.nombre}
-                </h2>
+              <div className="relative z-10 flex flex-col gap-6 flex-1 text-left text-gray-800 dark:text-gray-300">
+                <button
+                  onClick={cerrarModal}
+                  className="absolute top-0 right-0 text-gray-400 hover:text-red-500 text-3xl font-bold"
+                  aria-label="Cerrar modal"
+                >
+                  &times;
+                </button>
 
-                <p>{destinoSeleccionado.descripcion}</p>
-
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                {/* Contenido desplazable */}
+                <div className="overflow-y-auto pr-1 flex-1 space-y-6 mt-8 lg:mt-0">
                   <div>
-                    <p className="font-semibold text-blue-600">Ubicación</p>
-                    <p>
-                      {destinoSeleccionado.ubicacion.ciudad},{" "}
-                      {destinoSeleccionado.ubicacion.departamento}
-                    </p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-blue-600">
-                      Tipo / Modalidad
-                    </p>
-                    <p>
-                      {destinoSeleccionado.tipo} / {destinoSeleccionado.modalidad}
-                    </p>
+                    <h2 className="text-3xl font-bold text-blue-700 dark:text-white">
+                      {destinoSel.nombre}
+                    </h2>
+                    <p className="mt-4">{destinoSel.descripcion}</p>
                   </div>
 
-                  <div className="sm:col-span-2">
-                    <p className="font-semibold text-blue-600">Incluye</p>
-                    <ul className="list-disc list-inside mt-1 space-y-1">
-                      {destinoSeleccionado.incluye.map((item, idx) => (
-                        <li key={idx}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                    <div>
+                      <p className="font-semibold text-blue-600">Ubicación</p>
+                      <p>
+                        {destinoSel.ubicacion.ciudad}, {destinoSel.ubicacion.departamento}
+                      </p>
+                    </div>
+                    <div>
+                      <p className="font-semibold text-blue-600">Tipo / Modalidad</p>
+                      <p>
+                        {destinoSel.tipo} / {destinoSel.modalidad}
+                      </p>
+                    </div>
 
-                  <div className="sm:col-span-2">
-                    <p className="font-semibold text-blue-600">
-                      Fechas disponibles
-                    </p>
-                    <div className="flex flex-wrap gap-2 mt-1">
-                      {destinoSeleccionado.fechasDisponibles
-                        .filter((f) => dayjs(f).isAfter(hoy, "day"))
-                        .sort()
-                        .map((f) => (
-                          <span
-                            key={f}
-                            className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
-                          >
-                            {dayjs(f).format("dddd, D [de] MMMM")}
-                          </span>
+                    <div className="sm:col-span-2">
+                      <p className="font-semibold text-blue-600">Incluye</p>
+                      <ul className="list-disc list-inside mt-1 space-y-1">
+                        {destinoSel.incluye.map((item, idx) => (
+                          <li key={idx}>{item}</li>
                         ))}
+                      </ul>
+                    </div>
+
+                    <div className="sm:col-span-2">
+                      <p className="font-semibold text-blue-600">Fechas disponibles</p>
+
+                      {destinoSel.fechasRango?.length ? (
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {destinoSel.fechasRango.map((r, i) => (
+                            <span
+                              key={r + i}
+                              className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
+                            >
+                              {r}
+                            </span>
+                          ))}
+                        </div>
+                      ) : (
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {destinoSel.fechasDisponibles
+                            .filter((f) => dayjs(f).isAfter(hoy, "day"))
+                            .sort()
+                            .map((f) => (
+                              <span
+                                key={f}
+                                className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
+                              >
+                                {dayjs(f).format("dddd, D [de] MMMM")}
+                              </span>
+                            ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
 
-                {/* CTA WhatsApp */}
+                {/* CTA WhatsApp (siempre visible) */}
                 <a
                   href={
-                    "https://wa.me/573001234567?text=" +
+                    "https://wa.me/573162276795?text=" +
                     encodeURIComponent(
-                      `Hola Conexiones360, quiero más información sobre el viaje a ${destinoSeleccionado.nombre}.`
+                      `Hola Conexiones360, quiero más información sobre el viaje a ${destinoSel.nombre}.`
                     )
                   }
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 mx-auto px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow mt-6 w-full max-w-sm"
+                  className="inline-flex items-center justify-center gap-3 mx-auto px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg shadow w-full max-w-sm flex-shrink-0"
                 >
                   <FaWhatsapp className="w-6 h-6" />
                   Solicitar información

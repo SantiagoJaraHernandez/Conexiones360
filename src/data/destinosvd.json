@@ -1,0 +1,225 @@
+[
+  {
+    "nombre": "Eje Cafetero",
+    "duracion": "2 días",
+    "precioDesde": 630000,
+    "tipo": "terrestre",
+    "fechas": ["04 al 06 julio", "26 al 28 septiembre"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 1 noche en finca hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Entrada a Termales de Santa Rosa de Cabal",
+      "Tour ecológico por el sendero",
+      "Visita a Salento, Valle del Cócora y mirador La Mano de Acaime",
+      "Entrada al Parque del Café (Pasaporte múltiple 24 atracciones ilimitadas)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Eje Cafetero",
+    "duracion": "3 días",
+    "precioDesde": 790000,
+    "tipo": "terrestre",
+    "fechas": ["15 al 18 agosto", "10 al 13 octubre", "14 al 17 noviembre", "05 al 08 diciembre", "09 al 12 enero 2026"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 2 noches en finca hotel",
+      "Alimentación: desayuno y cena",
+      "Entrada a Termales de Santa Rosa de Cabal",
+      "Tour ecológico por el sendero",
+      "Entrada al Bioparque Ukumarí",
+      "Visita a Salento, Valle del Cócora y mirador La Mano de Acaime",
+      "Visita a Filandia y su mirador El Encanto",
+      "Entrada al Parque del Café (Pasaporte múltiple 24 atracciones ilimitadas)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Día de Sol en Piscilago",
+    "duracion": "1 día",
+    "precioDesde": 150000,
+    "tipo": "terrestre",
+    "fechas": ["06 julio", "13 julio", "27 julio", "03 agosto", "10 agosto", "18 agosto", "31 agosto", "07 septiembre", "21 septiembre", "05 octubre", "19 octubre", "03 noviembre", "17 noviembre", "30 noviembre", "08 diciembre", "14 diciembre", "21 diciembre", "12 enero", "18 enero", "25 enero"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alimentación: almuerzo y refrigerio",
+      "Entrada a Piscilago con atracciones ilimitadas (zoológico, tren, crucero, bici acuáticas, toboganes y piscinas)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Día de Sol en Parque Jaime Duque",
+    "duracion": "1 día",
+    "precioDesde": 330000,
+    "tipo": "terrestre",
+    "fechas": ["13 julio", "14 septiembre", "25 enero"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alimentación: desayuno y almuerzo",
+      "Visita al Museo Aeroespacial",
+      "Entrada al Parque Jaime Duque",
+      "Paseo en tren de los Andes",
+      "Visita al zoológico",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Boyacá",
+    "duracion": "2 y 3 días",
+    "precioDesde": 560000,
+    "tipo": "terrestre",
+    "fechas": ["18 al 20 julio", "19 al 21 septiembre", "05 al 08 diciembre"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 1 noche en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Entrada a la Catedral de Sal en Zipaquirá",
+      "Visita a Ráquira y sus artesanías",
+      "Entrada a la Casa al Revés y mirador del Artesano",
+      "Visita a Villa de Leyva y fábrica de chocolate",
+      "Visita al Puente de Boyacá",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Encanto Caleño",
+    "duracion": "2 días",
+    "precioDesde": 530000,
+    "tipo": "terrestre",
+    "fechas": ["11 al 13 julio", "14 al 16 noviembre"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 1 noche en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Misa de sanación en Buga",
+      "Paseo en lancha por el Lago Calima",
+      "Entrada al Zoológico de Cali",
+      "Visita a Cristo Rey",
+      "City tour por Cali",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Puebliando por Antioquia",
+    "duracion": "2 días",
+    "precioDesde": 630000,
+    "tipo": "terrestre",
+    "fechas": ["25 al 27 julio", "05 al 07 septiembre", "09 al 11 enero"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 1 noche en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Paseo en barco por el embalse de Guatapé",
+      "Entrada a la Casa al Revés",
+      "Caminata por los Zócalos, Malecón y Parque Central",
+      "Entrada al Mirador VIP Las Letras Piedra",
+      "Visita al Santorini Colombiano",
+      "Entrada al Parque Temático Hacienda Nápoles (Pasaporte Safari)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Puebliando por Antioquia",
+    "duracion": "3 días",
+    "precioDesde": 870000,
+    "tipo": "terrestre",
+    "fechas": ["31 octubre al 03 noviembre", "19 al 22 diciembre"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 2 noches en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Paseo en barco por el embalse de Guatapé",
+      "Entrada a la Casa al Revés",
+      "Caminata por los Zócalos, Malecón y Parque Central",
+      "Entrada al Mirador VIP Las Letras Piedra",
+      "Tour en Metro y Metrocable",
+      "Visita al Parque Botero y Comuna 13",
+      "Tours de compras",
+      "Visita al Santorini Colombiano",
+      "Entrada al Parque Temático Hacienda Nápoles (Pasaporte Safari)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "¡Que Viva Pasto!",
+    "duracion": "4 días - 2 noches",
+    "precioDesde": 819000,
+    "tipo": "terrestre",
+    "fechas": ["06 al 10 agosto", "14 al 18 enero"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 2 noches en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Misa de sanación en Buga",
+      "Visita a la Laguna de La Cocha (paseo en lancha)",
+      "Visita al Santuario de Nuestra Señora de las Lajas en Ipiales",
+      "Trámite paso fronterizo",
+      "Visita al cementerio indígena en Tulcán (Ecuador)",
+      "Tour de compras por Tulcán",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Feria de las Flores Medellín",
+    "duracion": "4 días - 3 noches",
+    "precioDesde": 999999,
+    "tipo": "terrestre",
+    "fechas": ["06 al 10 agosto"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 3 noches en hotel en Medellín",
+      "Alimentación: 4 desayunos, 3 almuerzos y 3 cenas",
+      "Paseo en barco por el embalse de Guatapé",
+      "Caminata por los Zócalos y parque principal",
+      "Tour por la Comuna 13, metro y metrocable",
+      "Visita al Parque Botero",
+      "Visita a Carmen de Viboral y San Antonio",
+      "Desfile de Silleteros",
+      "Seguro hotelero",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Día de Sol Playa Hawai",
+    "duracion": "1 día",
+    "precioDesde": 260000,
+    "tipo": "terrestre",
+    "fechas": ["31 agosto"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alimentación: almuerzo",
+      "Entrada al Parque Playa Hawai con atracciones, toboganes y piscinas",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  },
+  {
+    "nombre": "Sol y Playa Tolú - Coveñas",
+    "duracion": "8 días - 5 noches",
+    "precioDesde": 1699000,
+    "tipo": "terrestre",
+    "fechas": ["04 al 12 octubre"],
+    "incluye": [
+      "Transporte terrestre desde Neiva ida y regreso",
+      "Alojamiento 5 noches en hotel",
+      "Alimentación: desayuno, almuerzo y cena",
+      "Tours en Canoa por la Ciénaga de la Caimanera",
+      "Baño en Coveñas",
+      "Paseo en lancha por el Archipiélago de San Bernardo",
+      "Baño en la Isla Múcura",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ]
+  }
+]

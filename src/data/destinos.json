@@ -1,270 +1,456 @@
 [
   {
-    "nombre": "Piscilago",
-    "descripcion": "Disfruta de un día lleno de diversión, aventuras acuáticas y naturaleza en Piscilago, el parque perfecto para escapar del calor y compartir momentos inolvidables con familia y amigos.",
-    "precio": "Desde $150000",
+    "nombre": "Eje Cafetero 2 Días",
+    "descripcion": "Escápate 2 días al aroma del café, termales y paisajes únicos.",
+    "precio": 630000,
     "fechasDisponibles": [
-      "2025-07-06", "2025-07-13", "2025-07-27",
-      "2025-08-03", "2025-08-10", "2025-08-18", "2025-08-31"
+      "2025-07-04",
+      "2025-07-05",
+      "2025-07-06",
+      "2025-09-26",
+      "2025-09-27",
+      "2025-09-28"
+    ],
+    "fechasRango": [
+      "04 AL 06 JULIO",
+      "26 AL 28 SEPTIEMBRE"
     ],
     "incluye": [
-      "Transporte terrestre Neiva‑Piscilago‑Neiva",
-      "Entrada al parque con todas sus atracciones: zoológico, tren, crucero, 25 toboganes y piscinas",
-      "Almuerzo + refrigerio",
-      "Tarjeta de asistencia médica",
-      "Guía acompañante"
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alojamiento 1 Noche Finca Hotel",
+      "Alimentación Desayuno, Almuerzo y Cena",
+      "Entrada a Termales de Santa rosa de Cabal",
+      "Tour ecológico por el Sendero",
+      "Visita Salento, Valle del Cócora y su mirador la Mano de Acaime",
+      "Entrada al Parque del café Pasaporte múltiple 24 atracciones ilimitadas",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
     ],
-    "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/piscilago",
-    "galleryCount": 3
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/ejecafe2d",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Manizales", "departamento": "Caldas" }
   },
   {
-    "nombre": "Feria de las Flores",
-    "descripcion": "Vive la magia de la Feria de las Flores en Medellín: desfiles, silletas y cultura paisa en un plan todo incluido de 4 días y 3 noches.",
-    "precio": "Desde $999999",
-    "fechasDisponibles": ["2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10"],
-    "incluye": [
-      "Plan todo incluido (alojamiento, alimentación, tours)",
-      "Acomodación múltiple",
-      "Transporte ida y regreso",
-      "Ingreso a eventos oficiales de la feria",
-      "Guía acompañante",
-      "Tarjeta de asistencia médica"
+    "nombre": "Eje Cafetero 3 Días",
+    "descripcion": "Tres días llenos de aventura cafetera, parques y pueblos encantadores.",
+    "precio": 790000,
+    "fechasDisponibles": [
+      "2025-08-15",
+      "2025-08-16",
+      "2025-08-17",
+      "2025-08-18",
+      "2025-10-10",
+      "2025-10-11",
+      "2025-10-12",
+      "2025-10-13",
+      "2025-11-14",
+      "2025-11-15",
+      "2025-11-16",
+      "2025-11-17",
+      "2025-12-05",
+      "2025-12-06",
+      "2025-12-07",
+      "2025-12-08",
+      "2026-01-09",
+      "2026-01-10",
+      "2026-01-11",
+      "2026-01-12"
     ],
-    "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/feriaflores",
-    "galleryCount": 4
+    "fechasRango": [
+      "15 AL 18 AGOSTO",
+      "10 AL 13 OCTUBRE",
+      "14 AL 17 NOVIEMBRE",
+      "05 AL 08 DICIEMBRE",
+      "09 AL 12 ENERO 2026"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alojamiento 2 Noche Finca Hotel",
+      "Alimentación Desayuno y Cena",
+      "Entrada a Termales de Santa rosa de Cabal",
+      "Tour ecológico por el Sendero",
+      "Entrada al Bioparque Ukumari",
+      "Visita Salento, Valle del Cócora y su mirador la Mano de Acaime",
+      "Visita al Municipio Filandia y su Mirador el Encanto",
+      "Entrada al Parque del café Pasaporte múltiple 24 atracciones ilimitadas",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/ejecafe3d",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Manizales", "departamento": "Caldas" }
   },
   {
-    "nombre": "Avistamiento de Ballenas – Juanchaco y Ladrilleros",
-    "descripcion": "Admira las majestuosas ballenas jorobadas en el Pacífico colombiano y disfruta de playas vírgenes y naturaleza exuberante.",
-    "precio": "Desde $1325000",
-    "fechasDisponibles": ["2025-08-16", "2025-08-17", "2025-08-18"],
-    "incluye": [
-      "Plan todo incluido",
-      "Acomodación múltiple",
-      "Transporte terrestre y lancha",
-      "Tours de avistamiento de ballenas",
-      "Alimentación completa",
-      "Guía especializado",
-      "Tarjeta de asistencia médica"
+    "nombre": "Día de Sol en Piscilago",
+    "descripcion": "Diversión acuática y zoológico en un solo día inolvidable.",
+    "precio": 150000,
+    "fechasDisponibles": [
+      "2025-07-06",
+      "2025-07-13",
+      "2025-07-27",
+      "2025-08-03",
+      "2025-08-10",
+      "2025-08-18",
+      "2025-08-31",
+      "2025-09-07",
+      "2025-09-21",
+      "2025-10-05",
+      "2025-10-19",
+      "2025-11-03",
+      "2025-11-17",
+      "2025-11-30",
+      "2025-12-08",
+      "2025-12-14",
+      "2025-12-21",
+      "2026-01-12",
+      "2026-01-18",
+      "2026-01-25"
     ],
-    "ubicacion": { "ciudad": "Juanchaco", "departamento": "Valle del Cauca" },
-    "tipo": "Terrestre + Marítimo",
-    "modalidad": "Nacional",
-    "galeriaPath": "/ballenas",
-    "galleryCount": 4
+    "fechasRango": [
+      "JULIO 06 / 13 / 27",
+      "AGOSTO 03 / 10 / 18 / 31",
+      "SEPTIEMBRE 07 / 21",
+      "OCTUBRE 05 / 19",
+      "NOVIEMBRE 03 / 17 / 30",
+      "DICIEMBRE 08 / 14 / 21",
+      "ENERO 12 / 18 / 25"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Almuerzo y refrigerio",
+      "Entrada al Megaparque Piscilago con todas sus Tracciones",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/Piscilago",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Neiva", "departamento": "Huila" }
   },
   {
-    "nombre": "Cafam Melgar",
-    "descripcion": "Un día de aventura acuática en Cafam Melgar: toboganes extremos, realidad virtual única y más, con transporte desde Neiva.",
-    "precio": "Desde $160000",
-    "fechasDisponibles": ["2025-08-03"],
-    "incluye": [
-      "Transporte Neiva‑Melgar‑Neiva (salida 4 a.m., regreso 5 p.m.)",
-      "Entrada a parque acuático y atracciones (piscinas, toboganes, río lento, barco pirata, parque de mitos, zoológico)",
-      "Experiencia de realidad virtual",
-      "Almuerzo",
-      "Tarjeta de asistencia médica",
-      "Guía acompañante"
+    "nombre": "Día de Sol en Parque Jaime Duque",
+    "descripcion": "Historia, naturaleza y diversión familiar muy cerca de Bogotá.",
+    "precio": 330000,
+    "fechasDisponibles": [
+      "2025-07-13",
+      "2025-09-14",
+      "2026-01-25"
     ],
-    "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" },
-    "tipo": "Terrestre",
-    "modalidad": "Pasadía",
-    "galeriaPath": "/cafammelgar",
-    "galleryCount": 3
+    "fechasRango": [
+      "JULIO 13",
+      "SEPTIEMBRE 14",
+      "ENERO 25"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno y Almuerzo",
+      "Visita al Museo Aeroespacial",
+      "Entrada al Parque Jaime Duque",
+      "Paseo en tren de los Andes",
+      "Visita al Zoologico",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/jaimeduq",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Mosquera", "departamento": "Cundinamarca" }
   },
   {
-    "nombre": "Santuario de Las Lajas",
-    "descripcion": "Visita el icónico Santuario de las Lajas y admira una de las joyas arquitectónicas de Colombia, con plan todo incluido 4 días / 3 noches.",
-    "precio": "Desde $819000",
-    "fechasDisponibles": ["2025-08-07", "2025-08-08", "2025-08-09", "2025-08-10"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Transporte ida y regreso",
-      "Ingreso al Santuario y sitios turísticos cercanos",
-      "Alimentación completa",
-      "Guía acompañante",
-      "Tarjeta de asistencia médica"
+    "nombre": "Boyacá 2 y 3 Días",
+    "descripcion": "Descubre artesanías, historia y magia andina en Boyacá.",
+    "precio": 560000,
+    "fechasDisponibles": [
+      "2025-07-18",
+      "2025-07-19",
+      "2025-07-20",
+      "2025-09-19",
+      "2025-09-20",
+      "2025-09-21",
+      "2025-12-05",
+      "2025-12-06",
+      "2025-12-07",
+      "2025-12-08"
     ],
-    "ubicacion": { "ciudad": "Ipiales", "departamento": "Nariño" },
-    "tipo": "Terrestre",
-    "modalidad": "Religioso / Cultural",
-    "galeriaPath": "/laslajas",
-    "galleryCount": 4
+    "fechasRango": [
+      "JULIO 18 AL 20",
+      "SEPTIEMBRE 19 AL 21",
+      "DICIEMBRE 05 AL 08"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 1 Noche en Hotel",
+      "Entrada a la Catedral de Sal en Zipaquira",
+      "Visita a Raquira y sus Artesanias",
+      "Entrada ala Casa Al revés y su Mirador del Artesano",
+      "Visita a Villa de Leyva y la fabrica de Chocolate",
+      "Visita al Puente de Boyaca",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/Boyaca",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Tunja", "departamento": "Boyacá" }
   },
   {
-    "nombre": "Eje Cafetero & Ukumarí",
-    "descripcion": "Explora el Eje Cafetero y vive la experiencia del Bioparque Ukumarí en un plan todo incluido de 3 días / 2 noches.",
-    "precio": "Desde $790000",
-    "fechasDisponibles": ["2025-08-16", "2025-08-17", "2025-08-18"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Visita al Bioparque Ukumarí",
-      "Ingreso a Parque del Café",
-      "City tour cultural",
-      "Alimentación completa",
-      "Transporte",
-      "Guía acompañante",
-      "Tarjeta de asistencia médica"
+    "nombre": "Encanto Caleño 2 Días",
+    "descripcion": "Vive el sabor y la alegría del Valle en solo un fin de semana.",
+    "precio": 530000,
+    "fechasDisponibles": [
+      "2025-07-11",
+      "2025-07-12",
+      "2025-07-13",
+      "2025-11-14",
+      "2025-11-15",
+      "2025-11-16"
     ],
-    "ubicacion": { "ciudad": "Pereira", "departamento": "Risaralda" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/ukumari",
-    "galleryCount": 5
+    "fechasRango": [
+      "JULIO 11 AL 13",
+      "NOVIEMBRE 14 AL 16"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 1 Noche en Hotel",
+      "Misa de Sanación en Buga",
+      "Paseo en Lancha por el Embalse del Lago Calima",
+      "Entrada al Zoológico de Cali",
+      "Visita a Cristo Rey",
+      "City Tour por Cali",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/encantoca",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Cali", "departamento": "Valle del Cauca" }
   },
   {
-    "nombre": "Playa Hawai – Ibagué",
-    "descripcion": "Disfruta de un día inolvidable en Playa Hawai (Ibagué) con todas sus atracciones acuáticas y diversión para parejas.",
-    "precio": "Desde $260000 (pareja)",
-    "fechasDisponibles": ["2025-08-31"],
-    "incluye": [
-      "Transporte Neiva‑Ibagué‑Neiva (salida 4 a.m., regreso 5 p.m.)",
-      "Entrada al parque con todas sus atracciones",
-      "Almuerzo",
-      "Tarjeta de asistencia médica",
-      "Guía acompañante"
+    "nombre": "Pueblando por Antioquia 2 Días",
+    "descripcion": "Guatapé y Hacienda Nápoles: color y adrenalina en 48 horas.",
+    "precio": 630000,
+    "fechasDisponibles": [
+      "2025-07-25",
+      "2025-07-26",
+      "2025-07-27",
+      "2025-09-05",
+      "2025-09-06",
+      "2025-09-07",
+      "2026-01-09",
+      "2026-01-10",
+      "2026-01-11"
     ],
-    "ubicacion": { "ciudad": "Ibagué", "departamento": "Tolima" },
-    "tipo": "Terrestre",
-    "modalidad": "Pasadía",
-    "galeriaPath": "/playahawai",
-    "galleryCount": 3
+    "fechasRango": [
+      "JULIO 25 AL 27",
+      "SEPTIEMBRE 05 AL 07",
+      "ENERO 09 AL 11"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 1 Noche en Hotel",
+      "Paseo en Barco por el Embalse de Guatape",
+      "Entrada a la Casa Al Revés",
+      "Caminata por los Zócalos, Malecón, Parque Central",
+      "Entrada al Mirador VIP las Letras Piedra",
+      "visita al Santorini Colombiano",
+      "Entrada al Parque Temático Hacienda Nápoles Pasaporte Safari",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/puebleando",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" }
   },
   {
-    "nombre": "Parque del Café",
-    "descripcion": "Vive una experiencia inolvidable en el corazón del Eje Cafetero. El Parque del Café combina tradición, cultura, naturaleza y adrenalina en un solo lugar. Atrévete a disfrutar de sus montañas rusas, shows culturales y paisajes espectaculares.",
-    "precio": "Desde $560000",
-    "fechasDisponibles": ["2025-07-05", "2025-07-26"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Transporte cómodo ida y regreso",
-      "Entrada al parque con pasaporte múltiple",
-      "Desayuno y almuerzo típico",
-      "Seguro de viaje",
-      "Guía turístico especializado",
-      "Recorrido cultural por el Eje Cafetero"
+    "nombre": "Pueblando por Antioquia 3 Días",
+    "descripcion": "Explora Antioquia a fondo: Guatapé, Comuna 13 y más.",
+    "precio": 870000,
+    "fechasDisponibles": [
+      "2025-10-31",
+      "2025-11-01",
+      "2025-11-02",
+      "2025-11-03",
+      "2025-12-19",
+      "2025-12-20",
+      "2025-12-21",
+      "2025-12-22"
     ],
-    "ubicacion": { "ciudad": "Montenegro", "departamento": "Quindío" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/parquecafe",
-    "galleryCount": 5
+    "fechasRango": [
+      "OCTUBRE 31 AL 03 NOVIEMBRE",
+      "DICIEMBRE 19 AL 22"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 2 Noche en Hotel",
+      "Paseo en Barco por el Embalse de Guatape",
+      "Entrada a la Casa Al Revés",
+      "Caminata por los Zócalos, Malecón, Parque Central",
+      "Entrada al Mirador VIP las Letras Piedra",
+      "Tour en Metro y Metrocable",
+      "Visita al Parque Botero y Comuna 13",
+      "Tours de Compras",
+      "visita al Santorini Colombiano",
+      "Entrada al Parque Temático Hacienda Nápoles Pasaporte Safari",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/puebleando2",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" }
   },
   {
-    "nombre": "Arboletes",
-    "descripcion": "El Disney colombiano, disfruta del paraíso natural en Arboletes con todo incluido, desde el 21 al 28 de junio. Acomodación doble y planes para disfrutar en familia o pareja.",
-    "precio": "Desde $1850000",
-    "fechasDisponibles": ["2025-06-21", "2025-06-22", "2025-06-23", "2025-06-24", "2025-06-25", "2025-06-26", "2025-06-27", "2025-06-28"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación doble",
-      "Alimentación completa",
-      "Actividades recreativas",
-      "Transporte"
+    "nombre": "Que Viva Pasto !!!! 4 Días - 2 Noches",
+    "descripcion": "Pasto, La Cocha y Las Lajas: cultura, fe y naturaleza.",
+    "precio": 819000,
+    "fechasDisponibles": [
+      "2025-08-06",
+      "2025-08-07",
+      "2025-08-08",
+      "2025-08-09",
+      "2025-08-10",
+      "2026-01-14",
+      "2026-01-15",
+      "2026-01-16",
+      "2026-01-17",
+      "2026-01-18"
     ],
-    "ubicacion": { "ciudad": "Arboletes", "departamento": "Antioquia" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/arboletes",
-    "galleryCount": 4
+    "fechasRango": [
+      "AGOSTO 06 AL 10",
+      "ENERO 14 AL 18"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 2 Noche en Hotel",
+      "Misa de Sanación en Buga",
+      "Visita a la Laguna de La Cocha (Paseo en Lancha)",
+      "Visita al majestuoso Santuario de Las Lajas en Ipiales",
+      "Tramite Paso Fronterizo",
+      "Visita al Parque Cementerio Indígena mas Famoso del Mundo en Tulcán Ecuador",
+      "Tours de Compras por Tulcán",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/pasto",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Pasto", "departamento": "Nariño" }
   },
   {
-    "nombre": "Hacienda Nápoles",
-    "descripcion": "Disfruta la historia y naturaleza de la Hacienda Nápoles con planes todo incluido, desde acomodación múltiple y actividades para toda la familia.",
-    "precio": "Desde $630000",
-    "fechasDisponibles": ["2025-06-21", "2025-06-22", "2025-06-23", "2025-07-05", "2025-07-06", "2025-07-26", "2025-07-27"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Alimentación completa",
-      "Ingreso a parque temático",
-      "Transporte"
+    "nombre": "Feria de las Flores Medellín 4 Días - 3 Noches",
+    "descripcion": "Vive la magia y el color de la Feria de las Flores.",
+    "precio": 999999,
+    "fechasDisponibles": [
+      "2025-08-06",
+      "2025-08-07",
+      "2025-08-08",
+      "2025-08-09",
+      "2025-08-10"
     ],
-    "ubicacion": { "ciudad": "Puerto Triunfo", "departamento": "Antioquia" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/haciendanapoles",
-    "galleryCount": 4
+    "fechasRango": [
+      "AGOSTO 06 AL 10"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: 4 Desayuno, 3 Almuerzo y 3 Cenas",
+      "Alojamiento 3 Noche en Hotel Medellín",
+      "Paseo en Barco por el embalse de guatape",
+      "Caminate por los Zocalos, Parque principal",
+      "Tours por la comuna 13, Metro y metrocable",
+      "Visita Parque botero",
+      "Visita Carmen de Viboral Tradicional Vasijas de Arcilla",
+      "San Antonio Tradicional por sus mas 100 Sabores de Postres",
+      "Parque Tutucán Tradicional Pueblo Típico Antioquia",
+      "Desfile de Silleteros en Medellín",
+      "Seguro Hotelero",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/fflores",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Medellín", "departamento": "Antioquia" }
   },
   {
-    "nombre": "Lago Calima",
-    "descripcion": "Relájate y disfruta del Lago Calima con planes todo incluido, acomodación múltiple y actividades acuáticas para todos los gustos.",
-    "precio": "Desde $530000",
-    "fechasDisponibles": ["2025-07-12", "2025-07-13"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Actividades acuáticas",
-      "Alimentación completa",
-      "Transporte"
+    "nombre": "Día de Sol Playa Hawai",
+    "descripcion": "Sol, arena y toboganes sin salir del Huila.",
+    "precio": 260000,
+    "fechasDisponibles": [
+      "2025-08-31"
     ],
-    "ubicacion": { "ciudad": "Calima", "departamento": "Valle del Cauca" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/lagocalima",
-    "galleryCount": 3
+    "fechasRango": [
+      "AGOSTO 31"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Almuerzo",
+      "Entrada al Parque Playa Hawai con todas sus Atracciones",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/hawaii",
+    "galleryCount": 3,
+    "ubicacion": { "ciudad": "Neiva", "departamento": "Huila" }
   },
   {
-    "nombre": "Parque Jaime Duque",
-    "descripcion": "Diversión y cultura para toda la familia en el Parque Jaime Duque, con planes todo incluido para parejas y grupos.",
-    "precio": "Desde $640000",
-    "fechasDisponibles": ["2025-07-13"],
-    "incluye": [
-      "Todo incluido",
-      "Entrada para pareja",
-      "Alimentación",
-      "Guía",
-      "Actividades culturales"
+    "nombre": "Sol y Playa Tolú - Coveñas 8 Días - 5 Noches",
+    "descripcion": "Caribe colombiano, manglares y playas de ensueño por 8 días.",
+    "precio": 1699000,
+    "fechasDisponibles": [
+      "2025-10-04",
+      "2025-10-05",
+      "2025-10-06",
+      "2025-10-07",
+      "2025-10-08",
+      "2025-10-09",
+      "2025-10-10",
+      "2025-10-11",
+      "2025-10-12"
     ],
-    "ubicacion": { "ciudad": "Tocancipá", "departamento": "Cundinamarca" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/jaimeduque",
-    "galleryCount": 3
-  },
-  {
-    "nombre": "Villa de Leyva",
-    "descripcion": "Escápate a la historia y belleza colonial de Villa de Leyva con planes todo incluido, acomodación sencilla y actividades culturales.",
-    "precio": "Desde $560000",
-    "fechasDisponibles": ["2025-07-19", "2025-07-20"],
-    "incluye": [
-      "Todo incluido",
-      "Acomodación sencilla",
-      "Alimentación",
-      "Recorridos culturales",
-      "Transporte"
+    "fechasRango": [
+      "OCTUBRE 04 AL 12"
     ],
-    "ubicacion": { "ciudad": "Villa de Leyva", "departamento": "Boyacá" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/villaleyva",
-    "galleryCount": 4
-  },
-  {
-    "nombre": "San Agustín",
-    "descripcion": "Descubre el misterio arqueológico y belleza natural de San Agustín con planes todo incluido y acomodación múltiple.",
-    "precio": "Desde $260000",
-    "fechasDisponibles": ["2025-07-20"],
     "incluye": [
-      "Todo incluido",
-      "Acomodación múltiple",
-      "Tours arqueológicos",
-      "Alimentación",
-      "Transporte"
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alojamiento 5 Noche en Hotel",
+      "Paseo en Barco por el Embalse de Guatape",
+      "Caminata por los Zócalos, Malecón, Parque Central",
+      "Entrada al Mirador VIP las Letras Piedra",
+      "Tour en Metro y Metrocable",
+      "Visita al Parque Botero y Comuna 13",
+      "Tours de Compras",
+      "Tours en Canoa por la Ciénaga de la Caimanera",
+      "Baño de Playa en Coveñas",
+      "Paso en Lancha Archipiélago de San Bernando",
+      "Baño Isla Múcura",
+      "Tarjeta de Asistencia Medica",
+      "Guía Acompañante"
     ],
-    "ubicacion": { "ciudad": "San Agustín", "departamento": "Huila" },
-    "tipo": "Terrestre",
-    "modalidad": "Nacional",
-    "galeriaPath": "/sanagustin",
-    "galleryCount": 3
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/tolu",
+    "galleryCount": 5,
+    "ubicacion": { "ciudad": "Tolú", "departamento": "Sucre" }
   }
 ]
