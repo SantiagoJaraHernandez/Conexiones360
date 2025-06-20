@@ -286,16 +286,20 @@ export default function Destinos() {
 
               {/* Información */}
               <div className="relative z-10 flex flex-col gap-6 flex-1 text-left text-gray-800 dark:text-gray-300">
+                {/* Botón cerrar fijo arriba a la derecha, fuera del scroll */}
                 <button
                   onClick={cerrarModal}
-                  className="absolute top-0 right-0 text-gray-400 hover:text-red-500 text-3xl font-bold"
+                  className="absolute top-4 right-4 text-gray-400 hover:text-red-500 text-3xl font-bold z-50"
                   aria-label="Cerrar modal"
                 >
                   &times;
                 </button>
 
-                {/* Contenido desplazable */}
-                <div className="overflow-y-auto pr-1 flex-1 space-y-6 mt-8 lg:mt-0">
+                {/* Contenido desplazable con scroll delgado */}
+                <div
+                  className="overflow-y-auto pr-1 flex-1 space-y-6 mt-8 lg:mt-0 scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-400 scrollbar-track-gray-200 dark:scrollbar-thumb-gray-600 dark:scrollbar-track-gray-800"
+                  style={{ maxHeight: "calc(90vh - 4rem)" }}
+                >
                   <div>
                     <h2 className="text-3xl font-bold text-blue-700 dark:text-white">
                       {destinoSel.nombre}

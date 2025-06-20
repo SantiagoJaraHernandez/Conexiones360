@@ -197,7 +197,7 @@
     ],
     "tipo": "Turismo",
     "modalidad": "Terrestre",
-    "galeriaPath": "/Boyaca",
+    "galeriaPath": "/boyaca",
     "galleryCount": 5,
     "ubicacion": { "ciudad": "Tunja", "departamento": "Boyacá" }
   },
