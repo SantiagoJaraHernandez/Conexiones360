@@ -4,15 +4,15 @@
     "descripcion": "Escápate 2 días al aroma del café, termales y paisajes únicos.",
     "precio": 630000,
     "fechasDisponibles": [
-      "2025-07-04",
-      "2025-07-05",
-      "2025-07-06",
+      "2025-07-25",
+      "2025-07-26",
+      "2025-07-27",
       "2025-09-26",
       "2025-09-27",
       "2025-09-28"
     ],
     "fechasRango": [
-      "04 AL 06 JULIO",
+      "25 AL 27 JULIO",
       "26 AL 28 SEPTIEMBRE"
     ],
     "incluye": [
@@ -30,7 +30,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/ejecafe2d",
     "galleryCount": 5,
-    "ubicacion": { "ciudad": "Manizales", "departamento": "Quindío" }
+    "ubicacion": { "ciudad": "Risaralda", "departamento": "Quindío" }
   },
   {
     "nombre": "Eje Cafetero 3 Días",
@@ -82,7 +82,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/ejecafe3d",
     "galleryCount": 5,
-    "ubicacion": { "ciudad": "Manizales", "departamento": "Quindío" }
+    "ubicacion": { "ciudad": "Risaralda", "departamento": "Quindío" }
   },
   {
     "nombre": "Día de Sol en Piscilago",
@@ -129,7 +129,7 @@
     "tipo": "Turismo",
     "modalidad": "Terrestre",
     "galeriaPath": "/Piscilago",
-    "galleryCount": 5,
+    "galleryCount": 8,
     "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" }
   },
   {
@@ -185,7 +185,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 1 Noche en Hotel",
       "Entrada a la Catedral de Sal en Zipaquira",
       "Visita a Raquira y sus Artesanias",
@@ -219,7 +219,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 1 Noche en Hotel",
       "Misa de Sanación en Buga",
       "Paseo en Lancha por el Embalse del Lago Calima",
@@ -257,7 +257,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 1 Noche en Hotel",
       "Paseo en Barco por el Embalse de Guatape",
       "Entrada a la Casa Al Revés",
@@ -294,7 +294,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 2 Noche en Hotel",
       "Paseo en Barco por el Embalse de Guatape",
       "Entrada a la Casa Al Revés",
@@ -336,7 +336,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 2 Noche en Hotel",
       "Misa de Sanación en Buga",
       "Visita a la Laguna de La Cocha (Paseo en Lancha)",
@@ -432,7 +432,7 @@
     ],
     "incluye": [
       "Transporte Terrestres desde Neiva ida y regreso",
-      "Alimentación: Desayuno, Almuerzo y Almuerzo",
+      "Alimentación: Desayuno, Almuerzo y Cena",
       "Alojamiento 5 Noche en Hotel",
       "Paseo en Barco por el Embalse de Guatape",
       "Caminata por los Zócalos, Malecón, Parque Central",
