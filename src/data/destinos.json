@@ -452,5 +452,794 @@
     "galeriaPath": "/tolu",
     "galleryCount": 5,
     "ubicacion": { "ciudad": "Tolú", "departamento": "Sucre" }
-  }
+  },
+  {
+    "nombre": "Plan Estudiantil Costa Caribe 6 Días - 3 Noches",
+    "descripcion": "Cartagena, Santa Marta y Barranquilla en un solo viaje estudiantil lleno de cultura y playa.",
+    "precio": 999000,
+    "fechasDisponibles": [
+      "2025-11-28",
+      "2025-11-29",
+      "2025-11-30",
+      "2025-12-01",
+      "2025-12-02",
+      "2025-12-03"
+    ],
+    "fechasRango": [
+      "NOVIEMBRE 28 AL 03 DICIEMBRE"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Busetón o Bus según número de personas (mínimo 40 personas)",
+      "Alojamiento 1 Noche en Hotel en Cartagena",
+      "2 Noches en Hotel en Santa Marta",
+      "Alimentación: 4 Desayunos, 4 Almuerzos y 3 Cenas",
+      "Santa Marta: Paseo a Buritaca (donde se une el río con el mar), City Tour por calles principales",
+      "Barranquilla: Tours por Puente Pumarejo, Ventana del Mundo, Aleta de Tiburón, Letras y Monumento Shakira",
+      "Cartagena: City Tour en Chiva Rumbera (India Catalina, Zapatos Viejos, Castillo San Felipe - no incluye entrada), caminata por la Ciudad Amurallada",
+      "Noche Blanca y paseo en bus a la Isla Barú",
+      "Tarjeta de asistencia médica",
+      "Coordinador acompañante"
+    ],
+    "tipo": "Turismo Estudiantil",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/costacaribe",
+    "galleryCount": 5,
+    "ubicacion": {
+      "ciudad": "Cartagena / Santa Marta / Barranquilla",
+      "departamento": "Atlántico / Bolívar / Magdalena"
+    }
+  },
+  {
+    "nombre": "Excursión Navideña 8 Días - 6 Noches",
+    "descripcion": "Un recorrido inolvidable por Guatapé, Medellín, Cartagena, Santa Marta, Isla Múcura y más, para celebrar la Navidad viajando.",
+    "precio": 1790000,
+    "fechasDisponibles": [
+      "2025-12-15",
+      "2025-12-16",
+      "2025-12-17",
+      "2025-12-18",
+      "2025-12-19",
+      "2025-12-20",
+      "2025-12-21",
+      "2025-12-22",
+      "2025-12-23"
+    ],
+    "fechasRango": [
+      "DICIEMBRE 15 AL 23"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Busetón o Bus según número de personas (mínimo 30 personas)",
+      "Alojamiento: 1 Noche en Medellín, 2 Noches en Tolú, 1 Noche en Cartagena, 2 Noches en Santa Marta (Rodadero)",
+      "Alimentación: 8 Desayunos, 8 Almuerzos y 6 Cenas",
+      "Guatapé: Paseo en Barco Rumbero por la represa, Mirador Terraza VIP de la Piedra, caminata por Zócalos, Parque y Malecón",
+      "Medellín: Tours por Parque Botero, Metro y Metrocable, Comuna 13",
+      "Tolú - Coveñas: Paseo en Canoa por la Ciénaga de la Caimanera, Paseo en Lancha por el Archipiélago de San Bernardo (Isla Boquerón, Islote Santa Cruz, Isla Múcura)",
+      "Cartagena: Visita a Playa Tranquila en Barú, Ciudad Amurallada, City Tour (Castillo de San Felipe - no incluye entrada, Bahía, Zapatos Viejos)",
+      "Barranquilla: Tour Panorámico (Puente Pumarejo, Aleta de Tiburón, Monumento de Shakira, Ventana del Mundo)",
+      "Santa Marta: Visita a Buritaca (unión del río con el mar), Noche Blanca en Chiva Rumbera (Bahía, Monumento del Pipe, principales calles)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/excursionnavidena",
+    "galleryCount": 5,
+    "ubicacion": {
+      "ciudad": "Guatapé / Medellín / Tolú / Cartagena / Barranquilla / Santa Marta",
+      "departamento": "Antioquia / Sucre / Bolívar / Atlántico / Magdalena"
+    }
+  },
+  {
+    "nombre": "Excursión de Reyes / Costa Caribe 7 Días - 4 Noches",
+    "descripcion": "Disfruta del inicio del año con un recorrido por Cartagena, Santa Marta y Barranquilla lleno de cultura, playa y tradición.",
+    "precio": 1658000,
+    "fechasDisponibles": [
+      "2026-01-02",
+      "2026-01-03",
+      "2026-01-04",
+      "2026-01-05",
+      "2026-01-06",
+      "2026-01-07",
+      "2026-01-08"
+    ],
+    "fechasRango": [
+      "ENERO 02 AL 08"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso",
+      "Busetón o Bus según número de personas (mínimo 30 personas)",
+      "Alojamiento: 2 Noches en Hotel en Cartagena, 2 Noches en Hotel en Rodadero - Santa Marta",
+      "Alimentación: 5 Desayunos, 5 Almuerzos y 4 Cenas",
+      "Santa Marta: Visita a Buritaca (donde se une el río con el mar), City Tour por las principales calles",
+      "Barranquilla: Tour Panorámico (Puente Pumarejo, Aleta de Tiburón, Ventana del Mundo, Monumento de Shakira)",
+      "Cartagena: Visita a Zapatos Viejos, Castillo de San Felipe (no incluye entrada), Ciudad Amurallada y más",
+      "Tour de baño en la Isla Barú, Playa Blanca",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante durante el viaje"
+    ],
+    "tipo": "Turismo",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/reyescaribe",
+    "galleryCount": 5,
+    "ubicacion": {
+      "ciudad": "Cartagena / Santa Marta / Barranquilla",
+      "departamento": "Bolívar / Magdalena / Atlántico"
+    }
+  },
+  {
+    "nombre": "Peregrinación Señor de los Milagros Buga",
+    "descripcion": "Viaje espiritual desde Neiva hacia Buga con transporte cómodo y acompañamiento especializado.",
+    "precio": 130000,
+    "fechasDisponibles": [
+      "2025-09-14",
+      "2025-10-13",
+      "2025-12-14",
+      "2026-01-14"
+    ],
+    "incluye": [
+      "Transporte Terrestres desde Neiva ida y regreso (Vans, Busetón, Bus según número de personas)",
+      "Tarjeta de asistencia médica",
+      "Guía acompañante"
+    ],
+    "tipo": "Peregrinación",
+    "modalidad": "Terrestre",
+    "galeriaPath": "/peregrinacionbuga",
+    "galleryCount": 4,
+    "ubicacion": {
+      "ciudad": "Buga",
+      "departamento": "Valle del Cauca"
+    }
+  },
+  {
+  "nombre": "Cartagena 4 Días - 3 Noches",
+  "descripcion": "Paquete aéreo con tiquete Bogotá - Cartagena - Bogotá, alojamiento y tours en Cartagena, con opciones de planes de alimentación.",
+  "precio": 950000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo ida y regreso Bogotá - Cartagena",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 4 días - 3 noches con aire acondicionado y baño privado según hotel seleccionado",
+    "Alimentación según plan seleccionado (PC: solo desayunos)",
+    "Tour en bus compartido a Barú con almuerzo incluido",
+    "City tours histórico por las principales calles de Cartagena",
+    "Entrada al Castillo de San Felipe (obsequio de la agencia)",
+    "Impuestos del tiquete y hotel"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/cartagenaaereo",
+  "galleryCount": 5,
+  "ubicacion": {
+    "ciudad": "Cartagena",
+    "departamento": "Bolívar"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel Itaco",
+      "plan": "PC",
+      "precio": 950000,
+      "descripcionPlan": "Solo desayunos"
+    },
+    {
+      "hotel": "Hotel Toledo",
+      "plan": "PC",
+      "precio": 980000,
+      "descripcionPlan": "Solo desayunos"
+    },
+    {
+      "hotel": "Hotel Cartagena Premium",
+      "plan": "PAE",
+      "precio": 1290000,
+      "descripcionPlan": "Desayuno, almuerzo y cena"
+    },
+    {
+      "hotel": "Hotel Barahona",
+      "plan": "PAM",
+      "precio": 1459000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Atlantic Lux",
+      "plan": "PAM",
+      "precio": 1538000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Dorado Plaza",
+      "plan": "FULL",
+      "precio": 1499000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet, bar abierto"
+    }
+  ]
+},
+{
+  "nombre": "Santa Marta 4 Días - 3 Noches",
+  "descripcion": "Paquete aéreo con tiquete Bogotá - Santa Marta - Bogotá, alojamiento y tours en Santa Marta, con opciones de planes de alimentación.",
+  "precio": 950000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo ida Bogotá - Santa Marta - Bogotá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 4 días - 3 noches con aire acondicionado y baño privado según hotel seleccionado",
+    "Alimentación según plan seleccionado",
+    "PLAN PAM: Desayuno y cena",
+    "PLAN PA: Desayuno, almuerzo y cena tipo menú",
+    "PLAN PAE: Desayuno, almuerzo y cena tipo buffet, snack y bar abierto",
+    "Paseo en lancha a Playa Blanca con almuerzo incluido",
+    "Impuestos del tiquete y hotel"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/santamartaaereo",
+  "galleryCount": 3,
+  "ubicacion": {
+    "ciudad": "Santa Marta",
+    "departamento": "Magdalena"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel Taybo Beach",
+      "plan": "PAM",
+      "precio": 950000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Taybo Kai",
+      "plan": "PAM",
+      "precio": 950000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Rodadero Relax",
+      "plan": "PAM",
+      "precio": 970000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Palmarena",
+      "plan": "PAM",
+      "precio": 1150000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Portobahia",
+      "plan": "PA",
+      "precio": 1250000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Rodadero Beach",
+      "plan": "PAE",
+      "precio": 1380000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet, snack y bar abierto"
+    }
+  ]
+},
+{
+  "nombre": "San Andrés 4 Días - 3 Noches",
+  "descripcion": "Conoce el Mar de los Siete Colores con paquete aéreo, alojamiento y tours en San Andrés, con opciones de planes de alimentación.",
+  "precio": 1680000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo ida Bogotá - San Andrés - Bogotá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 4 días - 3 noches con aire acondicionado y baño privado según hotel seleccionado",
+    "Alimentación según plan seleccionado",
+    "PLAN PAM: Desayuno y cena",
+    "PLAN PAE: Desayuno, almuerzo y cena tipo menú",
+    "PLAN FULL: Desayuno, almuerzo y cena tipo buffet, snack y bar abierto",
+    "Tours vuelta a la isla (Cueva de Morgan, Hoyo Soplador, Piscinita)",
+    "Tours en lancha al Acuario Mágico",
+    "Tours por la bahía en catamarán",
+    "Impuestos del tiquete"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/sanandres",
+  "galleryCount": 5,
+  "ubicacion": {
+    "ciudad": "San Andrés",
+    "departamento": "Archipiélago de San Andrés, Providencia y Santa Catalina"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel San Andrés",
+      "plan": "PAE",
+      "precio": 1717000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Portofino",
+      "plan": "PAE",
+      "precio": 1680000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Sea Flower",
+      "plan": "PAM",
+      "precio": 1849000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Verde Mar",
+      "plan": "FULL",
+      "precio": 1935000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet, snack y bar abierto"
+    },
+    {
+      "hotel": "Hotel Dorado",
+      "plan": "FULL",
+      "precio": 2150000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet, snack y bar abierto"
+    },
+    {
+      "hotel": "Hotel Sol Caribe San Andrés",
+      "plan": "FULL",
+      "precio": 2287000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet, snack y bar abierto"
+    }
+  ]
+},
+{
+  "nombre": "Coveñas con Isla Múcura 4 Días - 3 Noches",
+  "descripcion": "Encantos del Caribe con paquete aéreo, alojamiento, traslados y tours en Coveñas y la Isla Múcura, con opciones de planes de alimentación.",
+  "precio": 1700000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo ida Bogotá - Montería - Bogotá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Traslado aeropuerto Montería – hotel – aeropuerto Montería",
+    "Alojamiento 4 días - 3 noches con aire acondicionado y baño privado según hotel seleccionado",
+    "Alimentación según plan seleccionado",
+    "PLAN PAM: Desayuno y cena",
+    "PLAN PAE: Desayuno, almuerzo y cena tipo menú",
+    "Traslado marítimo ida y regreso a La Isla Boquerón, Archipiélago de San Bernardo (visitando la isla más poblada del mundo), Isla Palma, Islote Santa Cruz, Titi Pan, Baño Isla Múcura (no incluye traslado interno)",
+    "Tour en canoa por la ciénaga de la caimanera (no incluye traslado interno)",
+    "Impuestos del tiquete y hotel"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/covenasaereo",
+  "galleryCount": 8,
+  "ubicacion": {
+    "ciudad": "Coveñas",
+    "departamento": "Sucre"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel La Mansion - Tolú",
+      "plan": "PAE",
+      "precio": 1748000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Kevin - Tolú",
+      "plan": "PAE",
+      "precio": 1760000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Katylú - Tolú",
+      "plan": "PAM",
+      "precio": 1700000,
+      "descripcionPlan": "Desayuno y cena"
+    },
+    {
+      "hotel": "Hotel Palmalinda - Coveñas",
+      "plan": "PAE",
+      "precio": 2000000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel Green - Coveñas",
+      "plan": "PAE",
+      "precio": 2030000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    },
+    {
+      "hotel": "Hotel K-Pre - Coveñas",
+      "plan": "PAE",
+      "precio": 2050000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo menú"
+    }
+  ]
+},
+{
+  "nombre": "Capurganá 5 Días - 4 Noches",
+  "descripcion": "Paquete todo incluido en Capurganá con vuelos desde Medellín, alojamiento, alimentación buffet, bar abierto y tours marítimos a Sapzurro, La Miel y Playa Soledad.",
+  "precio": 2600000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo Medellín - Capurganá - Medellín",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 5 días - 4 noches en Hotel Las Mañanitas en Capurganá",
+    "Habitaciones con aire acondicionado, piscina, jacuzzi y wifi",
+    "Alimentación tipo buffet: desayuno, almuerzo y cena",
+    "Bar abierto",
+    "Traslado marítimo a Sapzurro y La Miel (Panamá)",
+    "Traslado marítimo a Playa Soledad y Bahía El Aguacate",
+    "Visita al Hoyo Soplador en Bahía Aguacate",
+    "Seguro hotelero",
+    "Impuesto del tiquete",
+    "Tarjeta de asistencia médica"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/capurgana",
+  "galleryCount": 7,
+  "ubicacion": {
+    "ciudad": "Capurganá",
+    "departamento": "Chocó"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel Las Mañanitas",
+      "plan": "FULL",
+      "precio": 2600000,
+      "descripcionPlan": "Todo incluido: desayuno, almuerzo, cena tipo buffet y bar abierto"
+    }
+  ]
+},
+{
+  "nombre": "Perlas del Caribe - 5 Días / 4 Noches",
+  "descripcion": "Tour completo por Santa Marta, Barranquilla y Cartagena. Incluye tiquetes aéreos, alojamiento, alimentación, city tours, traslados y visitas a destinos icónicos del Caribe colombiano.",
+  "precio": 1950000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025 - No aplica puentes"],
+  "incluye": [
+    "Tiquete aéreo ida: Bogotá - Santa Marta",
+    "Tiquete aéreo regreso: Cartagena - Bogotá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento: 2 noches en hotel en Santa Marta",
+    "Alojamiento: 2 noches en hotel en Cartagena",
+    "Traslados internos en vans o busetón según número de pasajeros (Santa Marta - Barranquilla - Cartagena)",
+    "Alimentación: 4 desayunos, 2 almuerzos y 4 cenas",
+    "Santa Marta: paseo en lancha a Playa Blanca y city tour por las principales calles",
+    "Barranquilla: tour por la Ventana del Mundo, Aleta de Tiburón y Monumento de Shakira",
+    "Cartagena: city tour visitando India Catalina, Zapatos Viejos, Castillo de San Felipe y Ciudad Amurallada",
+    "Tour de playa en Isla Barú en bus",
+    "Tarjeta de asistencia médica"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/perlascaribe",
+  "galleryCount": 6,
+  "ubicacion": {
+    "ciudad": "Santa Marta, Barranquilla y Cartagena",
+    "departamento": "Caribe Colombiano"
+  },
+  "planes": [
+    {
+      "hotel": "Hoteles en Santa Marta y Cartagena",
+      "plan": "PAM",
+      "precio": 1950000,
+      "descripcionPlan": "Incluye 4 desayunos, 2 almuerzos y 4 cenas"
+    }
+  ]
+},
+{
+  "nombre": "Panamá - 5 Días / 4 Noches",
+  "descripcion": "Viaje a Panamá con tours de compras y visita al Canal. Incluye tiquetes, alojamiento, desayunos y guía acompañante.",
+  "precio": 2999000,
+  "fechasDisponibles": ["2025-11-27"],
+  "fechasRango": ["27 de noviembre al 1 de diciembre de 2025"],
+  "incluye": [
+    "Tiquete aéreo ida y regreso Bogotá - Panamá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Traslados internos en vans según número de personas",
+    "Alojamiento: 4 noches en hotel en Ciudad de Panamá",
+    "Alimentación: solo desayunos",
+    "Tour de compras en Colón",
+    "Tour al Canal de Panamá (no incluye entrada)",
+    "Guía acompañante",
+    "Tarjeta de asistencia médica"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/panama",
+  "galleryCount": 7,
+  "ubicacion": {
+    "ciudad": "Ciudad de Panamá",
+    "departamento": "Panamá"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel en Ciudad de Panamá",
+      "plan": "PC",
+      "precio": 2999000,
+      "descripcionPlan": "Solo desayunos"
+    }
+  ]
+},
+{
+  "nombre": "Cancún - 5 Días / 4 Noches",
+  "descripcion": "Viaje a Cancún con opción de hotel 3 o 4 estrellas. Incluye tiquetes, alojamiento, alimentación y tours según opción elegida.",
+  "precio": 3500000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Tiquete aéreo ida y regreso Bogotá - Cancún",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Tarjeta de asistencia médica internacional"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/cancun",
+  "galleryCount": 4,
+  "ubicacion": {
+    "ciudad": "Cancún",
+    "departamento": "Quintana Roo"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel 4 Estrellas",
+      "plan": "FULL",
+      "precio": 3500000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet + bar abierto y snacks"
+    },
+    {
+      "hotel": "Hotel 3 Estrellas",
+      "plan": "TOUR",
+      "precio": 3500000,
+      "descripcionPlan": "Desayunos diarios + City tour Cancún + Catamarán a Isla Mujeres + Visita a Chichén Itzá y Tulum"
+    }
+  ]
+},
+{
+  "nombre": "Punta Cana - 5 Días / 4 Noches",
+  "descripcion": "Disfruta de Punta Cana con tiquetes, hotel 4 estrellas, alimentación tipo buffet, bar abierto, Playa Bávaro y más.",
+  "precio": 3500000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Tiquete aéreo ida y regreso Bogotá - Punta Cana",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 4 noches en hotel 4 estrellas",
+    "Alimentación: desayuno, almuerzo y cena tipo buffet",
+    "Bar abierto y snacks",
+    "Acceso a Playa Bávaro",
+    "Impuestos del tiquete y hotel",
+    "Tarjeta de asistencia médica"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/puntacana",
+  "galleryCount": 4,
+  "ubicacion": {
+    "ciudad": "Punta Cana",
+    "departamento": "La Altagracia"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel 4 Estrellas",
+      "plan": "FULL",
+      "precio": 3500000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet + bar abierto y snacks"
+    }
+  ]
+},
+{
+  "nombre": "Pasadía Mano del Gigante",
+  "descripcion": "Plan personalizado desde Neiva con transporte, alimentación, entrada y visita completa a la Mano del Gigante y sus atractivos.",
+  "precio": 200000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Transporte terrestre desde Neiva ida y regreso según número de personas (Tracker, Vans, Bus)",
+    "Alimentación: almuerzo y refrigerio",
+    "Entrada a la Mano del Gigante",
+    "Traslado interno a la montaña",
+    "Visita a: Atrapasueños, Ojo de la Montaña, Columpio del Arcoíris, Malla Catamarán, Nido del Cardenal, Deslizador",
+    "Tarde en piscina en hotel campestre",
+    "Tarjeta de asistencia médica",
+    "Guía acompañante"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/manogigante",
+  "galleryCount": 8,
+  "ubicacion": {
+    "ciudad": "Gigante",
+    "departamento": "Huila"
+  },
+  "planes": [
+    {
+      "hotel": "Transporte Tracker",
+      "plan": "Privado",
+      "precio": 500000,
+      "descripcionPlan": "Desde 2 hasta 4 personas"
+    },
+    {
+      "hotel": "Vans o Buseta",
+      "plan": "Grupal",
+      "precio": 300000,
+      "descripcionPlan": "De 5 a 20 personas"
+    },
+    {
+      "hotel": "Busetón o Bus",
+      "plan": "Grupal",
+      "precio": 200000,
+      "descripcionPlan": "De 21 a 40 personas"
+    }
+  ]
+},
+{
+  "nombre": "Pasadía San Agustín",
+  "descripcion": "Tour cultural con salida desde Neiva al Parque Arqueológico de San Agustín, incluye alimentación, transporte, visitas culturales y guía local.",
+  "precio": 260000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Transporte terrestre desde Neiva ida y regreso según número de personas (Tracker, Vans, Bus)",
+    "Alimentación: desayuno y almuerzo",
+    "Entrada al Parque Arqueológico de San Agustín",
+    "Acompañado con guía local de la región",
+    "City tour cultural visitando: Iglesia Central, Calle Artesanal y Balcones de la Locería",
+    "Traslado al Estrecho del Río Magdalena",
+    "Tarjeta de asistencia médica",
+    "Guía acompañante"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/sanagustin",
+  "galleryCount": 4,
+  "ubicacion": {
+    "ciudad": "San Agustín",
+    "departamento": "Huila"
+  },
+  "planes": [
+    {
+      "hotel": "Transporte Tracker",
+      "plan": "Privado",
+      "precio": 800000,
+      "descripcionPlan": "Desde 2 hasta 4 personas"
+    },
+    {
+      "hotel": "Vans o Buseta",
+      "plan": "Grupal",
+      "precio": 400000,
+      "descripcionPlan": "De 5 a 20 personas"
+    },
+    {
+      "hotel": "Busetón o Bus",
+      "plan": "Grupal",
+      "precio": 260000,
+      "descripcionPlan": "De 21 a 40 personas"
+    }
+  ]
+},
+{
+  "nombre": "Pasadía Desierto de la Tatacoa",
+  "descripcion": "Tour ecológico y cultural desde Neiva al Desierto de la Tatacoa, incluye transporte, alimentación, guía local y visita al manantial Los Hoyos.",
+  "precio": 150000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Transporte terrestre desde Neiva ida y regreso según número de personas (Tracker, Vans, Bus)",
+    "Alimentación: almuerzo y refrigerio",
+    "Visita al Parque Principal de VillaVieja",
+    "Tour ecológico por el bosque tropical: Senderos, El Cuzco, Laberintos, El Cardón y artesanías del desierto",
+    "Guía profesional de la región",
+    "Tarjeta de asistencia médica",
+    "Guía acompañante",
+    "Visita al Manantial Los Hoyos (Piscina - opcional)"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/tatacoa",
+  "galleryCount": 4,
+  "ubicacion": {
+    "ciudad": "VillaVieja",
+    "departamento": "Huila"
+  },
+  "planes": [
+    {
+      "hotel": "Transporte Tracker",
+      "plan": "Privado",
+      "precio": 500000,
+      "descripcionPlan": "Desde 2 hasta 4 personas"
+    },
+    {
+      "hotel": "Vans o Buseta",
+      "plan": "Grupal",
+      "precio": 250000,
+      "descripcionPlan": "De 5 a 20 personas"
+    },
+    {
+      "hotel": "Busetón o Bus",
+      "plan": "Grupal",
+      "precio": 150000,
+      "descripcionPlan": "De 21 a 40 personas"
+    }
+  ]
+},
+{
+  "nombre": "Huila 2 Días - 1 Noche",
+  "descripcion": "Recorrido completo desde Neiva hacia San Agustín y la Mano del Gigante, con transporte, alimentación, entradas, guía local y visitas a sitios naturales y culturales.",
+  "precio": 650000,
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
+  "incluye": [
+    "Transporte terrestre desde Neiva ida y regreso según número de personas (Tracker, Vans, Bus)",
+    "Alimentación: 1 desayuno y 2 almuerzos",
+    "Transporte interno en Jeep hacia la Mano del Gigante",
+    "Entrada a la montaña de la Mano del Gigante: Atrapasueños, Ojo de la Montaña, Columpio del Arcoiris, Malla Catamarán, Nido del Cardenal y recorrido cafetero",
+    "Entrada al Parque Arqueológico de San Agustín con guía especializado de la región",
+    "Tour al Estrecho del Magdalena",
+    "Visita al Salto de Mortiño y su puente de cristal",
+    "Tarjeta de asistencia médica",
+    "Guía acompañante"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/huila-2dias",
+  "galleryCount": 5,
+  "ubicacion": {
+    "ciudad": "San Agustín",
+    "departamento": "Huila"
+  },
+  "planes": [
+    {
+      "hotel": "Transporte Tracker",
+      "plan": "Privado",
+      "precio": 1200000,
+      "descripcionPlan": "De 2 a 4 personas"
+    },
+    {
+      "hotel": "Vans o Buseta",
+      "plan": "Grupal",
+      "precio": 850000,
+      "descripcionPlan": "De 5 a 20 personas"
+    },
+    {
+      "hotel": "Busetón o Bus",
+      "plan": "Grupal",
+      "precio": 650000,
+      "descripcionPlan": "De 21 a 40 personas"
+    }
+  ]
+},
+{
+  "nombre": "Hotel Riviera del Sol - Arboletes",
+  "descripcion": "“Disney Colombiano” 4 Días - 3 Noches. Paquete con tiquete aéreo Bogotá - Montería - Bogotá, alojamiento en Hotel Riviera del Sol en Arboletes con habitaciones estándar, baño privado, aire acondicionado, TV satelital y caja de seguridad. Incluye coctel de bienvenida, alimentación tipo buffet, acceso a áreas húmedas, piscinas, toboganes, playa semiprivada, tarjeta de asistencia médica e impuestos.",
+  "precio": 2180000,
+  "fechasDisponibles": ["Temporada baja 2025"],
+  "incluye": [
+    "Tiquete Aéreo Bogotá - Montería - Bogotá",
+    "Equipaje incluido: un bolso o mochila pequeña",
+    "Alojamiento 4 días - 3 noches en Hotel Riviera del Sol en Arboletes, habitaciones estándar, baño privado, aire acondicionado, TV satelital, caja de seguridad",
+    "Cóctel de bienvenida",
+    "Desayuno, almuerzo y cena tipo buffet",
+    "Acceso a áreas húmedas autorizadas",
+    "2 piscinas de adultos, 2 piscinas para niños, toboganes",
+    "Castillo con terraza panorámica",
+    "Quiosco en la playa",
+    "Playa semiprivada",
+    "Tarjeta de asistencia médica",
+    "Impuestos del tiquete y hotel"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Aéreo",
+  "galeriaPath": "/rivieradelsol",
+  "galleryCount": 5,
+  "ubicacion": {
+    "ciudad": "Arboletes",
+    "departamento": "Antioquia"
+  },
+  "planes": [
+    {
+      "hotel": "Hotel Riviera del Sol",
+      "plan": "FULL",
+      "precio": 2180000,
+      "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet"
+    }
+  ]
+}
 ]

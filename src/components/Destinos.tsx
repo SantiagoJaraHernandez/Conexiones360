@@ -14,6 +14,13 @@ dayjs.locale("es");
 /* ───────────────────────────────
    Tipado
 ─────────────────────────────── */
+interface PlanAereo {
+  hotel: string;
+  plan: string;
+  precio: number;
+  descripcionPlan?: string;
+}
+
 interface Destino {
   nombre: string;
   descripcion: string;
@@ -26,6 +33,7 @@ interface Destino {
   galeriaPath: string;
   galleryCount?: number;
   ubicacion: { ciudad: string; departamento: string };
+  planes?: PlanAereo[];
 }
 
 /* react‑modal: accesibilidad */
@@ -137,15 +145,28 @@ export default function Destinos() {
   // Filtrar y ordenar destinos según filtroModalidad
   const destinosFiltrados = (destinosData as Destino[])
     .filter((d) => {
+      const modalidadLower = d.modalidad.toLowerCase();
       if (filtroModalidad === "Huila") {
+        // Todos los destinos del departamento Huila (sin filtrar fechas)
         return d.ubicacion.departamento.toLowerCase() === "huila";
-      } else {
-        return d.modalidad.toLowerCase() === filtroModalidad.toLowerCase();
+      } else if (filtroModalidad.toLowerCase() === "aéreo") {
+        // Todos los destinos con modalidad aéreo (sin filtrar fechas)
+        return modalidadLower === "aéreo";
+      } else if (filtroModalidad === "Terrestre") {
+        // Solo terrestres con fechas futuras
+        const prox = getProximaFecha(d);
+        return prox !== null && modalidadLower === "terrestre";
       }
+      return false;
     })
+    // Ordenar terrestres por fecha próxima y los otros al final
     .map((d) => ({ d, prox: getProximaFecha(d) }))
-    .filter(({ prox }) => prox)
-    .sort((a, b) => a.prox!.valueOf() - b.prox!.valueOf())
+    .sort((a, b) => {
+      if (!a.prox && !b.prox) return 0;
+      if (!a.prox) return 1;
+      if (!b.prox) return -1;
+      return a.prox.valueOf() - b.prox.valueOf();
+    })
     .map(({ d }) => d);
 
   /* handlers */
@@ -199,11 +220,10 @@ export default function Destinos() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-blue-700 dark:text-white mb-6"
         >
-          {/* Cambia el título según filtro */}
           {filtroModalidad === "Huila"
             ? "Nuestros Planes Personalizados en Huila"
             : filtroModalidad === "Aéreo"
-            ? "Nuestros Planes Aéreos Programados"
+            ? "Nuestros Planes Aéreos Personalizados"
             : "Nuestros Planes Terrestres Programados"}
         </motion.h2>
 
@@ -355,6 +375,21 @@ export default function Destinos() {
                       </p>
                     </div>
 
+                    {/* Mostrar planes solo si modalidad es aéreo y existen */}
+                    {destinoSel.modalidad.toLowerCase() === "aéreo" && destinoSel.planes && destinoSel.planes.length > 0 && (
+                      <div className="sm:col-span-2">
+                        <p className="font-semibold text-blue-600">Planes disponibles</p>
+                        <ul className="list-disc list-inside mt-1 space-y-1">
+                          {destinoSel.planes.map((plan, idx) => (
+                            <li key={idx}>
+                              <strong>{plan.hotel}</strong> / Plan: {plan.plan} — Desde ${plan.precio.toLocaleString()} COP
+                              {plan.descripcionPlan ? ` (${plan.descripcionPlan})` : ""}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+
                     <div className="sm:col-span-2">
                       <p className="font-semibold text-blue-600">Incluye</p>
                       <ul className="list-disc list-inside mt-1 space-y-1">
@@ -397,7 +432,7 @@ export default function Destinos() {
                   </div>
                 </div>
 
-                {/* CTA WhatsApp (siempre visible) */}
+                {/* CTA WhatsApp */}
                 <a
                   href={
                     "https://wa.me/573162276795?text=" +
