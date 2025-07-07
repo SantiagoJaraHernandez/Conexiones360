@@ -126,11 +126,23 @@ function DestinoCard({
 ─────────────────────────────── */
 export default function Destinos() {
   const hoy = dayjs();
+
+  // Estado para filtro modalidad
+  const [filtroModalidad, setFiltroModalidad] = useState<"Terrestre" | "Aéreo" | "Huila">("Terrestre");
+
   const [modalAbierto, setModalAbierto] = useState(false);
   const [destinoSel, setDestinoSel] = useState<Destino | null>(null);
   const [fotoIdx, setFotoIdx] = useState(0);
 
-  const destinosOrdenados = (destinosData as Destino[])
+  // Filtrar y ordenar destinos según filtroModalidad
+  const destinosFiltrados = (destinosData as Destino[])
+    .filter((d) => {
+      if (filtroModalidad === "Huila") {
+        return d.ubicacion.departamento.toLowerCase() === "huila";
+      } else {
+        return d.modalidad.toLowerCase() === filtroModalidad.toLowerCase();
+      }
+    })
     .map((d) => ({ d, prox: getProximaFecha(d) }))
     .filter(({ prox }) => prox)
     .sort((a, b) => a.prox!.valueOf() - b.prox!.valueOf())
@@ -185,15 +197,41 @@ export default function Destinos() {
           initial={{ opacity: 0, y: -40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-extrabold text-blue-700 dark:text-white mb-12"
+          className="text-4xl font-extrabold text-blue-700 dark:text-white mb-6"
         >
-          Nuestros Planes Terrestres Programados
+          {/* Cambia el título según filtro */}
+          {filtroModalidad === "Huila"
+            ? "Nuestros Planes Personalizados en Huila"
+            : filtroModalidad === "Aéreo"
+            ? "Nuestros Planes Aéreos Programados"
+            : "Nuestros Planes Terrestres Programados"}
         </motion.h2>
+
+        {/* Botones tipo slider (tabs) */}
+        <div className="inline-flex rounded-xl bg-blue-100 dark:bg-blue-900 p-1 mb-12 select-none">
+          {(["Terrestre", "Aéreo", "Huila"] as const).map((mod) => (
+            <button
+              key={mod}
+              onClick={() => setFiltroModalidad(mod)}
+              className={`px-5 py-2 rounded-lg font-semibold transition-colors
+                ${
+                  filtroModalidad === mod
+                    ? "bg-white text-blue-700 dark:bg-blue-700 dark:text-white shadow"
+                    : "text-blue-700 dark:text-blue-300 hover:bg-white/80 dark:hover:bg-blue-800"
+                }
+              `}
+              aria-pressed={filtroModalidad === mod}
+              type="button"
+            >
+              {mod}
+            </button>
+          ))}
+        </div>
 
         {/* Grid de tarjetas */}
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[1fr]">
-          {destinosOrdenados.length ? (
-            destinosOrdenados.map((d) => (
+          {destinosFiltrados.length ? (
+            destinosFiltrados.map((d) => (
               <DestinoCard key={`${d.nombre}-${d.precio}`} destino={d} abrirModal={abrirModal} />
             ))
           ) : (

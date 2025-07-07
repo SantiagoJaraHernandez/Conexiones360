@@ -30,7 +30,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/ejecafe2d",
     "galleryCount": 5,
-    "ubicacion": { "ciudad": "Manizales", "departamento": "Caldas" }
+    "ubicacion": { "ciudad": "Manizales", "departamento": "Quindío" }
   },
   {
     "nombre": "Eje Cafetero 3 Días",
@@ -82,7 +82,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/ejecafe3d",
     "galleryCount": 5,
-    "ubicacion": { "ciudad": "Manizales", "departamento": "Caldas" }
+    "ubicacion": { "ciudad": "Manizales", "departamento": "Quindío" }
   },
   {
     "nombre": "Día de Sol en Piscilago",
@@ -130,7 +130,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/Piscilago",
     "galleryCount": 5,
-    "ubicacion": { "ciudad": "Neiva", "departamento": "Huila" }
+    "ubicacion": { "ciudad": "Melgar", "departamento": "Tolima" }
   },
   {
     "nombre": "Día de Sol en Parque Jaime Duque",
@@ -410,7 +410,7 @@
     "modalidad": "Terrestre",
     "galeriaPath": "/hawaii",
     "galleryCount": 3,
-    "ubicacion": { "ciudad": "Neiva", "departamento": "Huila" }
+    "ubicacion": { "ciudad": "Ibague", "departamento": "Tolima" }
   },
   {
     "nombre": "Sol y Playa Tolú - Coveñas 8 Días - 5 Noches",

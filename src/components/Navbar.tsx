@@ -5,12 +5,13 @@ import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SECTIONS = ["hero", "mision", "porque", "destinos"];
+const SECTIONS = ["hero", "mision", "porque", "aventuras", "destinos"];
 const LABELS: Record<string, string> = {
   hero: "Inicio",
   mision: "Misión y Visión",
   porque: "¿Por qué elegirnos?",
   destinos: "Destinos",
+  aventuras: "Cotización"
 };
 
 export default function Navbar() {
@@ -28,36 +29,30 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      let closestSection = "hero";
-      let closestDistance = Infinity;
-      const viewportMiddle = window.innerHeight / 2;
+      let currentSection = "hero";
 
-      SECTIONS.forEach((sec) => {
-        const el = document.getElementById(sec);
-        if (!el) return;
+      for (const section of SECTIONS) {
+        const el = document.getElementById(section);
+        if (!el) continue;
         const rect = el.getBoundingClientRect();
-        const elementMiddle = rect.top + rect.height / 2;
-        const distance = Math.abs(viewportMiddle - elementMiddle);
-        if (distance < closestDistance) {
-          closestDistance = distance;
-          closestSection = sec;
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          currentSection = section;
+          break;
         }
-      });
-      setActiveSection(closestSection);
+      }
+
+      setActiveSection(currentSection);
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll();
+    handleScroll(); // Ejecutar en carga inicial
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleLinkClick = () => {
-    setMenuOpen(false);
-  };
+  const handleLinkClick = () => setMenuOpen(false);
 
   return (
     <motion.nav
-      // Eliminamos la animación inicial para que aparezca instantáneamente
       className={`fixed top-0 w-full z-50 ${
         scrolled ? "bg-white/80 shadow-md text-gray-900" : "bg-transparent text-white"
       } transition-all duration-300 backdrop-blur-md`}
@@ -69,7 +64,7 @@ export default function Navbar() {
           <span className="font-bold text-lg tracking-tight">Conexiones360</span>
         </div>
 
-        {/* Desktop Menu */}
+        {/* Menú escritorio */}
         <div className="hidden md:flex space-x-8 text-sm font-medium">
           {SECTIONS.map((section) => (
             <ScrollLink
@@ -78,22 +73,21 @@ export default function Navbar() {
               smooth={true}
               duration={500}
               offset={-70}
-              className={`cursor-pointer relative transition-all hover:text-blue-600 ${
+              className={`group cursor-pointer relative transition-all hover:text-blue-600 ${
                 activeSection === section ? "text-blue-600" : ""
               }`}
             >
               <span className="pb-1">{LABELS[section]}</span>
-              {/* Underline hover effect */}
               <span
                 className={`absolute left-0 bottom-0 h-0.5 w-full bg-blue-600 transform scale-x-0 origin-left transition-transform duration-300 ${
                   activeSection === section ? "scale-x-100" : "group-hover:scale-x-100"
                 }`}
-              ></span>
+              />
             </ScrollLink>
           ))}
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Botón menú móvil */}
         <button
           onClick={() => setMenuOpen((prev) => !prev)}
           className="md:hidden p-2 rounded-md focus:outline-none"
@@ -116,7 +110,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Menú móvil */}
       <AnimatePresence>
         {menuOpen && (
           <motion.div

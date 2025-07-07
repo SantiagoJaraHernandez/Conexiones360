@@ -27,7 +27,10 @@ export default function Home() {
         <PorQueElegirnos />
       </section>
 
-      <NuestrasAventuras/>
+      {/* Cotizacion */}
+      <section id="aventuras" className="pt-24 bg-[#cbd7e6]">
+        <NuestrasAventuras />
+      </section>
 
       {/* Destinos */}
       <section id="destinos" className="pt-24 bg-[#cbd7e6]">
