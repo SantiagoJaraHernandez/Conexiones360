@@ -64,7 +64,7 @@ export default function PorQueElegirnos() {
 
         <p className="text-base md:text-lg text-gray-700 mb-14 max-w-3xl mx-auto leading-relaxed font-light">
           En{" "}
-          <span className="font-semibold text-blue-700">Conexiones360°</span>{" "}
+          <span className="font-semibold text-blue-700">Conexiones360</span>{" "}
           convertimos tus sueños de viaje en realidad. Nuestro equipo de expertos
           y aliados estratégicos garantiza experiencias inolvidables, seguras
           y hechas a tu medida.

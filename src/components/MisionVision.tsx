@@ -85,7 +85,7 @@ export default function MisionVision() {
               Misión
             </h3>
             <p className="text-gray-800 dark:text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed tracking-wide text-justify">
-              Somos una empresa que promueve el turismo por Colombia y el mundo,
+              Somos una empresa que promueve los viajes y el turismo por Colombia y el mundo,
               dando a conocer alojamiento campestre en lugares maravillosos,
               sensibilizando al turista sobre la importancia del buen descanso,
               aprovechando los hermosos paisajes, artesanía, folclor, frutos y sabores
@@ -117,8 +117,11 @@ export default function MisionVision() {
               Visión
             </h3>
             <p className="text-gray-800 dark:text-gray-200 text-sm sm:text-base md:text-lg leading-relaxed tracking-wide text-justify">
-              Posicionarnos para el año 2030 como una de las más prestigiosas empresas
-              de viajes, turismo, servicios de terceros y agencia virtual, líder de
+              <span className="font-semibold">
+                En el sector de viajes y turismo, nuestra visión es
+              </span>{" "}
+              posicionarnos para el año 2030 como una de las más prestigiosas empresas
+              del ramo, así como de servicios de terceros y agencia virtual, líder de
               servicios en Colombia y el mundo; lograrlo por medio del esfuerzo,
               innovación, tecnología y mejoramiento continuo.
             </p>

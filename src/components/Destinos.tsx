@@ -187,7 +187,7 @@ export default function Destinos() {
           transition={{ duration: 0.6 }}
           className="text-4xl font-extrabold text-blue-700 dark:text-white mb-12"
         >
-          Nuestros Planes Programados
+          Nuestros Planes Terrestres Programados
         </motion.h2>
 
         {/* Grid de tarjetas */}
