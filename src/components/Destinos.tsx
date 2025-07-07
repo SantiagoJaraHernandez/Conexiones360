@@ -214,18 +214,23 @@ export default function Destinos() {
       <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/50 dark:from-gray-900/50 dark:to-gray-900/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        <motion.h2
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-4xl font-extrabold text-blue-700 dark:text-white mb-6"
-        >
-          {filtroModalidad === "Huila"
-            ? "Nuestros Planes Personalizados en Huila"
-            : filtroModalidad === "Aéreo"
-            ? "Nuestros Planes Aéreos Personalizados"
-            : "Nuestros Planes Terrestres Programados"}
-        </motion.h2>
+        {/* Animar cambio de título */}
+        <AnimatePresence mode="wait">
+          <motion.h2
+            key={filtroModalidad} // Para que React re-renderice al cambiar filtro
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.5 }}
+            className="text-4xl font-extrabold text-blue-700 dark:text-white mb-6"
+          >
+            {filtroModalidad === "Huila"
+              ? "Nuestros Planes Personalizados en Huila"
+              : filtroModalidad === "Aéreo"
+              ? "Nuestros Planes Aéreos Personalizados"
+              : "Nuestros Planes Terrestres Programados"}
+          </motion.h2>
+        </AnimatePresence>
 
         {/* Botones tipo slider (tabs) */}
         <div className="inline-flex rounded-xl bg-blue-100 dark:bg-blue-900 p-1 mb-12 select-none">
@@ -248,18 +253,27 @@ export default function Destinos() {
           ))}
         </div>
 
-        {/* Grid de tarjetas */}
-        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[1fr]">
-          {destinosFiltrados.length ? (
-            destinosFiltrados.map((d) => (
-              <DestinoCard key={`${d.nombre}-${d.precio}`} destino={d} abrirModal={abrirModal} />
-            ))
-          ) : (
-            <p className="text-gray-600 dark:text-gray-300 col-span-full">
-              No hay destinos próximos.
-            </p>
-          )}
-        </div>
+        {/* Grid de tarjetas animado */}
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={filtroModalidad} // para que reinicie la animación al cambiar filtro
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.4 }}
+            className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 auto-rows-[1fr]"
+          >
+            {destinosFiltrados.length ? (
+              destinosFiltrados.map((d) => (
+                <DestinoCard key={`${d.nombre}-${d.precio}`} destino={d} abrirModal={abrirModal} />
+              ))
+            ) : (
+              <p className="text-gray-600 dark:text-gray-300 col-span-full">
+                No hay destinos próximos.
+              </p>
+            )}
+          </motion.div>
+        </AnimatePresence>
 
         {/* Modal */}
         <AnimatePresence>

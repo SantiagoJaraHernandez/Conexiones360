@@ -1210,7 +1210,8 @@
   "nombre": "Hotel Riviera del Sol - Arboletes",
   "descripcion": "“Disney Colombiano” 4 Días - 3 Noches. Paquete con tiquete aéreo Bogotá - Montería - Bogotá, alojamiento en Hotel Riviera del Sol en Arboletes con habitaciones estándar, baño privado, aire acondicionado, TV satelital y caja de seguridad. Incluye coctel de bienvenida, alimentación tipo buffet, acceso a áreas húmedas, piscinas, toboganes, playa semiprivada, tarjeta de asistencia médica e impuestos.",
   "precio": 2180000,
-  "fechasDisponibles": ["Temporada baja 2025"],
+  "fechasDisponibles": [],
+  "fechasRango": ["Temporada baja 2025"],
   "incluye": [
     "Tiquete Aéreo Bogotá - Montería - Bogotá",
     "Equipaje incluido: un bolso o mochila pequeña",
