@@ -11,9 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 dayjs.locale("es");
 
-/* ───────────────────────────────
-   Tipado
-─────────────────────────────── */
+/* Tipado */
 interface PlanAereo {
   hotel: string;
   plan: string;
@@ -36,14 +34,12 @@ interface Destino {
   planes?: PlanAereo[];
 }
 
-/* react‑modal: accesibilidad */
+/* Accesibilidad react-modal */
 if (typeof window !== "undefined") {
   Modal.setAppElement(document.getElementById("__next") || document.body);
 }
 
-/* ───────────────────────────────
-   Helpers
-─────────────────────────────── */
+/* Helpers */
 const getProximaFecha = (d: Destino) => {
   const futuras = d.fechasDisponibles
     .map((f) => dayjs(f))
@@ -55,9 +51,7 @@ const getProximaFecha = (d: Destino) => {
 const buildGallery = (d: Destino) =>
   Array.from({ length: d.galleryCount ?? 5 }, (_, i) => `${d.galeriaPath}/${i + 1}.jpg`);
 
-/* ───────────────────────────────
-   Tarjeta
-─────────────────────────────── */
+/* Tarjeta de destino */
 function DestinoCard({
   destino,
   abrirModal,
@@ -89,7 +83,6 @@ function DestinoCard({
       }}
       aria-label={`Ver detalles del destino ${destino.nombre}`}
     >
-      {/* Imagen */}
       <div className="relative w-full h-[240px] bg-slate-200 shrink-0">
         <Image
           src={portada}
@@ -101,7 +94,6 @@ function DestinoCard({
         />
       </div>
 
-      {/* Contenido */}
       <div className="p-4 flex flex-col flex-1 text-left">
         <h3 className="text-lg font-bold text-blue-700 dark:text-white line-clamp-2">{destino.nombre}</h3>
         <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">{destino.descripcion}</p>
@@ -129,37 +121,25 @@ function DestinoCard({
   );
 }
 
-/* ───────────────────────────────
-   Componente principal
-─────────────────────────────── */
+/* Componente principal */
 export default function Destinos() {
   const hoy = dayjs();
-
-  // Estado para filtro modalidad
   const [filtroModalidad, setFiltroModalidad] = useState<"Terrestre" | "Aéreo" | "Huila">("Terrestre");
-
   const [modalAbierto, setModalAbierto] = useState(false);
   const [destinoSel, setDestinoSel] = useState<Destino | null>(null);
   const [fotoIdx, setFotoIdx] = useState(0);
 
-  // Filtrar y ordenar destinos según filtroModalidad
   const destinosFiltrados = (destinosData as Destino[])
     .filter((d) => {
       const modalidadLower = d.modalidad.toLowerCase();
-      if (filtroModalidad === "Huila") {
-        // Todos los destinos del departamento Huila (sin filtrar fechas)
-        return d.ubicacion.departamento.toLowerCase() === "huila";
-      } else if (filtroModalidad.toLowerCase() === "aéreo") {
-        // Todos los destinos con modalidad aéreo (sin filtrar fechas)
-        return modalidadLower === "aéreo";
-      } else if (filtroModalidad === "Terrestre") {
-        // Solo terrestres con fechas futuras
+      if (filtroModalidad === "Huila") return d.ubicacion.departamento.toLowerCase() === "huila";
+      if (filtroModalidad.toLowerCase() === "aéreo") return modalidadLower === "aéreo";
+      if (filtroModalidad === "Terrestre") {
         const prox = getProximaFecha(d);
         return prox !== null && modalidadLower === "terrestre";
       }
       return false;
     })
-    // Ordenar terrestres por fecha próxima y los otros al final
     .map((d) => ({ d, prox: getProximaFecha(d) }))
     .sort((a, b) => {
       if (!a.prox && !b.prox) return 0;
@@ -169,7 +149,6 @@ export default function Destinos() {
     })
     .map(({ d }) => d);
 
-  /* handlers */
   const abrirModal = (d: Destino) => {
     setDestinoSel(d);
     setFotoIdx(0);
@@ -195,14 +174,12 @@ export default function Destinos() {
 
   const fotoActual = () => (destinoSel ? buildGallery(destinoSel)[fotoIdx] : "");
 
-  /* Carrusel auto‑play */
   useEffect(() => {
     if (!modalAbierto || !destinoSel) return;
     const timer = setInterval(() => cambiarFoto("next"), 5000);
     return () => clearInterval(timer);
   }, [modalAbierto, destinoSel]);
 
-  /* ─────────── render ─────────── */
   return (
     <section
       className="py-20 px-4 -mt-20 bg-cover bg-center relative"
@@ -214,10 +191,9 @@ export default function Destinos() {
       <div className="absolute inset-0 bg-gradient-to-b from-white/60 to-white/50 dark:from-gray-900/50 dark:to-gray-900/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto text-center">
-        {/* Animar cambio de título */}
         <AnimatePresence mode="wait">
           <motion.h2
-            key={filtroModalidad} // Para que React re-renderice al cambiar filtro
+            key={filtroModalidad}
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
@@ -232,19 +208,16 @@ export default function Destinos() {
           </motion.h2>
         </AnimatePresence>
 
-        {/* Botones tipo slider (tabs) */}
         <div className="inline-flex rounded-xl bg-blue-100 dark:bg-blue-900 p-1 mb-12 select-none">
           {(["Terrestre", "Aéreo", "Huila"] as const).map((mod) => (
             <button
               key={mod}
               onClick={() => setFiltroModalidad(mod)}
-              className={`px-5 py-2 rounded-lg font-semibold transition-colors
-                ${
-                  filtroModalidad === mod
-                    ? "bg-white text-blue-700 dark:bg-blue-700 dark:text-white shadow"
-                    : "text-blue-700 dark:text-blue-300 hover:bg-white/80 dark:hover:bg-blue-800"
-                }
-              `}
+              className={`px-5 py-2 rounded-lg font-semibold transition-colors ${
+                filtroModalidad === mod
+                  ? "bg-white text-blue-700 dark:bg-blue-700 dark:text-white shadow"
+                  : "text-blue-700 dark:text-blue-300 hover:bg-white/80 dark:hover:bg-blue-800"
+              }`}
               aria-pressed={filtroModalidad === mod}
               type="button"
             >
@@ -253,10 +226,9 @@ export default function Destinos() {
           ))}
         </div>
 
-        {/* Grid de tarjetas animado */}
         <AnimatePresence mode="wait">
           <motion.div
-            key={filtroModalidad} // para que reinicie la animación al cambiar filtro
+            key={filtroModalidad}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
@@ -275,19 +247,17 @@ export default function Destinos() {
           </motion.div>
         </AnimatePresence>
 
-        {/* Modal */}
         <AnimatePresence>
           {modalAbierto && destinoSel && (
             <Modal
               isOpen={modalAbierto}
               onRequestClose={cerrarModal}
-              className="relative w-full sm:w-[95%] max-w-6xl max-h-[90vh] bg-white/80 dark:bg-gray-900/70 rounded-2xl p-6 md:p-10 shadow-2xl flex flex-col lg:flex-row gap-6 lg:gap-8 overflow-visible"
-              overlayClassName="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center md:items-center px-2 py-6 md:py-0 overflow-y-auto z-50"
+              className="relative w-full max-w-6xl bg-white/90 dark:bg-gray-900/80 rounded-2xl p-4 md:p-6 shadow-2xl flex flex-col lg:flex-row gap-6 overflow-hidden max-h-[95vh]"
+              overlayClassName="fixed inset-0 bg-black/60 backdrop-blur-sm flex justify-center items-start md:items-center px-2 py-6 md:py-0 overflow-y-auto z-50"
               contentLabel={`Detalles del destino ${destinoSel.nombre}`}
             >
               {/* Carrusel */}
-              <div className="relative z-10 flex-shrink-0 w-full lg:w-1/2 max-h-[80vh] aspect-[4/3] rounded-xl overflow-hidden shadow-md">
-                {/* Imagen de fondo blur para cubrir márgenes */}
+              <div className="relative z-10 w-full lg:w-1/2 h-[250px] sm:h-[300px] lg:h-[80vh] rounded-xl overflow-hidden shadow-md">
                 <div className="absolute inset-0">
                   <Image
                     src={fotoActual()}
@@ -297,8 +267,6 @@ export default function Destinos() {
                     loading="lazy"
                   />
                 </div>
-
-                {/* Imagen principal */}
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={fotoActual()}
@@ -317,24 +285,22 @@ export default function Destinos() {
                     />
                   </motion.div>
                 </AnimatePresence>
-
                 {buildGallery(destinoSel).length > 1 && (
                   <>
                     <button
                       onClick={() => cambiarFoto("prev")}
                       className="absolute left-3 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 text-white rounded-full p-2 z-20"
-                      aria-label="Imagen anterior"
+                      aria-label="Anterior"
                     >
                       ‹
                     </button>
                     <button
                       onClick={() => cambiarFoto("next")}
                       className="absolute right-3 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/60 text-white rounded-full p-2 z-20"
-                      aria-label="Imagen siguiente"
+                      aria-label="Siguiente"
                     >
                       ›
                     </button>
-
                     <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-20">
                       {buildGallery(destinoSel).map((_, i) => (
                         <span
@@ -343,12 +309,9 @@ export default function Destinos() {
                           className={`w-3 h-3 rounded-full cursor-pointer ${
                             i === fotoIdx ? "bg-white" : "bg-white/50"
                           }`}
-                          aria-label={`Ir a imagen ${i + 1}`}
                           role="button"
                           tabIndex={0}
-                          onKeyDown={(e) => {
-                            if (e.key === "Enter" || e.key === " ") cambiarFoto(i);
-                          }}
+                          aria-label={`Imagen ${i + 1}`}
                         />
                       ))}
                     </div>
@@ -357,40 +320,30 @@ export default function Destinos() {
               </div>
 
               {/* Información */}
-              <div className="relative z-10 flex flex-col gap-6 flex-1 text-left text-gray-800 dark:text-gray-300">
+              <div className="relative z-10 flex flex-col gap-6 flex-1 text-left text-gray-800 dark:text-gray-300 overflow-y-auto max-h-[70vh] pr-1">
                 <button
                   onClick={cerrarModal}
                   className="absolute top-0 right-0 text-gray-400 hover:text-red-500 text-3xl font-bold"
-                  aria-label="Cerrar modal"
+                  aria-label="Cerrar"
                 >
                   &times;
                 </button>
 
-                {/* Contenido desplazable */}
-                <div className="overflow-y-auto pr-1 flex-1 space-y-6 mt-8 lg:mt-0">
-                  <div>
-                    <h2 className="text-3xl font-bold text-blue-700 dark:text-white">
-                      {destinoSel.nombre}
-                    </h2>
-                    <p className="mt-4">{destinoSel.descripcion}</p>
-                  </div>
+                <div className="mt-10 lg:mt-0 flex flex-col gap-6">
+                  <h2 className="text-3xl font-bold text-blue-700 dark:text-white">{destinoSel.nombre}</h2>
+                  <p>{destinoSel.descripcion}</p>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
                     <div>
                       <p className="font-semibold text-blue-600">Ubicación</p>
-                      <p>
-                        {destinoSel.ubicacion.ciudad}, {destinoSel.ubicacion.departamento}
-                      </p>
+                      <p>{destinoSel.ubicacion.ciudad}, {destinoSel.ubicacion.departamento}</p>
                     </div>
                     <div>
                       <p className="font-semibold text-blue-600">Tipo / Modalidad</p>
-                      <p>
-                        {destinoSel.tipo} / {destinoSel.modalidad}
-                      </p>
+                      <p>{destinoSel.tipo} / {destinoSel.modalidad}</p>
                     </div>
 
-                    {/* Mostrar planes solo si modalidad es aéreo y existen */}
-                    {destinoSel.modalidad.toLowerCase() === "aéreo" && destinoSel.planes && destinoSel.planes.length > 0 && (
+                    {destinoSel.modalidad.toLowerCase() === "aéreo" && destinoSel.planes?.length ? (
                       <div className="sm:col-span-2">
                         <p className="font-semibold text-blue-600">Planes disponibles</p>
                         <ul className="list-disc list-inside mt-1 space-y-1">
@@ -402,7 +355,7 @@ export default function Destinos() {
                           ))}
                         </ul>
                       </div>
-                    )}
+                    ) : null}
 
                     <div className="sm:col-span-2">
                       <p className="font-semibold text-blue-600">Incluye</p>
@@ -415,44 +368,30 @@ export default function Destinos() {
 
                     <div className="sm:col-span-2">
                       <p className="font-semibold text-blue-600">Fechas disponibles</p>
-
-                      {destinoSel.fechasRango?.length ? (
-                        <div className="flex flex-wrap gap-2 mt-1">
-                          {destinoSel.fechasRango.map((r, i) => (
-                            <span
-                              key={r + i}
-                              className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
-                            >
-                              {r}
-                            </span>
-                          ))}
-                        </div>
-                      ) : (
-                        <div className="flex flex-wrap gap-2 mt-1">
-                          {destinoSel.fechasDisponibles
-                            .filter((f) => dayjs(f).isAfter(hoy, "day"))
-                            .sort()
-                            .map((f) => (
-                              <span
-                                key={f}
-                                className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
-                              >
-                                {dayjs(f).format("dddd, D [de] MMMM")}
-                              </span>
-                            ))}
-                        </div>
-                      )}
+                      <div className="flex flex-wrap gap-2 mt-1">
+                        {(destinoSel.fechasRango?.length
+                          ? destinoSel.fechasRango
+                          : destinoSel.fechasDisponibles
+                              .filter((f) => dayjs(f).isAfter(hoy, "day"))
+                              .sort()
+                              .map((f) => dayjs(f).format("dddd, D [de] MMMM"))
+                        ).map((f, i) => (
+                          <span
+                            key={f + i}
+                            className="bg-green-100 dark:bg-green-900 text-green-700 dark:text-green-200 px-3 py-1 rounded-full text-xs"
+                          >
+                            {f}
+                          </span>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                {/* CTA WhatsApp */}
                 <a
                   href={
                     "https://wa.me/573162276795?text=" +
-                    encodeURIComponent(
-                      `Hola Conexiones360, quiero más información sobre el viaje a ${destinoSel.nombre}.`
-                    )
+                    encodeURIComponent(`Hola Conexiones360, quiero más información sobre el viaje a ${destinoSel.nombre}.`)
                   }
                   target="_blank"
                   rel="noopener noreferrer"
