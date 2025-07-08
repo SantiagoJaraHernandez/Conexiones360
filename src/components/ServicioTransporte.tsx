@@ -75,7 +75,7 @@ export default function ServicioTransporte() {
               {/* Imagen */}
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-white">
                 <Image
-                  src={`/buses/${bus.id}.jpg`}
+                  src={`/Buses/${bus.id}.jpg`}
                   alt={bus.nombre}
                   fill
                   className="object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
