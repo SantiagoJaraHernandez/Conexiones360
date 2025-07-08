@@ -1242,5 +1242,73 @@
       "descripcionPlan": "Desayuno, almuerzo y cena tipo buffet"
     }
   ]
+},
+{
+  "nombre": "Excursión Navideña: Medellín + Arboletes + Coveñas",
+  "descripcion": "7 días / 4 noches. Transporte desde Neiva con alojamiento en Medellín y Tolú. Incluye múltiples tours y experiencias navideñas en Guatapé, Medellín, Arboletes, Tolú y Coveñas.",
+  "precio": 1780000,
+  "fechasDisponibles": [],
+  "fechasRango": ["14 al 20 diciembre 2025"],
+  "incluye": [
+    "Transporte terrestre desde Neiva (Vans - Busetón - Bus)",
+    "1 noche de alojamiento en Medellín",
+    "3 noches de alojamiento en Tolú",
+    "6 desayunos, 6 almuerzos y 4 cenas",
+    "Paseo en barco rumbero por el embalse de Guatapé",
+    "Caminata por los Zócalos, parque principal, malecón y artesanías",
+    "Visita a la Piedra del Peñol (incluye subida)",
+    "City tour por Medellín: Parque Botero, Metro y Metrocable, Comuna 13, escaleras eléctricas, Casa del Neón, graffitis 3D, galería de artistas locales",
+    "Pasadía en el Disney Colombiano (Arboletes): entrada, cóctel de bienvenida, almuerzo tipo buffet, refrigerio, acceso a piscinas y playa",
+    "Tour en canoa por la Ciénaga de la Caimanera (2 hr)",
+    "Baño de playa en Coveñas",
+    "Paseo en lancha por las Islas de Boquerón, archipiélago de San Bernardo: Isla Santa Cruz, Isla Palma, Isla Múcura",
+    "Bicitours por Tolú",
+    "Tour de compras en Tolú",
+    "Seguro hotelero",
+    "Tarjeta de asistencia médica",
+    "Guía acompañante"
+  ],
+  "tipo": "Excursión",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/public/destinos/excursion-navideña",
+  "galleryCount": 5,
+  "ubicacion": {
+    "ciudad": "Medellín - Arboletes - Coveñas",
+    "departamento": "Antioquia - Sucre"
+  }
+},
+{
+  "nombre": "Excursión Navideña Medellín + Arboletes + Coveñas",
+  "descripcion": "Una aventura decembrina completa por Medellín, Guatapé, Arboletes, Tolú y Coveñas. Cultura, playa, diversión y gastronomía en un solo viaje inolvidable.",
+  "precio": 1780000,
+  "fechasDisponibles": ["2025-12-14"],
+  "fechasRango": ["DICIEMBRE 14 AL 20"],
+  "incluye": [
+    "Transporte Terrestre desde Neiva en Vans, Busetón o Bus según número de personas",
+    "Alojamiento 1 noche en Medellín y 3 noches en Tolú",
+    "6 Desayunos, 6 Almuerzos y 4 Cenas",
+    "Paseo en Barco Rumbero por el Embalse de Guatapé",
+    "Caminata por los Zócalos, Parque Principal, Malecón y Artesanías",
+    "Subida a la Piedra del Peñol",
+    "City Tour por Medellín: Parque Botero, Metro, Metrocable, Comuna 13, Graffitis 3D, Galerías locales",
+    "Pasadía al Disney Colombiano en Arboletes con coctel de bienvenida, almuerzo buffet, refrigerio, acceso a piscinas, toboganes y playa",
+    "Tour en Canoa por la Ciénaga de la Caimanera (2 horas)",
+    "Baño de Playa en Coveñas",
+    "Paseo en Lancha por el Archipiélago de San Bernardo: Isla Boquerón, Islote Santa Cruz, Isla Palma y Playa en Isla Múcura",
+    "Bicitours y tours de compras en Tolú",
+    "Seguro Hotelero",
+    "Tarjeta de Asistencia Médica",
+    "Guía Acompañante"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/ExcursionNavidad",
+  "galleryCount": 6,
+  "ubicacion": {
+    "ciudad": "Medellín, Arboletes, Tolú, Coveñas",
+    "departamento": "Antioquia y Sucre"
+  }
 }
+
+
 ]
