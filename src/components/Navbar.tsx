@@ -5,11 +5,12 @@ import { Link as ScrollLink } from "react-scroll";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SECTIONS = ["hero", "mision", "porque", "aventuras", "destinos"];
+const SECTIONS = ["hero", "mision", "porque", "transporte", "aventuras", "destinos"];
 const LABELS: Record<string, string> = {
   hero: "Inicio",
   mision: "Misión y Visión",
   porque: "¿Por qué elegirnos?",
+  transporte: "Transporte",
   destinos: "Destinos",
   aventuras: "Cotización"
 };

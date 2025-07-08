@@ -6,6 +6,7 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NuestrasAventuras from "@/components/NuestrasAventuras";
+import ServicioTransporte from "@/components/ServicioTransporte";
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
       {/* Por qué elegirnos */}
       <section id="porque" className="pt-24 bg-[#cbd7e6]">
         <PorQueElegirnos />
+      </section>
+      
+      {/* Transporte */}
+      <section id="transporte" className="pt-24 bg-[#cbd7e6]">
+      <ServicioTransporte/>
       </section>
 
       {/* Cotizacion */}
