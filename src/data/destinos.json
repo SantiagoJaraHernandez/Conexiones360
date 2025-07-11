@@ -87,7 +87,7 @@
   {
     "nombre": "Día de Sol en Piscilago",
     "descripcion": "Diversión acuática y zoológico en un solo día inolvidable.",
-    "precio": 150000,
+    "precio": 140000,
     "fechasDisponibles": [
       "2025-07-06",
       "2025-07-13",
@@ -1308,7 +1308,32 @@
     "ciudad": "Medellín, Arboletes, Tolú, Coveñas",
     "departamento": "Antioquia y Sucre"
   }
+},
+{
+  "nombre": "Excursión de Reyes: Santa Marta + Guajira",
+  "descripcion": "Un recorrido único por el Caribe colombiano, desde las playas de Santa Marta hasta los paisajes desérticos de La Guajira. Cultura, aventura y mar en una sola experiencia.",
+  "precio": 1500000,
+  "fechasDisponibles": ["2026-01-11"],
+  "fechasRango": ["ENERO 11 AL 17 DE 2026"],
+  "incluye": [
+    "Transporte Terrestre desde Neiva en Bus o Busetón según número de personas",
+    "Alojamiento 3 noches en Santa Marta y 1 noche en Cabo de la Vela",
+    "5 Desayunos, 5 Almuerzos y 4 Cenas",
+    "City Tour en Chiva Rumbera por las principales calles de Santa Marta",
+    "Paseo en Lancha a Playa Blanca",
+    "Visita a las Minas de Sal en Manaure",
+    "City Tour por Uribia, Cabo de la Vela, Punta Faro y Pilón de Azúcar",
+    "Tour panorámico por Riohacha",
+    "Tarjeta de Asistencia Médica",
+    "Guía Acompañante"
+  ],
+  "tipo": "Turismo",
+  "modalidad": "Terrestre",
+  "galeriaPath": "/ExcursionReyes",
+  "galleryCount": 4,
+  "ubicacion": {
+    "ciudad": "Santa Marta y Cabo de la Vela",
+    "departamento": "Magdalena y La Guajira"
+  }
 }
-
-
 ]
