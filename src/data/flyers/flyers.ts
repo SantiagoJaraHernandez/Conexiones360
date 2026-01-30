@@ -234,4 +234,193 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
+  //Abril
+        {
+    id: "listadocompleto-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Programación Abril 2026",
+    fechas: ["Abril 1 - 30"],
+    precio: 145000,
+    imagen: "/Abril2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Abril 2026",
+  },
+        {
+    id: "costacaribe-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Costa Caribe",
+    fechas: ["Marzo 30 al Abril 5"],
+    precio: 1680000,
+    imagen: "/Abril2026/costacaribe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Costa Caribe",
+  },
+        {
+    id: "piscilago-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Abril 1",
+      "Abril 15",
+      "Abril 22",
+      "Abril 29",
+    ],
+    precio: 170000,
+    imagen: "/Abril2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago",
+  },
+        {
+    id: "ejecafetero-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Abril 1 al 4"],
+    precio: 910000,
+    imagen: "/Abril2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+          {
+    id: "bugaylajas-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Santuario de las Lajas y Buga",
+    fechas: ["Abril 1 al 5"],
+    precio: 145000,
+    imagen: "/Abril2026/laslajas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Buga Y Lajas",
+  },
+        {
+    id: "playahawai-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Playa Hawai",
+    fechas: ["Abril 29"],
+    precio: 145000,
+    imagen: "/Abril2026/playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+            {
+    id: "parquejaimeduque-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Parque Jaime Duque",
+    fechas: ["Abril 18"],
+    precio: 330000,
+    imagen: "/Abril2026/jaimeduque.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Parque Jaime Duque",
+  },
+          {
+    id: "ukumari-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Ukumarí",
+    fechas: ["Abril 26"],
+    precio: 340000,
+    imagen: "/Abril2026/ukumari.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Ukumarí",
+  },
+
+// Mayo
+        {
+    id: "listadocompleto-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Programación Mayo 2026",
+    fechas: ["Mayo 1 - 31"],
+    precio: 145000,
+    imagen: "/Mayo2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Mayo 2026",
+  },
+          {
+    id: "medellin-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Medellín, Guatapé y Nápoles",
+    fechas: ["Abril 30 al Mayo 3"],
+    precio: 899000,
+    imagen: "/Mayo2026/medellin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
+  },
+          {
+    id: "cafam-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Mayo 1"],
+    precio: 170000,
+    imagen: "/Mayo2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam",
+  },
+            {
+    id: "piscilago-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Mayo 3",
+      "Mayo 10",
+      "Mayo 18",
+      "Mayo 31",
+    ],
+    precio: 170000,
+    imagen: "/Mayo2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+            {
+    id: "tolucoveñas-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Tolú, Coveñas y Cartagena",
+    fechas: ["Mayo 13 al 18"],
+    precio: 1420000,
+    imagen: "/Mayo2026/covenascartagena.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Tolú, Coveñas y Cartagena",
+  },
+              {
+    id: "ejecafetero-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Mayo 16 al 18"],
+    precio: 910000,
+    imagen: "/Mayo2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "miradoresraquira-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Miradores de Raquira",
+    fechas: ["Mayo 24"],
+    precio: 280000,
+    imagen: "/Mayo2026/raquira.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Miradores de Raquira",
+  },
+              {
+    id: "bugacali-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Buga, Cali y Lago Calima",
+    fechas: ["Mayo 29 al 31"],
+    precio: 600000,
+    imagen: "/Mayo2026/caliylago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
+  },
 ];
