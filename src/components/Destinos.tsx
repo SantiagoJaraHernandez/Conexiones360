@@ -177,14 +177,21 @@ function FlyerCard({ plan }: { plan: FlyerPlan }) {
     </motion.div>
   );
 }
-// eslint-disable-next-line react-hooks/exhaustive-deps
+type TipoBtnProps = {
+  activo: boolean;
+  onClick: () => void;
+  icon: React.ReactNode;
+  text: string;
+  color: "indigo" | "green";
+};
+
 function TipoBtn({
   activo,
   onClick,
   icon,
   text,
   color,
-}: any) {
+}: TipoBtnProps) {
   return (
     <button
       onClick={onClick}
