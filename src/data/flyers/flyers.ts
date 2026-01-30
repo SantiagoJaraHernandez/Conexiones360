@@ -423,4 +423,99 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
   },
+
+// JUNIO
+        {
+    id: "listadocompleto-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Programación Junio 2026",
+    fechas: ["Junio 1 - 30"],
+    precio: 145000,
+    imagen: "/Junio2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Junio 2026",
+  },
+          {
+    id: "sanandres-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "San Andrés",
+    fechas: ["Junio 4 al 7"],
+    precio: 1980000,
+    imagen: "/Junio2026/sanandres.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan San Andrés",
+  },
+            {
+    id: "medellin-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Medellín, Guatapé y Nápoles",
+    fechas: ["Junio 6 al 8"],
+    precio: 899000,
+    imagen: "/Junio2026/medellin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
+  },
+            {
+    id: "piscilago-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Junio 8",
+      "Junio 15",
+      "Junio 21",
+      "Junio 29",
+    ],
+    precio: 170000,
+    imagen: "/Junio2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+            {
+    id: "buga-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Peregrinación Buga",
+    fechas: ["Junio 14"],
+    precio: 130000,
+    imagen: "/Junio2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
+            {
+    id: "ejecafetero-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Junio 13 al 15"],
+    precio: 910000,
+    imagen: "/Junio2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+            {
+    id: "costacaribe-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Costa Caribe",
+    fechas: ["Junio 17 al 25"],
+    precio: 1590000,
+    imagen: "/Junio2026/costacaribe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Costa Caribe",
+  },
+            {
+    id: "playahawai-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Playa Hawai",
+    fechas: ["Junio 28"],
+    precio: 160000,
+    imagen: "/Junio2026/playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
 ];
