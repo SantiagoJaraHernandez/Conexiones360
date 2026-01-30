@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
 
       {/* Texto SEO introductorio visible */}
-      <p className="max-w-5xl mx-auto text-center text-gray-700 mt-10 mb-16 px-4 text-lg">
+      <p className="sr-only">
         Conexiones360 es una agencia de viajes en Neiva con más de 15 años de
         experiencia, especializada en paquetes turísticos nacionales e
         internacionales, excursiones, pasadías y transporte turístico desde
