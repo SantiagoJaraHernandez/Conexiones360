@@ -518,4 +518,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
+
+// JULIO
+
 ];

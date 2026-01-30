@@ -36,7 +36,7 @@ const colorClasses = {
 
 export default function CatalogoFlyers() {
   const [tipoActivo, setTipoActivo] =
-    useState<"terrestre" | "aereo">("aereo");
+    useState<"terrestre" | "aereo">("terrestre");
 
   const [mesActivo, setMesActivo] = useState<Mes | null>(null);
 
@@ -68,7 +68,7 @@ export default function CatalogoFlyers() {
         });
 
   return (
-    <section className="relative py-24 px-4 bg-gradient-to-b from-slate-100 via-white to-slate-50">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-indigo-50 via-indigo-100/80 to-indigo-200/70">
       {/* decor blur */}
       <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-200/40 rounded-full blur-3xl pointer-events-none" />
 
@@ -80,19 +80,18 @@ export default function CatalogoFlyers() {
         {/* TIPO */}
         <div className="flex justify-center gap-4 mb-12">
           <TipoBtn
-            activo={tipoActivo === "aereo"}
-            onClick={() => setTipoActivo("aereo")}
-            color="indigo"
-            icon={<FaPlane />}
-            text="Aéreos Exclusivos"
-          />
-
-          <TipoBtn
             activo={tipoActivo === "terrestre"}
             onClick={() => setTipoActivo("terrestre")}
             color="green"
             icon={<FaBus />}
             text="Terrestres"
+          />
+            <TipoBtn
+            activo={tipoActivo === "aereo"}
+            onClick={() => setTipoActivo("aereo")}
+            color="indigo"
+            icon={<FaPlane />}
+            text="Aéreos Exclusivos"
           />
         </div>
 
