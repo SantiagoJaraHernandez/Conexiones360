@@ -177,6 +177,7 @@ function FlyerCard({ plan }: { plan: FlyerPlan }) {
     </motion.div>
   );
 }
+// eslint-disable-next-line react-hooks/exhaustive-deps
 function TipoBtn({
   activo,
   onClick,
