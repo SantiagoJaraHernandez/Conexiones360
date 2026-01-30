@@ -70,6 +70,17 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Febrero 2026",
   },
   {
+    id: "playahawaii",
+    mes: "febrero",
+    tipo: "terrestre",
+    titulo: "Playa Hawai",
+    fechas: ["Febrero 1"],
+    precio: 145000,
+    imagen: "/Febrero2026/Playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+    {
     id: "piscilago-febrero",
     mes: "febrero",
     tipo: "terrestre",
@@ -84,17 +95,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Febrero2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
-  },
-  {
-    id: "playahawaii",
-    mes: "febrero",
-    tipo: "terrestre",
-    titulo: "Playa Hawai",
-    fechas: ["Febrero 1"],
-    precio: 145000,
-    imagen: "/Febrero2026/Playahawai.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
           {
     id: "carnavalbarranquilla",
@@ -519,6 +519,6 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
 
-// JULIO
+// JULIO pendiente descargar flyers
 
 ];
