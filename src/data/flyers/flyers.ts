@@ -92,9 +92,53 @@ export const flyers: FlyerPlan[] = [
     titulo: "Playa Hawai",
     fechas: ["Febrero 1"],
     precio: 145000,
-    imagen: "/Febrero2026/playahawai.jpg",
+    imagen: "/Febrero2026/Playahawai.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+          {
+    id: "carnavalbarranquilla",
+    mes: "febrero",
+    tipo: "terrestre",
+    titulo: "Carnaval de Barranquilla",
+    fechas: ["Febrero 12 al 26"],
+    precio: 1100000,
+    imagen: "/Febrero2026/carnavalb.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Carnaval de Barranquilla",
+  },
+          {
+    id: "buga",
+    mes: "febrero",
+    tipo: "terrestre",
+    titulo: "Peregrinación Buga",
+    fechas: ["Febrero 14"],
+    precio: 120000,
+    imagen: "/Febrero2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
+        {
+    id: "pradotolima",
+    mes: "febrero",
+    tipo: "terrestre",
+    titulo: "Pasadía Prado-Tolima",
+    fechas: ["Febrero 15"],
+    precio: 260000,
+    imagen: "/Febrero2026/pradotolima.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Pasadía Prado-Tolima",
+  },
+          {
+    id: "guatape",
+    mes: "febrero",
+    tipo: "terrestre",
+    titulo: "Guatapé + Santorini y Hacienda Nápoles",
+    fechas: ["Febrero 20 al 22"],
+    precio: 680000,
+    imagen: "/Febrero2026/guatape.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Guatapé + Santorini y Hacienda Nápoles",
   },
     {
     id: "parquedelcafe",
@@ -102,10 +146,11 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Parque del Café",
     fechas: ["Febrero 22"],
-    precio: 145000,
+    precio: 340000,
     imagen: "/Febrero2026/pcafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Parque del Café",
   },
+
   
 ];
