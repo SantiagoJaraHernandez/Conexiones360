@@ -23,6 +23,17 @@ const mesesOrdenados = [
 
 type Mes = (typeof mesesOrdenados)[number];
 
+const colorClasses = {
+  indigo: {
+    active: "bg-indigo-600 text-white",
+    inactive: "bg-white text-indigo-600",
+  },
+  green: {
+    active: "bg-green-600 text-white",
+    inactive: "bg-white text-green-600",
+  },
+};
+
 export default function CatalogoFlyers() {
   const [tipoActivo, setTipoActivo] =
     useState<"terrestre" | "aereo">("aereo");
@@ -39,7 +50,6 @@ export default function CatalogoFlyers() {
     );
   });
 
-  // Auto seleccionar primer mes válido
   useEffect(() => {
     if (!mesActivo && mesesVisibles.length) {
       setMesActivo(mesesVisibles[0]);
@@ -49,19 +59,26 @@ export default function CatalogoFlyers() {
   const filtrados =
     tipoActivo === "aereo"
       ? flyers.filter(f => f.tipo === "aereo")
-      : flyers.filter(
-          f => f.tipo === "terrestre" && f.mes === mesActivo
-        );
+      : flyers.filter(f => {
+          if (f.tipo !== "terrestre") return false;
+          if (f.mes !== mesActivo) return false;
+
+          const indexMesFlyer = mesesOrdenados.indexOf(f.mes);
+          return indexMesFlyer >= mesActualIndex;
+        });
 
   return (
-    <section className="py-20 px-4 bg-[#f7f7f7]">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-extrabold text-center text-blue-700 mb-10">
+    <section className="relative py-24 px-4 bg-gradient-to-b from-slate-100 via-white to-slate-50">
+      {/* decor blur */}
+      <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-indigo-200/40 rounded-full blur-3xl pointer-events-none" />
+
+      <div className="relative max-w-7xl mx-auto">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-700 mb-14">
           Catálogo de Viajes
         </h2>
 
         {/* TIPO */}
-        <div className="flex justify-center gap-4 mb-10">
+        <div className="flex justify-center gap-4 mb-12">
           <TipoBtn
             activo={tipoActivo === "aereo"}
             onClick={() => setTipoActivo("aereo")}
@@ -84,7 +101,7 @@ export default function CatalogoFlyers() {
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="flex flex-wrap justify-center gap-3 mb-12"
+            className="flex flex-wrap justify-center gap-3 mb-14"
           >
             {mesesVisibles.map(mes => (
               <button
@@ -109,7 +126,7 @@ export default function CatalogoFlyers() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.35 }}
             className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10"
           >
             {filtrados.map(plan => (
@@ -121,12 +138,13 @@ export default function CatalogoFlyers() {
     </section>
   );
 }
+
 function FlyerCard({ plan }: { plan: FlyerPlan }) {
   return (
     <motion.div
-      whileHover={{ y: -8 }}
-      transition={{ type: "spring", stiffness: 200 }}
-      className="bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col"
+      whileHover={{ y: -10 }}
+      transition={{ type: "spring", stiffness: 180 }}
+      className="bg-white/80 backdrop-blur-md rounded-3xl shadow-xl overflow-hidden flex flex-col"
     >
       <div className="relative">
         <Image
@@ -145,7 +163,7 @@ function FlyerCard({ plan }: { plan: FlyerPlan }) {
         )}
       </div>
 
-      <div className="p-5 text-center">
+      <div className="p-6 text-center">
         <h3 className="text-xl font-extrabold">{plan.titulo}</h3>
 
         <div className="flex flex-wrap justify-center gap-2 mt-3">
@@ -159,7 +177,7 @@ function FlyerCard({ plan }: { plan: FlyerPlan }) {
           ))}
         </div>
 
-        <p className="text-3xl font-extrabold text-green-600 mt-4">
+        <p className="text-3xl font-extrabold text-green-600 mt-5">
           ${plan.precio.toLocaleString()} COP
         </p>
       </div>
@@ -177,6 +195,7 @@ function FlyerCard({ plan }: { plan: FlyerPlan }) {
     </motion.div>
   );
 }
+
 type TipoBtnProps = {
   activo: boolean;
   onClick: () => void;
@@ -197,8 +216,8 @@ function TipoBtn({
       onClick={onClick}
       className={`flex items-center gap-2 px-6 py-3 rounded-full font-bold transition-all ${
         activo
-          ? `bg-${color}-600 text-white scale-105`
-          : `bg-white text-${color}-600 shadow hover:scale-105`
+          ? `${colorClasses[color].active} scale-105`
+          : `${colorClasses[color].inactive} shadow hover:scale-105`
       }`}
     >
       {icon}

@@ -1,6 +1,6 @@
 export type FlyerPlan = {
   id: string;
-  mes: "febrero" | "marzo" | "abril" | "mayo" | "junio" | "julio";
+  mes: "enero" | "febrero" | "marzo" | "abril" | "mayo" | "junio" | "julio" | "agosto" | "septiembre" | "octubre" | "noviembre" | "diciembre";
   tipo: "terrestre" | "aereo";
   titulo: string;
   fechas: string[]; // 👈 AQUÍ LA CLAVE
@@ -151,6 +151,87 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Parque del Café",
   },
-
-  
+// MARZO 2026
+        {
+    id: "listadocompleto-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Programación Marzo 2026",
+    fechas: ["Marzo 1 - 30"],
+    precio: 145000,
+    imagen: "/Marzo2026/listamarzo.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Marzo 2026",
+  },
+          {
+    id: "piscilago-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Marzo 1",
+      "Marzo 15",
+      "Marzo 22",
+      "Marzo 29",
+    ],
+    precio: 170000,
+    imagen: "/Marzo2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago",
+  },
+          {
+    id: "buga-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Peregrinación Buga",
+    fechas: ["Marzo 14"],
+    precio: 120000,
+    imagen: "/Marzo2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
+          {
+    id: "medellin-coveñas",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Medellín + Coveñas",
+    fechas: ["Marzo 18 al 23"],
+    precio: 1380000,
+    imagen: "/Marzo2026/medellincovenas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Medellín + Coveñas",
+  },
+          {
+    id: "ejecafetero-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Marzo 20 al 23"],
+    precio: 910000,
+    imagen: "/Marzo2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+          {
+    id: "boyaca-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Boyacá",
+    fechas: ["Marzo 20 al 23"],
+    precio: 850000,
+    imagen: "/Marzo2026/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Boyacá",
+  },
+          {
+    id: "playahawai-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Playa Hawai",
+    fechas: ["Marzo 29"],
+    precio: 145000,
+    imagen: "/Marzo2026/playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
 ];

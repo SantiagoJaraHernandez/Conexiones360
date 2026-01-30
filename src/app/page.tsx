@@ -11,9 +11,22 @@ import ServicioTransporte from "@/components/ServicioTransporte";
 export default function Home() {
   return (
     <main className="bg-white text-gray-900">
+      {/* H1 SEO (principal del sitio) */}
+      <h1 className="sr-only">
+        Agencia de viajes en Neiva | Conexiones360
+      </h1>
+
       <Navbar />
 
-      {/* Hero Section */}
+      {/* Texto SEO introductorio visible */}
+      <p className="max-w-5xl mx-auto text-center text-gray-700 mt-10 mb-16 px-4 text-lg">
+        Conexiones360 es una agencia de viajes en Neiva con más de 15 años de
+        experiencia, especializada en paquetes turísticos nacionales e
+        internacionales, excursiones, pasadías y transporte turístico desde
+        Neiva y el Huila.
+      </p>
+
+      {/* Hero */}
       <section id="hero">
         <Hero />
       </section>
@@ -27,13 +40,13 @@ export default function Home() {
       <section id="porque" className="pt-24 bg-[#cbd7e6]">
         <PorQueElegirnos />
       </section>
-      
+
       {/* Transporte */}
       <section id="transporte" className="pt-24 bg-[#cbd7e6]">
-      <ServicioTransporte/>
+        <ServicioTransporte />
       </section>
 
-      {/* Cotizacion */}
+      {/* Aventuras */}
       <section id="aventuras" className="pt-24 bg-[#cbd7e6]">
         <NuestrasAventuras />
       </section>
@@ -43,10 +56,7 @@ export default function Home() {
         <Destinos />
       </section>
 
-      {/* Botón de WhatsApp flotante */}
       <WhatsAppButton />
-
-      {/* Footer al final */}
       <Footer />
     </main>
   );
