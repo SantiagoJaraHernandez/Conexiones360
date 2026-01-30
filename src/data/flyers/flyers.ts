@@ -13,6 +13,18 @@ export const flyers: FlyerPlan[] = [
 
 // AEREOS
   {
+    id: "arboletesaereo",
+    mes: "julio",
+    tipo: "aereo", // mes no relevante para aereo
+    titulo: "Arboletes",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 2299000,
+    imagen: "/Aereos/arboletes.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Arboletes",
+  },
+
+  {
     id: "cancunaereo",
     mes: "julio",
     tipo: "aereo", // mes no relevante para aereo
@@ -33,6 +45,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Aereos/mexico.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Mexico ",
+  },
+      {
+    id: "mexicomixaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "México + Cancún",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 5300000,
+    imagen: "/Aereos/mexicomix.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan México + Cancún",
   },
       {
     id: "panamaaereo",
@@ -519,6 +542,100 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
 
-// JULIO pendiente descargar flyers
+// JULIO 
 
+            {
+    id: "listadocompleto-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Programación Julio 2026",
+    fechas: ["Julio 1 - 26"],
+    precio: 145000,
+    imagen: "/Julio2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Julio 2026",
+  },
+
+            {
+    id: "haciendanapoles-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles",
+    fechas: ["Julio 5"],
+    precio: 390000,
+    imagen: "/Julio2026/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
+              {
+    id: "cali-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Cali, Lago Calima y Buga",
+    fechas: ["Julio 10 al 12"],
+    precio: 600000,
+    imagen: "/Julio2026/cali.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cali",
+  },
+              {
+    id: "piscilago-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Julio 5",
+      "Julio 12",
+      "Julio 20",
+      "Julio 26",
+    ],
+    precio: 170000,
+    imagen: "/Julio2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+            {
+    id: "tintipanycovenas-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Tintipan Archipiélago de San Bernardo",
+    fechas: ["Julio 15 al 20"],
+    precio: 1430000,
+    imagen: "/Julio2026/tintipan.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Tintipan Archipiélago de San Bernardo",
+  },
+              {
+    id: "boyacá-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Villa de Leyva",
+    fechas: ["Julio 18 al 20"],
+    precio: 640000,
+    imagen: "/Julio2026/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Villa de Leyva",
+  },
+                {
+    id: "ejecafe-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Julio 17 al 20"],
+    precio: 910000,
+    imagen: "/Julio2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+                {
+    id: "cafam-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Julio 18 al 20"],
+    precio: 160000,
+    imagen: "/Julio2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+  },
 ];
