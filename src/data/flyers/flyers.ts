@@ -895,4 +895,100 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Guatapé + Nápoles",
   },
+
+//OCTUBRE
+
+            {
+    id: "listadocompleto-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Programación Octubre 2026",
+    fechas: ["Octubre 1 - 31"],
+    precio: 170000,
+    imagen: "/Octubre2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Octubre 2026",
+  },
+              {
+    id: "piscilago-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía 2X",
+    fechas: [
+      "Octubre 4",
+      "Octubre 12",
+      "Octubre 18",
+      "Octubre 25",
+    ],
+    precio: 320000,
+    imagen: "/Octubre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+              {
+    id: "santamartayguajira-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Santa Marta y Guajira",
+    fechas: ["Octubre 6 al 12"],
+    precio: 1699000,
+    imagen: "/Octubre2026/guajira.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Santa Marta y Guajira",
+  },
+              {
+    id: "santuariodelaslajas-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Santuario de Las Lajas",
+    fechas: ["Octubre 9 al 12"],
+    precio: 850000,
+    imagen: "/Octubre2026/lajas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Santuario de Las Lajas",
+  },
+              {
+    id: "ejecafetero-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Octubre 10 al 12"],
+    precio: 960000,
+    imagen: "/Octubre2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "cafam-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Octubre 18"],
+    precio: 170000,
+    imagen: "/Octubre2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+  },
+              {
+    id: "termales-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Termales Santa Rosa de Cabal",
+    fechas: ["Octubre 25"],
+    precio: 350000,
+    imagen: "/Octubre2026/termales.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
+  },
+              {
+    id: "medellin-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Medellín, Guatapé y Nápoles",
+    fechas: ["Octubre 31 al 2 Noviembre"],
+    precio: 899000,
+    imagen: "/Octubre2026/medellin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
+  },
 ];
