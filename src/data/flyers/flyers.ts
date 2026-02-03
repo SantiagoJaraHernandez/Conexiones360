@@ -79,6 +79,72 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Punta Cana ",
   },
+      {
+    id: "sanandresaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "San Andrés",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 1870000,
+    imagen: "/Aereos/sanandres.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan San Andrés",
+  },
+      {
+    id: "capurganaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Capurganá",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 2800000,
+    imagen: "/Aereos/capurgana.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Capurganá",
+  },
+      {
+    id: "cartagenaybaruaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Cartagena y Barú",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 1280000,
+    imagen: "/Aereos/cartagena.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cartagena y Barú",
+  },
+      {
+    id: "santamartaaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Santa Marta",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 1189000,
+    imagen: "/Aereos/santamarta.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Santa Marta",
+  },
+      {
+    id: "coveñasaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Coveñas e Isla Múcura",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 1708000,
+    imagen: "/Aereos/covenas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Coveñas e Isla Múcura",
+  },
+      {
+    id: "islapalmasaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Isla Palma",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 2830000,
+    imagen: "/Aereos/islapalma.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Isla Palma",
+  },
 // TERRESTRES 2026
 // FEBRERO
   {
@@ -88,7 +154,7 @@ export const flyers: FlyerPlan[] = [
     titulo: "Programación Febrero 2026",
     fechas: ["Febrero 1 - 22"],
     precio: 145000,
-    imagen: "/Febrero2026/ListaFebrero.jpg",
+    imagen: "/Febrero2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Febrero 2026",
   },
@@ -107,14 +173,13 @@ export const flyers: FlyerPlan[] = [
     id: "piscilago-febrero",
     mes: "febrero",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
+    titulo: "Piscilago Pasadía 2X",
     fechas: [
-      "Febrero 1",
       "Febrero 8",
       "Febrero 15",
       "Febrero 22",
     ],
-    precio: 170000,
+    precio: 320000,
     imagen: "/Febrero2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
@@ -124,7 +189,7 @@ export const flyers: FlyerPlan[] = [
     mes: "febrero",
     tipo: "terrestre",
     titulo: "Carnaval de Barranquilla",
-    fechas: ["Febrero 12 al 26"],
+    fechas: ["Febrero 12 al 17"],
     precio: 1100000,
     imagen: "/Febrero2026/carnavalb.jpg",
     whatsappBase:
@@ -158,7 +223,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Guatapé + Santorini y Hacienda Nápoles",
     fechas: ["Febrero 20 al 22"],
-    precio: 680000,
+    precio: 650000,
     imagen: "/Febrero2026/guatape.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Guatapé + Santorini y Hacienda Nápoles",
@@ -167,9 +232,9 @@ export const flyers: FlyerPlan[] = [
     id: "parquedelcafe",
     mes: "febrero",
     tipo: "terrestre",
-    titulo: "Parque del Café",
+    titulo: "Parque del Café 2X",
     fechas: ["Febrero 22"],
-    precio: 340000,
+    precio: 499000,
     imagen: "/Febrero2026/pcafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Parque del Café",
