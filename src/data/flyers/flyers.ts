@@ -615,7 +615,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Julio 2026",
     fechas: ["Julio 1 - 26"],
-    precio: 145000,
+    precio: 170000,
     imagen: "/Julio2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Julio 2026",
@@ -702,5 +702,197 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Julio2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
+  },
+
+// AGOSTO
+
+            {
+    id: "listadocompleto-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Programación Agosto 2026",
+    fechas: ["Agosto 1 - 30"],
+    precio: 170000,
+    imagen: "/Agosto2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Agosto 2026",
+  },
+              {
+    id: "piscilago-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Agosto 2",
+      "Agosto 9",
+      "Agosto 17",
+      "Agosto 23",
+      "Agosto 30",
+    ],
+    precio: 170000,
+    imagen: "/Agosto2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+            {
+    id: "feriadelasflores-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Feria de las Flores Medellín",
+    fechas: ["Agosto 7 al 9"],
+    precio: 899000,
+    imagen: "/Agosto2026/feriaflores.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Feria de las Flores Medellín",
+  },
+              {
+    id: "haciendanapoles-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles",
+    fechas: ["Agosto 9"],
+    precio: 360000,
+    imagen: "/Agosto2026/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
+              {
+    id: "capurgana-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Capurganá",
+    fechas: ["Agosto 11 al 17"],
+    precio: 2425000,
+    imagen: "/Agosto2026/capurgana.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Capurganá",
+  },
+              {
+    id: "ejecafetero-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Agosto 15 al 17"],
+    precio: 910000,
+    imagen: "/Agosto2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "termales-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Termales Santa Rosa de Cabal",
+    fechas: ["Agosto 23"],
+    precio: 350000,
+    imagen: "/Agosto2026/termales.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
+  },
+              {
+    id: "jaimeduque-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Parque Jaime Duque + Piscilago",
+    fechas: ["Agosto 29 al 30"],
+    precio: 630000,
+    imagen: "/Agosto2026/piscilagoyjaime.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Parque Jaime Duque + Piscilago",
+  },
+// SEPTIEMBRE
+
+            {
+    id: "listadocompleto-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Programación Septiembre 2026",
+    fechas: ["Septiembre 1 - 30"],
+    precio: 170000,
+    imagen: "/Septiembre2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Septiembre 2026",
+  },
+              {
+    id: "piscilago-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía 2X",
+    fechas: [
+      "Septiembre 6",
+      "Septiembre 13",
+      "Septiembre 20",
+      "Septiembre 27",
+    ],
+    precio: 320000,
+    imagen: "/Septiembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+              {
+    id: "boyaca-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Villa de Leyva y Ráquira",
+    fechas: ["Septiembre 5 al 6"],
+    precio: 170000,
+    imagen: "/Septiembre2026/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Villa de Leyva y Ráquira",
+  },
+              {
+    id: "ejecafetero-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Septiembre 12 al 13"],
+    precio: 630000,
+    imagen: "/Septiembre2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "arboletesycoveñas-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Disney Colombiano con Tolú, Coveñas e Isla Múcura",
+    fechas: ["Septiembre 15 al 20"],
+    precio: 1599000,
+    imagen: "/Septiembre2026/arboletes.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Disney Colombiano con Tolú, Coveñas e Isla Múcura",
+  },
+              {
+    id: "buga-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Cali + Buga",
+    fechas: ["Septiembre 19 al 20"],
+    precio: 600000,
+    imagen: "/Septiembre2026/cali.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cali + Buga",
+  },
+              {
+    id: "playahawai-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Playa Hawai 2X",
+    fechas: ["Septiembre 13"],
+    precio: 300000,
+    imagen: "/Septiembre2026/playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+              {
+    id: "guatape-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Guatapé + Nápoles",
+    fechas: ["Septiembre 25 al 27"],
+    precio: 650000,
+    imagen: "/Septiembre2026/guatape.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Guatapé + Nápoles",
   },
 ];
