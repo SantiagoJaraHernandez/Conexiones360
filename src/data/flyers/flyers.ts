@@ -39,7 +39,7 @@ export const flyers: FlyerPlan[] = [
     id: "mexiconaereo",
     mes: "julio",// mes no relevante para aereo
     tipo: "aereo",
-    titulo: "Mexico",
+    titulo: "México",
     fechas: ["Salidas temporadas bajas o a tu elección"],
     precio: 3800000,
     imagen: "/Aereos/mexico.jpg",
@@ -627,7 +627,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Hacienda Nápoles",
     fechas: ["Julio 5"],
-    precio: 390000,
+    precio: 360000,
     imagen: "/Julio2026/napoles.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
@@ -676,7 +676,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Villa de Leyva",
     fechas: ["Julio 18 al 20"],
-    precio: 640000,
+    precio: 630000,
     imagen: "/Julio2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Villa de Leyva",
@@ -698,7 +698,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Julio 18 al 20"],
-    precio: 160000,
+    precio: 170000,
     imagen: "/Julio2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
