@@ -991,4 +991,99 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
   },
+// NOVIEMBRE
+            {
+    id: "listadocompleto-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Programación Noviembre 2026",
+    fechas: ["Noviembre 1 - 30"],
+    precio: 170000,
+    imagen: "/Noviembre2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Noviembre 2026",
+  },
+                {
+    id: "piscilago-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Noviembre 2",
+      "Noviembre 8",
+      "Noviembre 16",
+      "Noviembre 29",
+    ],
+    precio: 170000,
+    imagen: "/Noviembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+              {
+    id: "raquira-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Raquira y Villa de Leyva",
+    fechas: ["Noviembre 8"],
+    precio: 300000,
+    imagen: "/Noviembre2026/raquira.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Raquira y Villa de Leyva",
+  },
+              {
+    id: "cali-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Buga + Cali",
+    fechas: ["Noviembre 14 al 15"],
+    precio: 600000,
+    imagen: "/Noviembre2026/caliconlago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cali",
+  },
+              {
+    id: "ejecafetero-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Noviembre 14 al 16"],
+    precio: 910000,
+    imagen: "/Noviembre2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "jaimeduqueconpiscilago-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Jaime Duque con Piscilago",
+    fechas: ["Noviembre 21 al 22"],
+    precio: 630000,
+    imagen: "/Noviembre2026/jaimeduque.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Jaime Duque con Piscilago",
+  },
+              {
+    id: "costacaribe-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Costa Caribe",
+    fechas: ["Noviembre 27 al 2 Diciembre"],
+    precio: 1198000,
+    imagen: "/Noviembre2026/costacaribe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Costa Caribe",
+  },
+                {
+    id: "consota-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Ukumarí + Consotá",
+    fechas: ["Noviembre 29"],
+    precio: 340000,
+    imagen: "/Noviembre2026/consota.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
+  },
+  
 ];
