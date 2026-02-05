@@ -47,7 +47,7 @@ export default function PorQueElegirnos() {
 
   return (
     <section
-      className="py-24 bg-[#cbd7e6] -mt-16"
+      className="py-24 bg-[#c6d0dc] -mt-16"
       id="elegirnos"
     >
       <motion.div

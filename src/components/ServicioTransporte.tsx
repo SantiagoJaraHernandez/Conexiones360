@@ -28,7 +28,7 @@ const descripciones = {
 
 export default function ServicioTransporte() {
   return (
-    <section className="py-24 bg-[#cbd7e6]" id="transporte">
+    <section className="py-24 bg-[#c6d0dc]" id="transporte">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-center text-blue-800 mb-6 font-display">
           Servicio Especial de Transporte Turístico
