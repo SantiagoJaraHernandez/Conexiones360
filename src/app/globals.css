@@ -22,14 +22,18 @@
 
 html {
   scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   background: #dbeafe;
   color: var(--foreground);
   font-family: 'Inter', sans-serif;
-  
+  max-width: 100%;
+  overflow-x: hidden;
 }
+
 
 /* Scrollbar delgado personalizado */
 .scrollbar-thin::-webkit-scrollbar {

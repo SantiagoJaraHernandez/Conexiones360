@@ -3,13 +3,13 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const keywords = ["momentos", "emociones", "destinos"];
+const keywords = ["momentos", "aventuras", "destinos"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement | null>(null);
 
-  // Texto animado
+  // Palabras animadas
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % keywords.length);
@@ -17,7 +17,7 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
 
-  // Optimización video (pausa / play al hacer scroll)
+  // Play / pause del video según visibilidad
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -38,7 +38,17 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center text-white text-center px-6 overflow-hidden">
+    <section
+      className="
+        relative
+        min-h-[100svh]
+        w-full
+        overflow-hidden
+        overscroll-none
+        flex items-center justify-center
+        text-white text-center px-6
+      "
+    >
       {/* VIDEO FONDO */}
       <video
         ref={videoRef}
@@ -51,8 +61,10 @@ export default function Hero() {
         className="
           absolute inset-0 w-full h-full
           object-cover object-center
-          scale-110 md:scale-105
-          sm:brightness-110 sm:saturate-110
+          scale-100
+          md:scale-105
+          brightness-110 saturate-110
+          will-change-transform
         "
       >
         {/* Mobile */}
@@ -69,16 +81,16 @@ export default function Hero() {
         />
       </video>
 
-      {/* OVERLAYS */}
+      {/* OVERLAYS (blindados, no generan overflow) */}
       <div
         className="
-          absolute inset-0
+          absolute inset-0 pointer-events-none
           bg-gradient-to-b
           from-black/90 via-black/60 to-black/30
           md:from-black/80 md:via-black/40 md:to-black/20
         "
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
+      <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
 
       {/* CONTENIDO */}
       <motion.div
@@ -157,9 +169,16 @@ export default function Hero() {
         </motion.a>
       </motion.div>
 
-      {/* SCROLL */}
+      {/* INDICADOR SCROLL (safe-area real) */}
       <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-sm opacity-90 font-medium"
+        className="
+          absolute
+          left-1/2 -translate-x-1/2
+          bottom-[calc(env(safe-area-inset-bottom)+2.5rem)]
+          md:bottom-8
+          text-sm opacity-90 font-medium
+          pointer-events-none
+        "
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 1.6, repeat: Infinity }}
       >
