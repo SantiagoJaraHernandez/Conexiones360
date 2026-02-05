@@ -1,26 +1,38 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 
-const keywords = ["momentos", "aventuras", "destinos"];
+const keywords = ["momentos", "destinos", "aventuras"];
 
 export default function Hero() {
   const [index, setIndex] = useState(0);
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const prefersReducedMotion = useReducedMotion();
 
-  // Palabras animadas
+  /* ============================
+     Palabras animadas (seguras)
+  ============================ */
   useEffect(() => {
+    if (prefersReducedMotion) return;
+
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % keywords.length);
     }, 2600);
-    return () => clearInterval(interval);
-  }, []);
 
-  // Play / pause del video según visibilidad
+    return () => clearInterval(interval);
+  }, [prefersReducedMotion]);
+
+  /* ============================
+     Video play / pause por visibilidad
+     (sin romper scroll mobile)
+  ============================ */
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
+
+    video.muted = true;
+    video.playsInline = true;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -46,9 +58,12 @@ export default function Hero() {
         overflow-hidden
         flex items-center justify-center
         text-white text-center px-6
+        isolate
       "
     >
-      {/* VIDEO FONDO */}
+      {/* ============================
+          VIDEO FONDO (blindado)
+      ============================ */}
       <video
         ref={videoRef}
         autoPlay
@@ -57,22 +72,23 @@ export default function Hero() {
         playsInline
         preload="metadata"
         poster="/hero-poster.jpg"
+        aria-hidden="true"
+        tabIndex={-1}
         className="
-          absolute inset-0 w-full h-full
+          absolute inset-0
+          w-full h-full
           object-cover object-center
-          scale-100
           md:scale-105
           brightness-110 saturate-110
+          pointer-events-none
           will-change-transform
         "
       >
-        {/* Mobile */}
         <source
           src="/heromobile.mp4"
           type="video/mp4"
           media="(max-width: 768px)"
         />
-        {/* Desktop */}
         <source
           src="/hero4.mp4"
           type="video/mp4"
@@ -80,33 +96,25 @@ export default function Hero() {
         />
       </video>
 
-      {/* OVERLAYS (blindados, no generan overflow) */}
-      <div
-        className="
-          absolute inset-0 pointer-events-none
-          bg-gradient-to-b
-          from-black/90 via-black/60 to-black/30
-          md:from-black/80 md:via-black/40 md:to-black/20
-        "
-      />
+      {/* ============================
+          OVERLAYS (no generan overflow)
+      ============================ */}
+      <div className="absolute inset-0 pointer-events-none bg-gradient-to-b from-black/90 via-black/60 to-black/30 md:from-black/80 md:via-black/40 md:to-black/20" />
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
 
-      {/* CONTENIDO */}
+      {/* ============================
+          CONTENIDO
+      ============================ */}
       <motion.div
         className="relative z-10 max-w-4xl mx-auto"
-        initial={{ opacity: 0, y: 24 }}
+        initial={prefersReducedMotion ? false : { opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
         {/* SLOGAN */}
-        <motion.p
-          className="text-base sm:text-lg md:text-xl opacity-90 mb-4"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.15 }}
-        >
+        <p className="text-base sm:text-lg md:text-xl opacity-90 mb-4">
           Haz de cada viaje una experiencia inolvidable con
-        </motion.p>
+        </p>
 
         {/* LOGO + MARCA */}
         <div className="flex items-center justify-center gap-4 flex-wrap mb-6">
@@ -114,19 +122,15 @@ export default function Hero() {
             src="/logo.png"
             alt="Conexiones360"
             className="w-14 sm:w-16 md:w-20"
+            loading="eager"
           />
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-wide drop-shadow-lg">
             CONEXIONES360
           </h1>
         </div>
 
-        {/* TEXTO ANIMADO */}
-        <motion.p
-          className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed opacity-90"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.35 }}
-        >
+        {/* TEXTO ANIMADO (altura fija → no mueve layout) */}
+        <p className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed opacity-90">
           Viajes diseñados para conectar{" "}
           <span className="inline-flex items-center">
             <AnimatePresence mode="wait">
@@ -136,14 +140,19 @@ export default function Hero() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -8 }}
                 transition={{ duration: 0.35, ease: "easeOut" }}
-                className="inline-block min-w-[8ch] text-center font-semibold text-cyan-400"
+                className="
+                  inline-block
+                  min-w-[8ch]
+                  text-center
+                  font-semibold
+                  text-cyan-400
+                "
               >
                 {keywords[index]}
               </motion.span>
             </AnimatePresence>
           </span>
-          .
-        </motion.p>
+        </p>
 
         {/* CTA */}
         <motion.a
@@ -154,21 +163,18 @@ export default function Hero() {
             font-semibold text-white
             bg-gradient-to-r from-blue-600 to-cyan-500
             shadow-[0_12px_30px_rgba(0,0,0,0.35)]
+            focus:outline-none focus:ring-2 focus:ring-cyan-300
           "
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.55, duration: 0.6 }}
-          whileHover={{
-            y: -3,
-            boxShadow: "0 18px 40px rgba(0,0,0,0.45)",
-          }}
+          whileHover={!prefersReducedMotion ? { y: -3 } : undefined}
           whileTap={{ scale: 0.97 }}
         >
           Arma tu próxima aventura
         </motion.a>
       </motion.div>
 
-      {/* INDICADOR SCROLL (safe-area real) */}
+      {/* ============================
+          INDICADOR SCROLL (safe-area)
+      ============================ */}
       <motion.div
         className="
           absolute
@@ -178,7 +184,7 @@ export default function Hero() {
           text-sm opacity-90 font-medium
           pointer-events-none
         "
-        animate={{ y: [0, 10, 0] }}
+        animate={prefersReducedMotion ? undefined : { y: [0, 10, 0] }}
         transition={{ duration: 1.6, repeat: Infinity }}
       >
         Explorar ↓
