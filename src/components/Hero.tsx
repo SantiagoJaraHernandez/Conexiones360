@@ -1,81 +1,169 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+
+const keywords = ["momentos", "emociones", "destinos"];
 
 export default function Hero() {
-  return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center text-white text-center px-6 overflow-hidden">
-      {/* Video de fondo */}
-      <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          className="w-full h-full object-cover"
-        >
-          <source src="/hero2.mp4" type="video/mp4" />
-          Tu navegador no soporta videos en HTML5.
-        </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-transparent" />
-      </div>
+  const [index, setIndex] = useState(0);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
 
-      {/* Contenido */}
+  // Texto animado
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % keywords.length);
+    }, 2600);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Optimización video (pausa / play al hacer scroll)
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.25 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section className="relative min-h-screen flex items-center justify-center text-white text-center px-6 overflow-hidden">
+      {/* VIDEO FONDO */}
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster="/hero-poster.jpg"
+        className="
+          absolute inset-0 w-full h-full
+          object-cover object-center
+          scale-110 md:scale-105
+          sm:brightness-110 sm:saturate-110
+        "
+      >
+        {/* Mobile */}
+        <source
+          src="/heromobile.mp4"
+          type="video/mp4"
+          media="(max-width: 768px)"
+        />
+        {/* Desktop */}
+        <source
+          src="/hero4.mp4"
+          type="video/mp4"
+          media="(min-width: 769px)"
+        />
+      </video>
+
+      {/* OVERLAYS */}
+      <div
+        className="
+          absolute inset-0
+          bg-gradient-to-b
+          from-black/90 via-black/60 to-black/30
+          md:from-black/80 md:via-black/40 md:to-black/20
+        "
+      />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_60%)]" />
+
+      {/* CONTENIDO */}
       <motion.div
         className="relative z-10 max-w-4xl mx-auto"
-        initial={{ opacity: 0, y: 20 }}
+        initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        {/* Frase superior (slogan) */}
+        {/* SLOGAN */}
         <motion.p
-          className="text-lg sm:text-xl md:text-2xl drop-shadow-md max-w-2xl mx-auto px-2 font-sans mb-4"
+          className="text-base sm:text-lg md:text-xl opacity-90 mb-4"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.4 }}
->
-Haz de cada viaje una experiencia inolvidable con
-</motion.p>
-
-        {/* Logo + Marca */}
-        <motion.div
-          className="flex items-center justify-center gap-4 flex-wrap"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.3, duration: 0.4 }}
+          transition={{ delay: 0.15 }}
         >
-          <img src="/logo.png" alt="Logo Conexiones360" className="w-16 md:w-20 lg:w-24" />
-          <motion.h1
-            className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-wide drop-shadow-lg font-sans"
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4, duration: 0.4 }}
-          >
-            CONEXIONES360
-          </motion.h1>
-        </motion.div>
-
-        {/* Frase descriptiva */}
-        <motion.p
-          className="mt-5 text-lg sm:text-xl md:text-2xl drop-shadow-md max-w-2xl mx-auto px-2 font-sans"
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.4 }}
-        >
-          Descubre el mundo con experiencias únicas e inolvidables.
+          Haz de cada viaje una experiencia inolvidable con
         </motion.p>
 
-        {/* Botón CTA */}
+        {/* LOGO + MARCA */}
+        <div className="flex items-center justify-center gap-4 flex-wrap mb-6">
+          <img
+            src="/logo.png"
+            alt="Conexiones360"
+            className="w-14 sm:w-16 md:w-20"
+          />
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-wide drop-shadow-lg">
+            CONEXIONES360
+          </h1>
+        </div>
+
+        {/* TEXTO ANIMADO */}
+        <motion.p
+          className="text-lg sm:text-xl md:text-2xl max-w-2xl mx-auto leading-relaxed opacity-90"
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.35 }}
+        >
+          Viajes diseñados para conectar{" "}
+          <span className="inline-flex items-center">
+            <AnimatePresence mode="wait">
+              <motion.span
+                key={keywords[index]}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -8 }}
+                transition={{ duration: 0.35, ease: "easeOut" }}
+                className="inline-block min-w-[8ch] text-center font-semibold text-cyan-400"
+              >
+                {keywords[index]}
+              </motion.span>
+            </AnimatePresence>
+          </span>
+          .
+        </motion.p>
+
+        {/* CTA */}
         <motion.a
           href="#destinos"
-          className="inline-block mt-8 bg-blue-600 px-8 py-3 rounded-full text-white font-semibold hover:bg-blue-700 shadow-lg transition"
-          initial={{ opacity: 0, scale: 0.92 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.6, duration: 0.4 }}
+          className="
+            relative inline-flex items-center justify-center
+            mt-10 px-12 py-4 rounded-full
+            font-semibold text-white
+            bg-gradient-to-r from-blue-600 to-cyan-500
+            shadow-[0_12px_30px_rgba(0,0,0,0.35)]
+          "
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.55, duration: 0.6 }}
+          whileHover={{
+            y: -3,
+            boxShadow: "0 18px 40px rgba(0,0,0,0.45)",
+          }}
+          whileTap={{ scale: 0.97 }}
         >
-          Ver destinos
+          Arma tu próxima aventura
         </motion.a>
+      </motion.div>
+
+      {/* SCROLL */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-sm opacity-90 font-medium"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ duration: 1.6, repeat: Infinity }}
+      >
+        Explorar ↓
       </motion.div>
     </section>
   );
