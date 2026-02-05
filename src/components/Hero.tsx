@@ -44,7 +44,6 @@ export default function Hero() {
         min-h-[100svh]
         w-full
         overflow-hidden
-        overscroll-none
         flex items-center justify-center
         text-white text-center px-6
       "
