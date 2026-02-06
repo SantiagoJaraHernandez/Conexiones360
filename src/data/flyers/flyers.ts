@@ -367,7 +367,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Eje Cafetero",
     fechas: ["Abril 1 al 4"],
-    precio: 910000,
+    precio: 960000,
     imagen: "/Abril2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
@@ -378,7 +378,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Santuario de las Lajas y Buga",
     fechas: ["Abril 1 al 5"],
-    precio: 145000,
+    precio: 850000,
     imagen: "/Abril2026/laslajas.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga Y Lajas",
@@ -495,7 +495,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Miradores de Raquira",
     fechas: ["Mayo 24"],
-    precio: 280000,
+    precio: 300000,
     imagen: "/Mayo2026/raquira.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Miradores de Raquira",
@@ -519,7 +519,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Junio 2026",
     fechas: ["Junio 1 - 30"],
-    precio: 145000,
+    precio: 130000,
     imagen: "/Junio2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Junio 2026",
@@ -637,7 +637,7 @@ export const flyers: FlyerPlan[] = [
     mes: "julio",
     tipo: "terrestre",
     titulo: "Cali, Lago Calima y Buga",
-    fechas: ["Julio 10 al 12"],
+    fechas: ["Julio 11 al 12"],
     precio: 600000,
     imagen: "/Julio2026/cali.jpg",
     whatsappBase:
@@ -675,7 +675,7 @@ export const flyers: FlyerPlan[] = [
     mes: "julio",
     tipo: "terrestre",
     titulo: "Villa de Leyva",
-    fechas: ["Julio 18 al 20"],
+    fechas: ["Julio 19 al 20"],
     precio: 630000,
     imagen: "/Julio2026/boyaca.jpg",
     whatsappBase:
@@ -686,7 +686,7 @@ export const flyers: FlyerPlan[] = [
     mes: "julio",
     tipo: "terrestre",
     titulo: "Eje Cafetero",
-    fechas: ["Julio 17 al 20"],
+    fechas: ["Julio 18 al 20"],
     precio: 910000,
     imagen: "/Julio2026/ejecafe.jpg",
     whatsappBase:
@@ -697,7 +697,7 @@ export const flyers: FlyerPlan[] = [
     mes: "julio",
     tipo: "terrestre",
     titulo: "Cafam Melgar",
-    fechas: ["Julio 18 al 20"],
+    fechas: ["Julio 26"],
     precio: 170000,
     imagen: "/Julio2026/cafam.jpg",
     whatsappBase:
@@ -835,7 +835,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Villa de Leyva y Ráquira",
     fechas: ["Septiembre 5 al 6"],
-    precio: 170000,
+    precio: 630000,
     imagen: "/Septiembre2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Villa de Leyva y Ráquira",
