@@ -294,7 +294,7 @@ export const flyers: FlyerPlan[] = [
     mes: "marzo",
     tipo: "terrestre",
     titulo: "Medellín + Coveñas",
-    fechas: ["Marzo 18 al 23"],
+    fechas: ["Marzo 14 al 15"],
     precio: 1380000,
     imagen: "/Marzo2026/medellincovenas.jpg",
     whatsappBase:
@@ -323,15 +323,15 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Boyacá",
   },
           {
-    id: "playahawai-marzo",
+    id: "costacaribe-marzo",
     mes: "marzo",
     tipo: "terrestre",
-    titulo: "Playa Hawai",
-    fechas: ["Marzo 29"],
-    precio: 145000,
-    imagen: "/Marzo2026/playahawai.jpg",
+    titulo: "Costa Caribe",
+    fechas: ["Marzo 30 al Abril 5"],
+    precio: 1680000,
+    imagen: "/Marzo2026/costacaribe.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai",
+      "Hola Conexiones360, quiero información del plan Costa Caribe",
   },
   //Abril
         {
@@ -366,7 +366,7 @@ export const flyers: FlyerPlan[] = [
     mes: "abril",
     tipo: "terrestre",
     titulo: "Santuario de las Lajas y Buga",
-    fechas: ["Abril 1 al 5"],
+    fechas: ["Abril 2 al 5"],
     precio: 850000,
     imagen: "/Abril2026/laslajas.jpg",
     whatsappBase:
@@ -440,6 +440,22 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Mayo 2026",
   },
+              {
+    id: "piscilago-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Mayo 3",
+      "Mayo 10",
+      "Mayo 18",
+      "Mayo 24",
+    ],
+    precio: 170000,
+    imagen: "/Mayo2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
           {
     id: "medellin-mayo",
     mes: "mayo",
@@ -472,22 +488,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Mayo2026/caliylago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
-  },
-            {
-    id: "piscilago-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Mayo 3",
-      "Mayo 10",
-      "Mayo 18",
-      "Mayo 24",
-    ],
-    precio: 170000,
-    imagen: "/Mayo2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
             {
     id: "tolucoveñas-mayo",
