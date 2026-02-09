@@ -1096,5 +1096,101 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
   },
-  
+
+// DICIEMBRE
+
+            {
+    id: "listadocompleto-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Programación Diciembre 2026",
+    fechas: ["Diciembre 1 - 31"],
+    precio: 170000,
+    imagen: "/Diciembre2026/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Diciembre 2026",
+  },
+              {
+    id: "piscilago-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Diciembre 6",
+      "Diciembre 13",
+      "Diciembre 20",
+    ],
+    precio: 170000,
+    imagen: "/Diciembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+              {
+    id: "ejecafetero-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Diciembre 6 al 8"],
+    precio: 960000,
+    imagen: "/Diciembre2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "costacaribe-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Costa Caribe",
+    fechas: ["Diciembre 10 al 17"],
+    precio: 1600000,
+    imagen: "/Diciembre2026/costacaribe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Costa Caribe",
+  },  
+              {
+    id: "cali-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Cali, Lago Calima y Buga",
+    fechas: ["Diciembre 12 al 13"],
+    precio: 630000,
+    imagen: "/Diciembre2026/calilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cali, Lago Calima y Buga",
+  },
+                {
+    id: "parquejaimeduque-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Parque Jaime Duque con Piscilago",
+    fechas: ["Diciembre 19 al 20"],
+    precio: 630000,
+    imagen: "/Diciembre2026/jaimeduque.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Parque Jaime Duque con Piscilago",
+  },
+                {
+    id: "AlumbradoMedellin-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Alumbrado Navideño Medellín",
+    fechas: ["Diciembre 19 al 21"],
+    precio: 970000,
+    imagen: "/Diciembre2026/medellin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Alumbrado Medellín",
+  },
+                {
+    id: "boyaca-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Luces Navideñas Boyacá",
+    fechas: ["Diciembre 31 al Enero 3"],
+    precio: 1230000,
+    imagen: "/Diciembre2026/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Boyacá",
+  },
+   
+
 ];
