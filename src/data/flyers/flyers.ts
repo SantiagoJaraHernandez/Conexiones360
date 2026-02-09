@@ -366,7 +366,7 @@ export const flyers: FlyerPlan[] = [
     mes: "abril",
     tipo: "terrestre",
     titulo: "Eje Cafetero",
-    fechas: ["Abril 1 al 4"],
+    fechas: ["Abril 2 al 4"],
     precio: 960000,
     imagen: "/Abril2026/ejecafe.jpg",
     whatsappBase:
@@ -424,7 +424,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Mayo 2026",
     fechas: ["Mayo 1 - 31"],
-    precio: 145000,
+    precio: 170000,
     imagen: "/Mayo2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Mayo 2026",
