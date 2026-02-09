@@ -323,7 +323,7 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Boyacá",
   },
           {
-    id: "costacaribe-marzo",
+    id: "costacaribec-marzo",
     mes: "marzo",
     tipo: "terrestre",
     titulo: "Costa Caribe",
