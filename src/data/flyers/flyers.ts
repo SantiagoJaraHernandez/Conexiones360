@@ -246,7 +246,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Marzo 2026",
     fechas: ["Marzo 1 - 30"],
-    precio: 145000,
+    precio: 120000,
     imagen: "/Marzo2026/listamarzo.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Marzo 2026",
@@ -255,14 +255,14 @@ export const flyers: FlyerPlan[] = [
     id: "piscilago-marzo",
     mes: "marzo",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
+    titulo: "Piscilago Pasadía 2X",
     fechas: [
       "Marzo 1",
       "Marzo 15",
       "Marzo 22",
       "Marzo 29",
     ],
-    precio: 170000,
+    precio: 320000,
     imagen: "/Marzo2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
@@ -277,6 +277,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Marzo2026/buga.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
+            {
+    id: "haciendanapoles-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles",
+    fechas: ["Marzo 18 al 23"],
+    precio: 650000,
+    imagen: "/Marzo2026/haciendanapoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
   },
           {
     id: "medellin-coveñas",
@@ -335,17 +346,6 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Abril 2026",
   },
         {
-    id: "costacaribe-abril",
-    mes: "abril",
-    tipo: "terrestre",
-    titulo: "Costa Caribe",
-    fechas: ["Marzo 30 al Abril 5"],
-    precio: 1680000,
-    imagen: "/Abril2026/costacaribe.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Costa Caribe",
-  },
-        {
     id: "piscilago-abril",
     mes: "abril",
     tipo: "terrestre",
@@ -361,18 +361,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
   },
-        {
-    id: "ejecafetero-abril",
-    mes: "abril",
-    tipo: "terrestre",
-    titulo: "Eje Cafetero",
-    fechas: ["Abril 2 al 4"],
-    precio: 960000,
-    imagen: "/Abril2026/ejecafe.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Eje Cafetero",
-  },
-          {
+            {
     id: "bugaylajas-abril",
     mes: "abril",
     tipo: "terrestre",
@@ -384,12 +373,23 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Buga Y Lajas",
   },
         {
+    id: "ejecafetero-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Abril 2 al 4"],
+    precio: 960000,
+    imagen: "/Abril2026/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+        {
     id: "playahawai-abril",
     mes: "abril",
     tipo: "terrestre",
-    titulo: "Playa Hawai",
-    fechas: ["Abril 29"],
-    precio: 145000,
+    titulo: "Playa Hawai 2X",
+    fechas: ["Abril 12"],
+    precio: 290000,
     imagen: "/Abril2026/playahawai.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
@@ -398,9 +398,9 @@ export const flyers: FlyerPlan[] = [
     id: "parquejaimeduque-abril",
     mes: "abril",
     tipo: "terrestre",
-    titulo: "Parque Jaime Duque",
-    fechas: ["Abril 18"],
-    precio: 330000,
+    titulo: "Parque Jaime Duque con Piscilago",
+    fechas: ["Abril 18 al 19"],
+    precio: 630000,
     imagen: "/Abril2026/jaimeduque.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Parque Jaime Duque",
@@ -415,6 +415,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Abril2026/ukumari.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Ukumarí",
+  },
+          {
+    id: "medellin-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Medellín, Guatapé y Nápoles",
+    fechas: ["Abril 30 al Mayo 3"],
+    precio: 899000,
+    imagen: "/Abril2026/medellin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Medellín",
   },
 
 // Mayo
