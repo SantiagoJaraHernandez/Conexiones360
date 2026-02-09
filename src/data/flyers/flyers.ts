@@ -446,10 +446,21 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Mayo 1"],
-    precio: 170000,
+    precio: 160000,
     imagen: "/Mayo2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam",
+  },
+                {
+    id: "bugacali-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Buga, Cali y Lago Calima",
+    fechas: ["Mayo 9 al 10"],
+    precio: 600000,
+    imagen: "/Mayo2026/caliylago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
   },
             {
     id: "piscilago-mayo",
@@ -460,7 +471,7 @@ export const flyers: FlyerPlan[] = [
       "Mayo 3",
       "Mayo 10",
       "Mayo 18",
-      "Mayo 31",
+      "Mayo 24",
     ],
     precio: 170000,
     imagen: "/Mayo2026/piscilago.jpg",
@@ -489,6 +500,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
+                {
+    id: "haciendanapoles-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles",
+    fechas: ["Mayo 17"],
+    precio: 370000,
+    imagen: "/Mayo2026/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
               {
     id: "miradoresraquira-mayo",
     mes: "mayo",
@@ -499,17 +521,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Mayo2026/raquira.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Miradores de Raquira",
-  },
-              {
-    id: "bugacali-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Buga, Cali y Lago Calima",
-    fechas: ["Mayo 29 al 31"],
-    precio: 600000,
-    imagen: "/Mayo2026/caliylago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
   },
 
 // JUNIO
