@@ -1190,7 +1190,5 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Diciembre2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Boyacá",
-  },
-   
-
+  },   
 ];
