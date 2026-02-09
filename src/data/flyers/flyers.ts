@@ -456,18 +456,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
-          {
-    id: "medellin-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Medellín, Guatapé y Nápoles",
-    fechas: ["Abril 30 al Mayo 3"],
-    precio: 899000,
-    imagen: "/Mayo2026/medellin.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
-  },
-          {
+            {
     id: "cafam-mayo",
     mes: "mayo",
     tipo: "terrestre",
