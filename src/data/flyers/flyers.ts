@@ -3,7 +3,7 @@ export type FlyerPlan = {
   mes: "enero" | "febrero" | "marzo" | "abril" | "mayo" | "junio" | "julio" | "agosto" | "septiembre" | "octubre" | "noviembre" | "diciembre";
   tipo: "terrestre" | "aereo";
   titulo: string;
-  fechas: string[]; // 👈 AQUÍ LA CLAVE
+  fechas: string[]; 
   precio: number;
   imagen: string;
   whatsappBase: string;
@@ -398,12 +398,12 @@ export const flyers: FlyerPlan[] = [
     id: "parquejaimeduque-abril",
     mes: "abril",
     tipo: "terrestre",
-    titulo: "Parque Jaime Duque con Piscilago",
+    titulo: "Guatavita y Parque Jaime Duque",
     fechas: ["Abril 18 al 19"],
     precio: 630000,
     imagen: "/Abril2026/jaimeduque.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Parque Jaime Duque",
+      "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
   },
           {
     id: "ukumari-abril",
