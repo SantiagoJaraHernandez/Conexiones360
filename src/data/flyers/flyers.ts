@@ -246,7 +246,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Marzo 2026",
     fechas: ["Marzo 1 - 30"],
-    precio: 120000,
+    precio: 130000,
     imagen: "/Marzo2026/listamarzo.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Marzo 2026",
@@ -258,9 +258,10 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía 2X",
     fechas: [
       "Marzo 1",
+      "Marzo 15",
       "Marzo 23",
     ],
-    precio: 370000,
+    precio: 350000,
     imagen: "/Marzo2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
@@ -271,7 +272,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Peregrinación Buga",
     fechas: ["Marzo 14"],
-    precio: 120000,
+    precio: 130000,
     imagen: "/Marzo2026/buga.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinación Buga",
@@ -282,7 +283,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Marzo 15"],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Marzo2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
