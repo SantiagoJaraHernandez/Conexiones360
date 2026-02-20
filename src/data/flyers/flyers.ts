@@ -372,12 +372,11 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Piscilago Pasadía",
     fechas: [
-      "Abril 1",
-      "Abril 15",
-      "Abril 22",
-      "Abril 29",
+      "Abril 12",
+      "Abril 19",
+      "Abril 26",
     ],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Abril2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
@@ -410,10 +409,21 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Playa Hawai 2X",
     fechas: ["Abril 12"],
-    precio: 290000,
+    precio: 330000,
     imagen: "/Abril2026/playahawai.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+          {
+    id: "cafam-abril",
+    mes: "abril",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Abril 12"],
+    precio: 175000,
+    imagen: "/Abril2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
   },
             {
     id: "parquejaimeduque-abril",
