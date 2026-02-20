@@ -258,11 +258,9 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía 2X",
     fechas: [
       "Marzo 1",
-      "Marzo 15",
-      "Marzo 22",
-      "Marzo 29",
+      "Marzo 23",
     ],
-    precio: 320000,
+    precio: 370000,
     imagen: "/Marzo2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago",
@@ -277,6 +275,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Marzo2026/buga.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
+            {
+    id: "cafam-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Marzo 15"],
+    precio: 170000,
+    imagen: "/Marzo2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
   },
             {
     id: "haciendanapoles-marzo",
@@ -321,6 +330,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Marzo2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Boyacá",
+  },
+            {
+    id: "sanagustin-marzo",
+    mes: "marzo",
+    tipo: "terrestre",
+    titulo: "San Agustín + Isnos",
+    fechas: ["Marzo 29"],
+    precio: 270000,
+    imagen: "/Marzo2026/sanagustin.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan San Agustín",
   },
           {
     id: "costacaribec-marzo",
