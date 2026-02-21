@@ -677,7 +677,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Julio 2026",
     fechas: ["Julio 1 - 26"],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Julio2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Julio 2026",
@@ -687,12 +687,12 @@ export const flyers: FlyerPlan[] = [
     id: "haciendanapoles-julio",
     mes: "julio",
     tipo: "terrestre",
-    titulo: "Hacienda Nápoles",
-    fechas: ["Julio 5"],
-    precio: 360000,
+    titulo: "Guatapé + Hacienda Nápoles",
+    fechas: ["Julio 3 al 5"],
+    precio: 650000,
     imagen: "/Julio2026/napoles.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+      "Hola Conexiones360, quiero información del plan Guatapé + Hacienda Nápoles",
   },
               {
     id: "cali-julio",
@@ -712,11 +712,10 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía",
     fechas: [
       "Julio 5",
-      "Julio 12",
       "Julio 20",
       "Julio 26",
     ],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Julio2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
@@ -738,7 +737,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Villa de Leyva",
     fechas: ["Julio 19 al 20"],
-    precio: 630000,
+    precio: 640000,
     imagen: "/Julio2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Villa de Leyva",
@@ -755,15 +754,26 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
                 {
-    id: "cafam-julio",
+    id: "nevadodelruiz-julio",
     mes: "julio",
     tipo: "terrestre",
-    titulo: "Cafam Melgar",
+    titulo: "Nevado del Ruiz",
     fechas: ["Julio 26"],
-    precio: 170000,
-    imagen: "/Julio2026/cafam.jpg",
+    precio: 350000,
+    imagen: "/Julio2026/nevadoruiz.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
+  },
+                  {
+    id: "pasadiaprado-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Pasadía Prado Tolima",
+    fechas: ["Julio 26"],
+    precio: 198000,
+    imagen: "/Julio2026/prado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan pasadía Prado Tolima",
   },
 
 // AGOSTO
