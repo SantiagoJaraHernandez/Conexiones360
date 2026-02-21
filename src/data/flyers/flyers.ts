@@ -547,7 +547,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Hacienda Nápoles",
     fechas: ["Mayo 17"],
-    precio: 370000,
+    precio: 380000,
     imagen: "/Mayo2026/napoles.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
@@ -571,7 +571,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Junio 2026",
     fechas: ["Junio 1 - 30"],
-    precio: 130000,
+    precio: 165000,
     imagen: "/Junio2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Junio 2026",
@@ -587,6 +587,21 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan San Andrés",
   },
+              {
+    id: "piscilago-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Junio 8",
+      "Junio 15",
+      "Junio 29",
+    ],
+    precio: 175000,
+    imagen: "/Junio2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
             {
     id: "medellin-junio",
     mes: "junio",
@@ -597,22 +612,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Junio2026/medellin.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
-  },
-            {
-    id: "piscilago-junio",
-    mes: "junio",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Junio 8",
-      "Junio 15",
-      "Junio 21",
-      "Junio 29",
-    ],
-    precio: 170000,
-    imagen: "/Junio2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
             {
     id: "buga-junio",
@@ -653,10 +652,21 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Playa Hawai",
     fechas: ["Junio 28"],
-    precio: 160000,
+    precio: 165000,
     imagen: "/Junio2026/playahawai.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
+  },
+              {
+    id: "guatavita-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Guatavita y Parque Jaime Duque",
+    fechas: ["Junio 28"],
+    precio: 680000,
+    imagen: "/Junio2026/guatavita.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
   },
 
 // JULIO 
