@@ -361,7 +361,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Abril 2026",
     fechas: ["Abril 1 - 30"],
-    precio: 145000,
+    precio: 175000,
     imagen: "/Abril2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Abril 2026",
@@ -466,10 +466,21 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Mayo 2026",
     fechas: ["Mayo 1 - 31"],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Mayo2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Mayo 2026",
+  },
+                {
+    id: "nevadodelruiz-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Nevado del Ruiz",
+    fechas: ["Mayo 1"],
+    precio: 350000,
+    imagen: "/Mayo2026/nevadoruiz.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
               {
     id: "piscilago-mayo",
@@ -478,11 +489,10 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía",
     fechas: [
       "Mayo 3",
-      "Mayo 10",
       "Mayo 18",
       "Mayo 24",
     ],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Mayo2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
@@ -492,8 +502,8 @@ export const flyers: FlyerPlan[] = [
     mes: "mayo",
     tipo: "terrestre",
     titulo: "Cafam Melgar",
-    fechas: ["Mayo 1"],
-    precio: 160000,
+    fechas: ["Mayo 10"],
+    precio: 175000,
     imagen: "/Mayo2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam",
