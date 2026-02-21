@@ -758,7 +758,7 @@ export const flyers: FlyerPlan[] = [
     mes: "julio",
     tipo: "terrestre",
     titulo: "Nevado del Ruiz",
-    fechas: ["Julio 26"],
+    fechas: ["Julio 25"],
     precio: 350000,
     imagen: "/Julio2026/nevadoruiz.jpg",
     whatsappBase:
