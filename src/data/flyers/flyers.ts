@@ -1124,45 +1124,54 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Noviembre 2026",
   },
+              {
+    id: "nevadodelruiz-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Nevado del Ruiz",
+    fechas: ["Noviembre 1"],
+    precio: 350000,
+    imagen: "/Noviembre2026/nevado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
+  },
+              {
+    id: "cafam-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Noviembre 2"],
+    precio: 175000,
+    imagen: "/Noviembre2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+  },
+              {
+    id: "guatavita-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Guatavita y Parque Jaime Duque",
+    fechas: ["Noviembre 6 al 8"],
+    precio: 630000,
+    imagen: "/Noviembre2026/guatavita.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
+  },
                 {
     id: "piscilago-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
     titulo: "Piscilago Pasadía",
     fechas: [
-      "Noviembre 2",
-      "Noviembre 8",
       "Noviembre 16",
       "Noviembre 29",
     ],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Noviembre2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
-              {
-    id: "raquira-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Raquira y Villa de Leyva",
-    fechas: ["Noviembre 8"],
-    precio: 300000,
-    imagen: "/Noviembre2026/raquira.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Raquira y Villa de Leyva",
-  },
-              {
-    id: "cali-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Buga + Cali",
-    fechas: ["Noviembre 14 al 15"],
-    precio: 600000,
-    imagen: "/Noviembre2026/caliconlago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cali",
-  },
-              {
+                {
     id: "ejecafetero-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
@@ -1173,16 +1182,27 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
-              {
-    id: "jaimeduqueconpiscilago-noviembre",
+                {
+    id: "cali-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
-    titulo: "Jaime Duque con Piscilago",
-    fechas: ["Noviembre 21 al 22"],
-    precio: 630000,
-    imagen: "/Noviembre2026/jaimeduque.jpg",
+    titulo: "Buga + Cali",
+    fechas: ["Noviembre 14 al 15"],
+    precio: 600000,
+    imagen: "/Noviembre2026/caliconlago.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Jaime Duque con Piscilago",
+      "Hola Conexiones360, quiero información del plan Cali",
+  },
+                {
+    id: "playahawai-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Playa Hawai",
+    fechas: ["Noviembre 22"],
+    precio: 600000,
+    imagen: "/Noviembre2026/hawaii.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
               {
     id: "costacaribe-noviembre",
@@ -1200,7 +1220,7 @@ export const flyers: FlyerPlan[] = [
     mes: "noviembre",
     tipo: "terrestre",
     titulo: "Ukumarí + Consotá",
-    fechas: ["Noviembre 29"],
+    fechas: ["Noviembre 28"],
     precio: 340000,
     imagen: "/Noviembre2026/consota.jpg",
     whatsappBase:
