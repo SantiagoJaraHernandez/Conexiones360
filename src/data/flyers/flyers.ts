@@ -905,6 +905,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Septiembre 2026",
   },
+                {
+    id: "boyaca-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Guatavita y parque Jaime Duque",
+    fechas: ["Septiembre 4 al 6"],
+    precio: 630000,
+    imagen: "/Septiembre2026/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Guatavita y parque Jaime Duque",
+  },
               {
     id: "piscilago-septiembre",
     mes: "septiembre",
@@ -912,25 +923,12 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía 2X",
     fechas: [
       "Septiembre 6",
-      "Septiembre 13",
       "Septiembre 20",
-      "Septiembre 27",
     ],
-    precio: 320000,
+    precio: 350000,
     imagen: "/Septiembre2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
-              {
-    id: "boyaca-septiembre",
-    mes: "septiembre",
-    tipo: "terrestre",
-    titulo: "Villa de Leyva y Ráquira",
-    fechas: ["Septiembre 5 al 6"],
-    precio: 630000,
-    imagen: "/Septiembre2026/boyaca.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Villa de Leyva y Ráquira",
   },
               {
     id: "ejecafetero-septiembre",
@@ -942,6 +940,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Septiembre2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+                {
+    id: "playahawai-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Playa Hawai 2X",
+    fechas: ["Septiembre 13"],
+    precio: 300000,
+    imagen: "/Septiembre2026/playahawai.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
               {
     id: "arboletesycoveñas-septiembre",
@@ -965,16 +974,16 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali + Buga",
   },
-              {
-    id: "playahawai-septiembre",
+                {
+    id: "nevadodelruiz-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Playa Hawai 2X",
-    fechas: ["Septiembre 13"],
-    precio: 300000,
-    imagen: "/Septiembre2026/playahawai.jpg",
+    titulo: "Nevado del Ruiz",
+    fechas: ["Septiembre 27"],
+    precio: 350000,
+    imagen: "/Septiembre2026/nevado.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai",
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
               {
     id: "guatape-septiembre",
