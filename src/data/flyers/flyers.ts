@@ -1017,14 +1017,23 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía 2X",
     fechas: [
       "Octubre 4",
-      "Octubre 12",
       "Octubre 18",
-      "Octubre 25",
     ],
-    precio: 320000,
+    precio: 350000,
     imagen: "/Octubre2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+                {
+    id: "zipaquira-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Zipaquirá y Villa de Leyva",
+    fechas: ["Octubre 2 al 4"],
+    precio: 640000,
+    imagen: "/Octubre2026/zipaquira.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Zipaquirá y Villa de Leyva",
   },
               {
     id: "santamartayguajira-octubre",
@@ -1059,13 +1068,24 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
+                {
+    id: "napoles-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles",
+    fechas: ["Octubre 17"],
+    precio: 380000,
+    imagen: "/Octubre2026/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
               {
     id: "cafam-octubre",
     mes: "octubre",
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Octubre 18"],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Octubre2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
