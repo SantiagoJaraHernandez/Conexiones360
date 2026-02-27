@@ -796,12 +796,10 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía",
     fechas: [
       "Agosto 2",
-      "Agosto 9",
       "Agosto 17",
-      "Agosto 23",
       "Agosto 30",
     ],
-    precio: 170000,
+    precio: 175000,
     imagen: "/Agosto2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
@@ -817,18 +815,18 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Feria de las Flores Medellín",
   },
-              {
-    id: "haciendanapoles-agosto",
+                {
+    id: "ballenas-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Hacienda Nápoles",
-    fechas: ["Agosto 9"],
-    precio: 360000,
-    imagen: "/Agosto2026/napoles.jpg",
+    titulo: "Ballenas del Pacífico",
+    fechas: ["Agosto 7 al 9"],
+    precio: 1810000,
+    imagen: "/Agosto2026/ballenas.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+      "Hola Conexiones360, quiero información del plan Ballenas del Pacífico",
   },
-              {
+                {
     id: "capurgana-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -839,7 +837,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Capurganá",
   },
-              {
+                {
     id: "ejecafetero-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -851,26 +849,48 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
               {
+    id: "haciendanapoles-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Gutapé + Hacienda Nápoles",
+    fechas: ["Agosto 16 al 17"],
+    precio: 650000,
+    imagen: "/Agosto2026/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
+                {
+    id: "prado-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Pasadía Prado Tolima",
+    fechas: ["Agosto 23"],
+    precio: 198000,
+    imagen: "/Agosto2026/prado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Pasadía Prado Tolima",
+  },
+              {
     id: "termales-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Termales Santa Rosa de Cabal",
-    fechas: ["Agosto 23"],
+    titulo: "Termales Santa Rosa de Cabal + Salento",
+    fechas: ["Agosto 29"],
     precio: 350000,
     imagen: "/Agosto2026/termales.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
+      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal + Salento",
   },
               {
-    id: "jaimeduque-agosto",
+    id: "cafam-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Parque Jaime Duque + Piscilago",
-    fechas: ["Agosto 29 al 30"],
+    titulo: "Cafam Melgar",
+    fechas: ["Agosto 30"],
     precio: 630000,
-    imagen: "/Agosto2026/piscilagoyjaime.jpg",
+    imagen: "/Agosto2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Parque Jaime Duque + Piscilago",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
   },
 // SEPTIEMBRE
 
