@@ -1240,22 +1240,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Diciembre 2026",
   },
-              {
-    id: "piscilago-diciembre",
-    mes: "diciembre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Diciembre 6",
-      "Diciembre 13",
-      "Diciembre 20",
-    ],
-    precio: 170000,
-    imagen: "/Diciembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
-              {
+                {
     id: "ejecafetero-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
@@ -1265,6 +1250,31 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Diciembre2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+              {
+    id: "piscilago-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Diciembre 6",
+      "Diciembre 20",
+    ],
+    precio: 175000,
+    imagen: "/Diciembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+                {
+    id: "cafam-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar",
+    fechas: ["Diciembre 8"],
+    precio: 175000,
+    imagen: "/Diciembre2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
   },
               {
     id: "costacaribe-diciembre",
@@ -1282,22 +1292,33 @@ export const flyers: FlyerPlan[] = [
     mes: "diciembre",
     tipo: "terrestre",
     titulo: "Cali, Lago Calima y Buga",
-    fechas: ["Diciembre 12 al 13"],
+    fechas: ["Diciembre 11 al 13"],
     precio: 630000,
     imagen: "/Diciembre2026/calilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali, Lago Calima y Buga",
   },
                 {
-    id: "parquejaimeduque-diciembre",
+    id: "prado-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
-    titulo: "Parque Jaime Duque con Piscilago",
-    fechas: ["Diciembre 19 al 20"],
-    precio: 630000,
-    imagen: "/Diciembre2026/jaimeduque.jpg",
+    titulo: "Pasadía Prado Tolima",
+    fechas: ["Diciembre 13"],
+    precio: 198000,
+    imagen: "/Diciembre2026/prado.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Parque Jaime Duque con Piscilago",
+      "Hola Conexiones360, quiero información del plan Pasadía Prado Tolima",
+  },
+                {
+    id: "termales-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Termales Santa Rosa de Cabal",
+    fechas: ["Diciembre 20"],
+    precio: 350000,
+    imagen: "/Diciembre2026/termales.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
   },
                 {
     id: "AlumbradoMedellin-diciembre",
