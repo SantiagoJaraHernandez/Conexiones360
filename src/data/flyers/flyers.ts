@@ -1233,9 +1233,8 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía",
     fechas: [
       "Diciembre 6",
-      "Diciembre 20",
     ],
-    precio: 175000,
+    precio: 180000,
     imagen: "/Diciembre2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
@@ -1246,7 +1245,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Diciembre 8"],
-    precio: 175000,
+    precio: 160000,
     imagen: "/Diciembre2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
@@ -1279,7 +1278,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Pasadía Prado Tolima",
     fechas: ["Diciembre 13"],
-    precio: 198000,
+    precio: 199000,
     imagen: "/Diciembre2026/prado.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Pasadía Prado Tolima",
