@@ -482,21 +482,18 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
-              {
-    id: "piscilago-mayo",
+                {
+    id: "pasadiamanogigante-mayo",
     mes: "mayo",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Mayo 3",
-      "Mayo 18",
-      "Mayo 24",
-    ],
-    precio: 175000,
-    imagen: "/Mayo2026/piscilago.jpg",
+    titulo: "Pasadia Mano del Gigante",
+    fechas: ["Mayo 1"],
+    precio: 180000,
+    imagen: "/Mayo2026/manogigante.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
+
             {
     id: "cafam-mayo",
     mes: "mayo",
