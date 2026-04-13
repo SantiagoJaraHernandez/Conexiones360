@@ -895,20 +895,6 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Guatavita y parque Jaime Duque",
   },
               {
-    id: "piscilago-septiembre",
-    mes: "septiembre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía 2X",
-    fechas: [
-      "Septiembre 6",
-      "Septiembre 20",
-    ],
-    precio: 350000,
-    imagen: "/Septiembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
-              {
     id: "ejecafetero-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
@@ -953,15 +939,17 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Cali + Buga",
   },
                 {
-    id: "nevadodelruiz-septiembre",
+    id: "piscilago-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Nevado del Ruiz",
-    fechas: ["Septiembre 27"],
-    precio: 350000,
-    imagen: "/Septiembre2026/nevado.jpg",
+    titulo: "Piscilago Pasadía 2X",
+    fechas: [
+      "Septiembre 20",
+    ],
+    precio: 360000,
+    imagen: "/Septiembre2026/piscilago.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
               {
     id: "guatape-septiembre",
@@ -973,6 +961,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Septiembre2026/guatape.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Guatapé + Nápoles",
+  },
+                  {
+    id: "nevadodelruiz-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Nevado del Ruiz",
+    fechas: ["Septiembre 27"],
+    precio: 350000,
+    imagen: "/Septiembre2026/nevado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
 
 //OCTUBRE
