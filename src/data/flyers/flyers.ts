@@ -572,32 +572,6 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Junio 2026",
   },
-          {
-    id: "sanandres-junio",
-    mes: "junio",
-    tipo: "terrestre",
-    titulo: "San Andrés",
-    fechas: ["Junio 4 al 7"],
-    precio: 1980000,
-    imagen: "/Junio2026/sanandres.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan San Andrés",
-  },
-              {
-    id: "piscilago-junio",
-    mes: "junio",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Junio 8",
-      "Junio 15",
-      "Junio 29",
-    ],
-    precio: 175000,
-    imagen: "/Junio2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
             {
     id: "medellin-junio",
     mes: "junio",
@@ -609,13 +583,24 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
   },
+              {
+    id: "buga2-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Buga + Pasto + Lajas",
+    fechas: ["Junio 11 al 15"],
+    precio: 120000,
+    imagen: "/Junio2026/lajas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación Buga",
+  },
             {
     id: "buga-junio",
     mes: "junio",
     tipo: "terrestre",
     titulo: "Peregrinación Buga",
     fechas: ["Junio 14"],
-    precio: 130000,
+    precio: 120000,
     imagen: "/Junio2026/buga.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinación Buga",
@@ -646,9 +631,9 @@ export const flyers: FlyerPlan[] = [
     id: "playahawai-junio",
     mes: "junio",
     tipo: "terrestre",
-    titulo: "Playa Hawai",
+    titulo: "Playa Hawai 2X",
     fechas: ["Junio 28"],
-    precio: 165000,
+    precio: 290000,
     imagen: "/Junio2026/playahawai.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
@@ -700,21 +685,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Julio2026/cali.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali",
-  },
-              {
-    id: "piscilago-julio",
-    mes: "julio",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Julio 5",
-      "Julio 20",
-      "Julio 26",
-    ],
-    precio: 175000,
-    imagen: "/Julio2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
             {
     id: "tintipanycovenas-julio",
@@ -770,6 +740,19 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Julio2026/prado.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan pasadía Prado Tolima",
+  },
+                {
+    id: "piscilago-julio",
+    mes: "julio",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Julio 26",
+    ],
+    precio: 184000,
+    imagen: "/Julio2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
 
 // AGOSTO
