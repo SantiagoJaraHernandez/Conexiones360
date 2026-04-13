@@ -768,22 +768,18 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Agosto 2026",
   },
-              {
-    id: "piscilago-agosto",
+                {
+    id: "cafam-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Agosto 2",
-      "Agosto 17",
-      "Agosto 30",
-    ],
-    precio: 175000,
-    imagen: "/Agosto2026/piscilago.jpg",
+    titulo: "Cafam Melgar",
+    fechas: ["Agosto 2"],
+    precio: 160000,
+    imagen: "/Agosto2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar",
   },
-            {
+              {
     id: "feriadelasflores-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -794,18 +790,18 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Feria de las Flores Medellín",
   },
-                {
-    id: "ballenas-agosto",
+              {
+    id: "buga2-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Ballenas del Pacífico",
-    fechas: ["Agosto 7 al 9"],
-    precio: 1810000,
-    imagen: "/Agosto2026/ballenas.jpg",
+    titulo: "Buga, Lajas y Tulcán",
+    fechas: ["Agosto 6 al 9"],
+    precio: 850000,
+    imagen: "/Agosto2026/feriaflores.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Ballenas del Pacífico",
+      "Hola Conexiones360, quiero información del plan Buga, Lajas y Tulcán",
   },
-                {
+                  {
     id: "capurgana-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -816,7 +812,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Capurganá",
   },
-                {
+                  {
     id: "ejecafetero-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -827,18 +823,31 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
-              {
+                {
     id: "haciendanapoles-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Gutapé + Hacienda Nápoles",
+    titulo: "Guatapé + Hacienda Nápoles",
     fechas: ["Agosto 16 al 17"],
     precio: 650000,
     imagen: "/Agosto2026/napoles.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
   },
-                {
+              {
+    id: "piscilago-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Agosto 17",
+    ],
+    precio: 180000,
+    imagen: "/Agosto2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+                  {
     id: "prado-agosto",
     mes: "agosto",
     tipo: "terrestre",
@@ -854,23 +863,13 @@ export const flyers: FlyerPlan[] = [
     mes: "agosto",
     tipo: "terrestre",
     titulo: "Termales Santa Rosa de Cabal + Salento",
-    fechas: ["Agosto 29"],
+    fechas: ["Agosto 30"],
     precio: 350000,
     imagen: "/Agosto2026/termales.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal + Salento",
   },
-              {
-    id: "cafam-agosto",
-    mes: "agosto",
-    tipo: "terrestre",
-    titulo: "Cafam Melgar",
-    fechas: ["Agosto 30"],
-    precio: 630000,
-    imagen: "/Agosto2026/cafam.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
-  },
+
 // SEPTIEMBRE
 
             {
