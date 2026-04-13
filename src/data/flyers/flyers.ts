@@ -797,7 +797,7 @@ export const flyers: FlyerPlan[] = [
     titulo: "Buga, Lajas y Tulcán",
     fechas: ["Agosto 6 al 9"],
     precio: 850000,
-    imagen: "/Agosto2026/feriaflores.jpg",
+    imagen: "/Agosto2026/lajas.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga, Lajas y Tulcán",
   },
