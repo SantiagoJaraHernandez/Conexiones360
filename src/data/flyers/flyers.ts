@@ -491,19 +491,7 @@ export const flyers: FlyerPlan[] = [
     precio: 180000,
     imagen: "/Mayo2026/manogigante.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
-  },
-
-            {
-    id: "cafam-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Cafam Melgar",
-    fechas: ["Mayo 10"],
-    precio: 175000,
-    imagen: "/Mayo2026/cafam.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam",
+      "Hola Conexiones360, quiero información del plan mano del gigante",
   },
                 {
     id: "bugacali-mayo",
@@ -515,6 +503,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Mayo2026/caliylago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
+  },
+              {
+    id: "cafam-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar 2X",
+    fechas: ["Mayo 10"],
+    precio: 310000,
+    imagen: "/Mayo2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam",
   },
             {
     id: "tolucoveñas-mayo",
@@ -544,7 +543,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Hacienda Nápoles",
     fechas: ["Mayo 17"],
-    precio: 380000,
+    precio: 360000,
     imagen: "/Mayo2026/napoles.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
