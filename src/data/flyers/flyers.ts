@@ -987,21 +987,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Octubre 2026",
   },
-              {
-    id: "piscilago-octubre",
-    mes: "octubre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía 2X",
-    fechas: [
-      "Octubre 4",
-      "Octubre 18",
-    ],
-    precio: 350000,
-    imagen: "/Octubre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
-                {
+                  {
     id: "zipaquira-octubre",
     mes: "octubre",
     tipo: "terrestre",
@@ -1012,6 +998,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Zipaquirá y Villa de Leyva",
   },
+
               {
     id: "santamartayguajira-octubre",
     mes: "octubre",
@@ -1056,16 +1043,29 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
   },
-              {
-    id: "cafam-octubre",
+                {
+    id: "piscilago-octubre",
     mes: "octubre",
     tipo: "terrestre",
-    titulo: "Cafam Melgar",
-    fechas: ["Octubre 18"],
-    precio: 175000,
-    imagen: "/Octubre2026/cafam.jpg",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Octubre 18",
+    ],
+    precio: 180000,
+    imagen: "/Octubre2026/piscilago.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
+              {
+    id: "buga-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Peregrinacion Buga",
+    fechas: ["Octubre 24"],
+    precio: 120000,
+    imagen: "/Octubre2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinacion Buga",
   },
               {
     id: "termales-octubre",
