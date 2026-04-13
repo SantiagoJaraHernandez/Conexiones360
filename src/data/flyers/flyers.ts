@@ -572,6 +572,20 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Junio 2026",
   },
+          {
+    id: "piscilago-abril",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Junio 8",
+      "Junio 9",
+    ],
+    precio: 180000,
+    imagen: "/Junio2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago",
+  },
             {
     id: "medellin-junio",
     mes: "junio",
