@@ -1118,7 +1118,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar",
     fechas: ["Noviembre 2"],
-    precio: 175000,
+    precio: 160000,
     imagen: "/Noviembre2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar",
@@ -1133,20 +1133,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Noviembre2026/guatavita.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
-  },
-                {
-    id: "piscilago-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Noviembre 16",
-      "Noviembre 29",
-    ],
-    precio: 175000,
-    imagen: "/Noviembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
                 {
     id: "ejecafetero-noviembre",
@@ -1176,7 +1162,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Playa Hawai",
     fechas: ["Noviembre 22"],
-    precio: 600000,
+    precio: 150000,
     imagen: "/Noviembre2026/hawaii.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Playa Hawai",
@@ -1203,7 +1189,19 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
   },
-
+                {
+    id: "piscilago-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Noviembre 29",
+    ],
+    precio: 180000,
+    imagen: "/Noviembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+  },
 // DICIEMBRE
 
             {
