@@ -488,8 +488,8 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cafam Melgar 2X",
     fechas: [
+      "Mayo 1",
       "Mayo 10",
-      "Mayo 17",
     ],
     precio: 290000,
     imagen: "/Mayo2026/cafam.jpg",
