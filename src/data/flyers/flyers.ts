@@ -483,15 +483,29 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
                 {
-    id: "pasadiamanogigante-mayo",
+    id: "cafam-mayo",
     mes: "mayo",
     tipo: "terrestre",
-    titulo: "Pasadia Mano del Gigante",
-    fechas: ["Mayo 1"],
-    precio: 180000,
-    imagen: "/Mayo2026/manogigante.jpg",
+    titulo: "Cafam Melgar 2X",
+    fechas: [
+      "Mayo 10",
+      "Mayo 17",
+    ],
+    precio: 290000,
+    imagen: "/Mayo2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan mano del gigante",
+      "Hola Conexiones360, quiero información del plan Cafam",
+  },
+                  {
+    id: "playahawaii-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Playa Hawai 2X",
+    fechas: ["Mayo 3"],
+    precio: 270000,
+    imagen: "/Mayo2026/hawaii.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Playa Hawai",
   },
                 {
     id: "bugacali-mayo",
@@ -503,28 +517,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Mayo2026/caliylago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Buga, Cali y Lago Calima",
-  },
-              {
-    id: "cafam-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Cafam Melgar 2X",
-    fechas: ["Mayo 10"],
-    precio: 310000,
-    imagen: "/Mayo2026/cafam.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam",
-  },
-            {
-    id: "tolucoveñas-mayo",
-    mes: "mayo",
-    tipo: "terrestre",
-    titulo: "Tolú, Coveñas y Cartagena",
-    fechas: ["Mayo 13 al 18"],
-    precio: 1420000,
-    imagen: "/Mayo2026/covenascartagena.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Tolú, Coveñas y Cartagena",
   },
               {
     id: "ejecafetero-mayo",
@@ -548,6 +540,30 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
   },
+                    {
+    id: "pasadiaprado-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Pasadía Prado Tolima",
+    fechas: ["Mayo 18"],
+    precio: 199000,
+    imagen: "/Mayo2026/prado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan pasadía Prado Tolima",
+  },
+            {
+    id: "piscilago-mayo",
+    mes: "mayo",
+    tipo: "terrestre",
+    titulo: "Piscilago Pasadía",
+    fechas: [
+      "Mayo 18",
+    ],
+    precio: 180000,
+    imagen: "/Mayo2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago",
+  },
               {
     id: "miradoresraquira-mayo",
     mes: "mayo",
@@ -559,6 +575,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Miradores de Raquira",
   },
+
 
 // JUNIO
         {
@@ -573,7 +590,7 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Junio 2026",
   },
           {
-    id: "piscilago-abril",
+    id: "piscilago-junio",
     mes: "junio",
     tipo: "terrestre",
     titulo: "Piscilago Pasadía",
