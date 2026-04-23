@@ -63,7 +63,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "aereo",
     titulo: "Panamá",
     fechas: ["Salidas temporadas bajas o a tu elección"],
-    precio: 2850000,
+    precio: 3100000,
     imagen: "/Aereos/panama.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Panamá ",
@@ -144,6 +144,17 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Aereos/islapalma.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Isla Palma",
+  },
+        {
+    id: "peruaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "Perú",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 5800000,
+    imagen: "/Aereos/peru.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Perú",
   },
 // TERRESTRES 2026
 // FEBRERO
