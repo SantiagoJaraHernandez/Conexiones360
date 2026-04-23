@@ -596,7 +596,7 @@ export const flyers: FlyerPlan[] = [
     titulo: "Piscilago Pasadía",
     fechas: [
       "Junio 8",
-      "Junio 9",
+      "Junio 29",
     ],
     precio: 180000,
     imagen: "/Junio2026/piscilago.jpg",
@@ -652,8 +652,8 @@ export const flyers: FlyerPlan[] = [
     mes: "junio",
     tipo: "terrestre",
     titulo: "Costa Caribe",
-    fechas: ["Junio 17 al 25"],
-    precio: 1590000,
+    fechas: ["Junio 19 al 25"],
+    precio: 1400000,
     imagen: "/Junio2026/costacaribe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Costa Caribe",
