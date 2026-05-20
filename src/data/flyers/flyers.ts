@@ -156,6 +156,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Perú",
   },
+          {
+    id: "españaaereo",
+    mes: "julio",// mes no relevante para aereo
+    tipo: "aereo",
+    titulo: "España",
+    fechas: ["Salidas temporadas bajas o a tu elección"],
+    precio: 7990000,
+    imagen: "/Aereos/españa.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan España",
+  },
 // TERRESTRES 2026
 // FEBRERO
   {
@@ -625,6 +636,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Medellín, Guatapé y Nápoles",
   },
+                {
+    id: "ukumari-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Ukumarí + Consotá",
+    fechas: ["Junio 7"],
+    precio: 340000,
+    imagen: "/Junio2026/ukumari.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
+  },
               {
     id: "buga2-junio",
     mes: "junio",
@@ -647,17 +669,7 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinación Buga",
   },
-            {
-    id: "ejecafetero-junio",
-    mes: "junio",
-    tipo: "terrestre",
-    titulo: "Eje Cafetero",
-    fechas: ["Junio 13 al 15"],
-    precio: 910000,
-    imagen: "/Junio2026/ejecafe.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Eje Cafetero",
-  },
+
             {
     id: "costacaribe-junio",
     mes: "junio",
@@ -669,28 +681,29 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Costa Caribe",
   },
-            {
-    id: "playahawai-junio",
-    mes: "junio",
-    tipo: "terrestre",
-    titulo: "Playa Hawai 2X",
-    fechas: ["Junio 28"],
-    precio: 290000,
-    imagen: "/Junio2026/playahawai.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai",
-  },
               {
-    id: "guatavita-junio",
+    id: "ejecafetero-junio",
     mes: "junio",
     tipo: "terrestre",
-    titulo: "Guatavita y Parque Jaime Duque",
-    fechas: ["Junio 28"],
-    precio: 680000,
-    imagen: "/Junio2026/guatavita.jpg",
+    titulo: "Eje Cafetero",
+    fechas: ["Junio 27 al 29"],
+    precio: 910000,
+    imagen: "/Junio2026/ejecafe.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
+      "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
+            {
+    id: "nevado-junio",
+    mes: "junio",
+    tipo: "terrestre",
+    titulo: "Nevado del Ruiz y Murillo",
+    fechas: ["Junio 28"],
+    precio: 350000,
+    imagen: "/Junio2026/nevado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz y Murillo",
+  },
+
 
 // JULIO 
 
