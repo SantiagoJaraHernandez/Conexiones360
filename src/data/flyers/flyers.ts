@@ -778,23 +778,12 @@ export const flyers: FlyerPlan[] = [
     id: "nevadodelruiz-julio",
     mes: "julio",
     tipo: "terrestre",
-    titulo: "Nevado del Ruiz",
-    fechas: ["Julio 25"],
-    precio: 350000,
+    titulo: "Nevado del Ruiz + Termales",
+    fechas: ["Julio 25 al 26"],
+    precio: 680000,
     imagen: "/Julio2026/nevadoruiz.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
-  },
-                  {
-    id: "pasadiaprado-julio",
-    mes: "julio",
-    tipo: "terrestre",
-    titulo: "Pasadía Prado Tolima",
-    fechas: ["Julio 26"],
-    precio: 198000,
-    imagen: "/Julio2026/prado.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan pasadía Prado Tolima",
   },
                 {
     id: "piscilago-julio",
@@ -804,7 +793,7 @@ export const flyers: FlyerPlan[] = [
     fechas: [
       "Julio 26",
     ],
-    precio: 184000,
+    precio: 180000,
     imagen: "/Julio2026/piscilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
