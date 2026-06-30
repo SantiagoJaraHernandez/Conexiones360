@@ -892,15 +892,15 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
                   {
-    id: "prado-agosto",
+    id: "nevado-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Pasadía Prado Tolima",
+    titulo: "Aventura Nevado del Ruiz",
     fechas: ["Agosto 23"],
-    precio: 198000,
-    imagen: "/Agosto2026/prado.jpg",
+    precio: 680000,
+    imagen: "/Agosto2026/nevado.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Pasadía Prado Tolima",
+      "Hola Conexiones360, quiero información del plan Aventura Nevado del Ruiz",
   },
               {
     id: "termales-agosto",
