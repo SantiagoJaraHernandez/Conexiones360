@@ -1283,6 +1283,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
+                  {
+    id: "boyaca-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Luces y Velitas Boyacá",
+    fechas: ["Diciembre 6 al 8"],
+    precio: 950000,
+    imagen: "/Diciembre2026/boyaca2.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Boyacá",
+  }, 
                 {
     id: "cafam-diciembre",
     mes: "diciembre",
