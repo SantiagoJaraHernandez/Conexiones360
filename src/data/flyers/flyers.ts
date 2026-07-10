@@ -780,7 +780,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Nevado del Ruiz + Termales",
     fechas: ["Julio 25 al 26"],
-    precio: 680000,
+    precio: 350000,
     imagen: "/Julio2026/nevadoruiz.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
