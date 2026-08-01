@@ -1033,35 +1033,23 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Octubre 2026",
   },
-                  {
-    id: "zipaquira-octubre",
+                {
+    id: "tolucovecar-octubre",
     mes: "octubre",
     tipo: "terrestre",
-    titulo: "Zipaquirá y Villa de Leyva",
-    fechas: ["Octubre 2 al 4"],
-    precio: 640000,
-    imagen: "/Octubre2026/zipaquira.jpg",
+    titulo: "Tolú, Coveñas y Cartagena",
+    fechas: ["Octubre 7 al 12"],
+    precio: 1560000,
+    imagen: "/Octubre2026/tolu.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Zipaquirá y Villa de Leyva",
-  },
-
-              {
-    id: "santamartayguajira-octubre",
-    mes: "octubre",
-    tipo: "terrestre",
-    titulo: "Santa Marta y Guajira",
-    fechas: ["Octubre 6 al 12"],
-    precio: 1699000,
-    imagen: "/Octubre2026/guajira.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Santa Marta y Guajira",
+      "Hola Conexiones360, quiero información del plan Tolú, Coveñas y Cartagena",
   },
               {
     id: "santuariodelaslajas-octubre",
     mes: "octubre",
     tipo: "terrestre",
     titulo: "Santuario de Las Lajas",
-    fechas: ["Octubre 9 al 12"],
+    fechas: ["Octubre 8 al 12"],
     precio: 850000,
     imagen: "/Octubre2026/lajas.jpg",
     whatsappBase:
@@ -1079,30 +1067,6 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
                 {
-    id: "napoles-octubre",
-    mes: "octubre",
-    tipo: "terrestre",
-    titulo: "Hacienda Nápoles",
-    fechas: ["Octubre 17"],
-    precio: 380000,
-    imagen: "/Octubre2026/napoles.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
-  },
-                {
-    id: "piscilago-octubre",
-    mes: "octubre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Octubre 18",
-    ],
-    precio: 180000,
-    imagen: "/Octubre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
-              {
     id: "buga-octubre",
     mes: "octubre",
     tipo: "terrestre",
@@ -1113,16 +1077,27 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinacion Buga",
   },
-              {
-    id: "termales-octubre",
+                {
+    id: "napoles-octubre",
     mes: "octubre",
     tipo: "terrestre",
-    titulo: "Termales Santa Rosa de Cabal",
+    titulo: "Hacienda Nápoles",
     fechas: ["Octubre 25"],
-    precio: 350000,
-    imagen: "/Octubre2026/termales.jpg",
+    precio: 380000,
+    imagen: "/Octubre2026/napoles.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
+  },
+                      {
+    id: "zipaquira-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Zipaquirá y Villa de Leyva",
+    fechas: ["Octubre 23 al 25"],
+    precio: 650000,
+    imagen: "/Octubre2026/zipaquira.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Zipaquirá y Villa de Leyva",
   },
               {
     id: "medellin-octubre",
