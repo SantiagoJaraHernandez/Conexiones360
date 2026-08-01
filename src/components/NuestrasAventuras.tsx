@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
-const TOTAL = 13;
+const TOTAL = 16;
 const AUTO_TIME = 5500;
 const SWIPE_CONFIDENCE = 80;
 

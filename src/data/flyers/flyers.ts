@@ -813,48 +813,39 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Agosto 2026",
   },
                 {
+    id: "peregrinacionbuga-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Peregrinación a Buga",
+    fechas: ["Agosto 2"],
+    precio: 120000,
+    imagen: "/Agosto2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación a Buga",
+  },
+                {
     id: "cafam-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Cafam Melgar",
-    fechas: ["Agosto 2"],
-    precio: 160000,
+    titulo: "Cafam Melgar 2X",
+    fechas: ["Agosto 7",
+            "Agosto 23",
+    ],
+    precio: 320000,
     imagen: "/Agosto2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
-  },
-              {
-    id: "feriadelasflores-agosto",
-    mes: "agosto",
-    tipo: "terrestre",
-    titulo: "Feria de las Flores Medellín",
-    fechas: ["Agosto 7 al 9"],
-    precio: 899000,
-    imagen: "/Agosto2026/feriaflores.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Feria de las Flores Medellín",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
               {
     id: "buga2-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Buga, Lajas y Tulcán",
+    titulo: "Santuario de las Lajas y Tulcán",
     fechas: ["Agosto 6 al 9"],
-    precio: 850000,
+    precio: 768000,
     imagen: "/Agosto2026/lajas.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Buga, Lajas y Tulcán",
-  },
-                  {
-    id: "capurgana-agosto",
-    mes: "agosto",
-    tipo: "terrestre",
-    titulo: "Capurganá",
-    fechas: ["Agosto 11 al 17"],
-    precio: 2425000,
-    imagen: "/Agosto2026/capurgana.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Capurganá",
+      "Hola Conexiones360, quiero información del plan Santuario de las Lajas y Tulcán",
   },
                   {
     id: "ejecafetero-agosto",
@@ -878,40 +869,38 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Hacienda Nápoles",
   },
-              {
-    id: "piscilago-agosto",
+                      {
+    id: "termalescoco-agosto",
     mes: "agosto",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Agosto 17",
-    ],
-    precio: 180000,
-    imagen: "/Agosto2026/piscilago.jpg",
+    titulo: "Termales de Santa Rosa de Cabal y Valle del Cocora",
+    fechas: ["Agosto 22"],
+    precio: 350000,
+    imagen: "/Agosto2026/termales.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+      "Hola Conexiones360, quiero información del plan Termales de Santa Rosa de Cabal y Valle del Cocora",
+  },
+                    {
+    id: "nevadopasadia-agosto",
+    mes: "agosto",
+    tipo: "terrestre",
+    titulo: "Aventura Pasadia en el Nevado del Ruiz",
+    fechas: ["Agosto 23"],
+    precio: 350000,
+    imagen: "/Agosto2026/nevadopd.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Aventura Pasadia en el Nevado del Ruiz",
   },
                   {
     id: "nevado-agosto",
     mes: "agosto",
     tipo: "terrestre",
     titulo: "Aventura Nevado del Ruiz",
-    fechas: ["Agosto 23"],
+    fechas: ["Agosto 21 al 23"],
     precio: 680000,
     imagen: "/Agosto2026/nevado.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Aventura Nevado del Ruiz",
-  },
-              {
-    id: "termales-agosto",
-    mes: "agosto",
-    tipo: "terrestre",
-    titulo: "Termales Santa Rosa de Cabal + Salento",
-    fechas: ["Agosto 30"],
-    precio: 350000,
-    imagen: "/Agosto2026/termales.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal + Salento",
   },
 
 // SEPTIEMBRE
@@ -976,24 +965,22 @@ export const flyers: FlyerPlan[] = [
     mes: "septiembre",
     tipo: "terrestre",
     titulo: "Cali + Buga",
-    fechas: ["Septiembre 19 al 20"],
+    fechas: ["Septiembre 18 al 20"],
     precio: 600000,
     imagen: "/Septiembre2026/cali.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali + Buga",
   },
                 {
-    id: "piscilago-septiembre",
+    id: "cafam-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Piscilago Pasadía 2X",
-    fechas: [
-      "Septiembre 20",
-    ],
-    precio: 360000,
-    imagen: "/Septiembre2026/piscilago.jpg",
+    titulo: "Cafam Melgar 2X",
+    fechas: ["Septiembre 20"],
+    precio: 320000,
+    imagen: "/Septiembre2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
               {
     id: "guatape-septiembre",
@@ -1017,7 +1004,22 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
-
+                  {
+    id: "peregrinaciones-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Acompañanos en nuestras Peregrinaciones",
+    fechas: ["Septiembre 6",
+             "Septiembre 9",
+             "Septiembre 13",
+             "Septiembre 20",
+             "Septiembre 24"
+    ],
+    precio: 120000,
+    imagen: "/Septiembre2026/nevado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinaciones",
+  },
 //OCTUBRE
 
             {
