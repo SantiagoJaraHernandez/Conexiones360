@@ -1016,7 +1016,7 @@ export const flyers: FlyerPlan[] = [
              "Septiembre 24"
     ],
     precio: 120000,
-    imagen: "/Septiembre2026/nevado.jpg",
+    imagen: "/Septiembre2026/peregrinacion.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinaciones",
   },
