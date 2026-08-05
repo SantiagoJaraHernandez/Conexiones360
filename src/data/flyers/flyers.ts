@@ -1137,12 +1137,14 @@ export const flyers: FlyerPlan[] = [
     id: "cafam-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
-    titulo: "Cafam Melgar",
-    fechas: ["Noviembre 2"],
-    precio: 160000,
+    titulo: "Cafam Melgar 2X",
+    fechas: ["Noviembre 2",
+              "Noviembre 29"
+    ],
+    precio: 320000,
     imagen: "/Noviembre2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
               {
     id: "guatavita-noviembre",
@@ -1160,7 +1162,7 @@ export const flyers: FlyerPlan[] = [
     mes: "noviembre",
     tipo: "terrestre",
     titulo: "Eje Cafetero",
-    fechas: ["Noviembre 14 al 16"],
+    fechas: ["Noviembre 13 al 16"],
     precio: 910000,
     imagen: "/Noviembre2026/ejecafe.jpg",
     whatsappBase:
@@ -1171,8 +1173,8 @@ export const flyers: FlyerPlan[] = [
     mes: "noviembre",
     tipo: "terrestre",
     titulo: "Buga + Cali",
-    fechas: ["Noviembre 14 al 15"],
-    precio: 600000,
+    fechas: ["Noviembre 21 al 22"],
+    precio: 650000,
     imagen: "/Noviembre2026/caliconlago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali",
@@ -1181,12 +1183,12 @@ export const flyers: FlyerPlan[] = [
     id: "playahawai-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
-    titulo: "Playa Hawai",
+    titulo: "Playa Hawai 2X",
     fechas: ["Noviembre 22"],
-    precio: 150000,
+    precio: 300000,
     imagen: "/Noviembre2026/hawaii.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai",
+      "Hola Conexiones360, quiero información del plan Playa Hawai 2X",
   },
               {
     id: "costacaribe-noviembre",
@@ -1205,24 +1207,12 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Ukumarí + Consotá",
     fechas: ["Noviembre 28"],
-    precio: 340000,
+    precio: 350000,
     imagen: "/Noviembre2026/consota.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
   },
-                {
-    id: "piscilago-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Noviembre 29",
-    ],
-    precio: 180000,
-    imagen: "/Noviembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
-  },
+
 // DICIEMBRE
 
             {
