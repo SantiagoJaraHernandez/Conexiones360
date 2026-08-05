@@ -74,7 +74,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "aereo",
     titulo: "Punta Cana",
     fechas: ["Salidas temporadas bajas o a tu elección"],
-    precio: 3800000,
+    precio: 3500000,
     imagen: "/Aereos/puntacana.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Punta Cana ",
@@ -85,7 +85,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "aereo",
     titulo: "San Andrés",
     fechas: ["Salidas temporadas bajas o a tu elección"],
-    precio: 1870000,
+    precio: 1699000,
     imagen: "/Aereos/sanandres.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan San Andrés",
@@ -129,7 +129,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "aereo",
     titulo: "Coveñas e Isla Múcura",
     fechas: ["Salidas temporadas bajas o a tu elección"],
-    precio: 1708000,
+    precio: 1930000,
     imagen: "/Aereos/covenas.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Coveñas e Isla Múcura",
@@ -140,7 +140,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "aereo",
     titulo: "Isla Palma",
     fechas: ["Salidas temporadas bajas o a tu elección"],
-    precio: 2830000,
+    precio: 2999000,
     imagen: "/Aereos/islapalma.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Isla Palma",
