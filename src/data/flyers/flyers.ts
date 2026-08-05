@@ -1232,23 +1232,10 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Eje Cafetero",
     fechas: ["Diciembre 6 al 8"],
-    precio: 960000,
+    precio: 910000,
     imagen: "/Diciembre2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
-  },
-              {
-    id: "piscilago-diciembre",
-    mes: "diciembre",
-    tipo: "terrestre",
-    titulo: "Piscilago Pasadía",
-    fechas: [
-      "Diciembre 6",
-    ],
-    precio: 180000,
-    imagen: "/Diciembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago Pasadía",
   },
                   {
     id: "boyaca-diciembre",
@@ -1265,19 +1252,19 @@ export const flyers: FlyerPlan[] = [
     id: "cafam-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
-    titulo: "Cafam Melgar",
+    titulo: "Cafam Melgar 2X",
     fechas: ["Diciembre 8"],
-    precio: 160000,
+    precio: 320000,
     imagen: "/Diciembre2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
               {
     id: "costacaribe-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
     titulo: "Costa Caribe",
-    fechas: ["Diciembre 10 al 17"],
+    fechas: ["Diciembre 10 al 16"],
     precio: 1600000,
     imagen: "/Diciembre2026/costacaribe.jpg",
     whatsappBase:
@@ -1289,32 +1276,10 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Cali, Lago Calima y Buga",
     fechas: ["Diciembre 11 al 13"],
-    precio: 630000,
+    precio: 650000,
     imagen: "/Diciembre2026/calilago.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cali, Lago Calima y Buga",
-  },
-                {
-    id: "prado-diciembre",
-    mes: "diciembre",
-    tipo: "terrestre",
-    titulo: "Pasadía Prado Tolima",
-    fechas: ["Diciembre 13"],
-    precio: 199000,
-    imagen: "/Diciembre2026/prado.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Pasadía Prado Tolima",
-  },
-                {
-    id: "termales-diciembre",
-    mes: "diciembre",
-    tipo: "terrestre",
-    titulo: "Termales Santa Rosa de Cabal",
-    fechas: ["Diciembre 20"],
-    precio: 350000,
-    imagen: "/Diciembre2026/termales.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Termales Santa Rosa de Cabal",
   },
                 {
     id: "AlumbradoMedellin-diciembre",
@@ -1331,9 +1296,9 @@ export const flyers: FlyerPlan[] = [
     id: "boyaca-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
-    titulo: "Luces Navideñas Boyacá",
+    titulo: "Fin de año en Boyacá",
     fechas: ["Diciembre 31 al Enero 3"],
-    precio: 1230000,
+    precio: 1290000,
     imagen: "/Diciembre2026/boyaca.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Boyacá",
