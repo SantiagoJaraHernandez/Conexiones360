@@ -911,7 +911,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Septiembre 2026",
     fechas: ["Septiembre 1 - 30"],
-    precio: 170000,
+    precio: 300000,
     imagen: "/Septiembre2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Septiembre 2026",
@@ -932,11 +932,22 @@ export const flyers: FlyerPlan[] = [
     mes: "septiembre",
     tipo: "terrestre",
     titulo: "Eje Cafetero",
-    fechas: ["Septiembre 12 al 13"],
+    fechas: ["Septiembre 11 al 13"],
     precio: 630000,
     imagen: "/Septiembre2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
+  },
+                {
+    id: "buga-septiembre",
+    mes: "septiembre",
+    tipo: "terrestre",
+    titulo: "Peregrinación Buga",
+    fechas: ["Septiembre 13"],
+    precio: 120000,
+    imagen: "/Septiembre2026/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Peregrinación Buga",
   },
                 {
     id: "playahawai-septiembre",
@@ -960,29 +971,29 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Disney Colombiano con Tolú, Coveñas e Isla Múcura",
   },
-              {
-    id: "buga-septiembre",
+                    {
+    id: "nevadodelruiz-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Cali + Buga",
+    titulo: "Nevado del Ruiz + Termales",
     fechas: ["Septiembre 18 al 20"],
-    precio: 600000,
-    imagen: "/Septiembre2026/cali.jpg",
+    precio: 680000,
+    imagen: "/Septiembre2026/nevado.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cali + Buga",
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
                 {
-    id: "cafam-septiembre",
+    id: "parquedelcafe-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Cafam Melgar 2X",
+    titulo: "Parque del Café 2X",
     fechas: ["Septiembre 20"],
-    precio: 320000,
-    imagen: "/Septiembre2026/cafam.jpg",
+    precio: 530000,
+    imagen: "/Septiembre2026/pcafe.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
+      "Hola Conexiones360, quiero información del plan Parque del Café 2X",
   },
-              {
+                {
     id: "guatape-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
@@ -993,16 +1004,16 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Guatapé + Nápoles",
   },
-                  {
-    id: "nevadodelruiz-septiembre",
+                {
+    id: "cafam-septiembre",
     mes: "septiembre",
     tipo: "terrestre",
-    titulo: "Nevado del Ruiz",
+    titulo: "Cafam Melgar 2X",
     fechas: ["Septiembre 27"],
-    precio: 350000,
-    imagen: "/Septiembre2026/nevado.jpg",
+    precio: 320000,
+    imagen: "/Septiembre2026/cafam.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
                   {
     id: "peregrinaciones-septiembre",
