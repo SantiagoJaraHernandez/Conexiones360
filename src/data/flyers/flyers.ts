@@ -1137,7 +1137,18 @@ export const flyers: FlyerPlan[] = [
     precio: 130000,
     imagen: "/Octubre2026/virgen.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Peregrinacion Buga",
+      "Hola Conexiones360, quiero información del plan Peregrinacion Virgen de Fátima",
+  },
+                  {
+    id: "piscilago-octubre",
+    mes: "octubre",
+    tipo: "terrestre",
+    titulo: "Piscilago 2X",
+    fechas: ["Octubre 25"],
+    precio: 359000,
+    imagen: "/Octubre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago 2X",
   },
                 {
     id: "napoles-octubre",
