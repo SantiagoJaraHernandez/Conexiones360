@@ -1,6 +1,7 @@
 export type FlyerPlan = {
   id: string;
   mes: "enero" | "febrero" | "marzo" | "abril" | "mayo" | "junio" | "julio" | "agosto" | "septiembre" | "octubre" | "noviembre" | "diciembre";
+  año?: number; // opcional — si no lo pones, se asume el año actual
   tipo: "terrestre" | "aereo";
   titulo: string;
   fechas: string[]; 
@@ -168,6 +169,67 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan España",
   },
 // TERRESTRES 2026
+// ENERO
+  {
+    id: "ListadoCompleto-febrero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Programación Enero 2027",
+    fechas: ["Enero 1 - 22"],
+    precio: 380000,
+    imagen: "/Enero2027/lista.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Enero 2027",
+  },
+    {
+    id: "santuariolajas-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Santuario de las lajas",
+    fechas: ["Enero 8 al 11"],
+    precio: 680000,
+    imagen: "/Enero2027/lajas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Enero 2027",
+  },
+      {
+    id: "guatape-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Guatape + Hacienda Nápoles",
+    fechas: ["Enero 8 al 11"],
+    precio: 999000,
+    imagen: "/Enero2027/guatape.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Enero 2027",
+  },
+      {
+    id: "nevado-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Nevado del Ruiz",
+    fechas: ["Enero 24"],
+    precio: 380000,
+    imagen: "/Enero2027/nevado.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Enero 2027",
+  },
+      {
+    id: "zipaquiraboyaca-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Villa de leyva y Zipaquirá",
+    fechas: ["Enero 29 al 31"],
+    precio: 750000,
+    imagen: "/Enero2027/boyaca.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Enero 2027",
+  },
 // FEBRERO
   {
     id: "ListadoCompleto-febrero",
@@ -1039,21 +1101,10 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Octubre 2026",
     fechas: ["Octubre 1 - 31"],
-    precio: 170000,
+    precio: 130000,
     imagen: "/Octubre2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Octubre 2026",
-  },
-                {
-    id: "tolucovecar-octubre",
-    mes: "octubre",
-    tipo: "terrestre",
-    titulo: "Tolú, Coveñas y Cartagena",
-    fechas: ["Octubre 7 al 12"],
-    precio: 1560000,
-    imagen: "/Octubre2026/tolu.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Tolú, Coveñas y Cartagena",
   },
               {
     id: "santuariodelaslajas-octubre",
@@ -1072,19 +1123,19 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Eje Cafetero",
     fechas: ["Octubre 10 al 12"],
-    precio: 960000,
+    precio: 910000,
     imagen: "/Octubre2026/ejecafe.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Eje Cafetero",
   },
                 {
-    id: "buga-octubre",
+    id: "virgen-octubre",
     mes: "octubre",
     tipo: "terrestre",
-    titulo: "Peregrinacion Buga",
-    fechas: ["Octubre 24"],
-    precio: 120000,
-    imagen: "/Octubre2026/buga.jpg",
+    titulo: "Peregrinacion Virgen de Fátima",
+    fechas: ["Octubre 18"],
+    precio: 130000,
+    imagen: "/Octubre2026/virgen.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Peregrinacion Buga",
   },
@@ -1128,7 +1179,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Noviembre 2026",
     fechas: ["Noviembre 1 - 30"],
-    precio: 170000,
+    precio: 320000,
     imagen: "/Noviembre2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Noviembre 2026",
@@ -1143,19 +1194,6 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Noviembre2026/nevado.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
-  },
-              {
-    id: "cafam-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Cafam Melgar 2X",
-    fechas: ["Noviembre 2",
-              "Noviembre 29"
-    ],
-    precio: 320000,
-    imagen: "/Noviembre2026/cafam.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
               {
     id: "guatavita-noviembre",
@@ -1191,15 +1229,15 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Cali",
   },
                 {
-    id: "playahawai-noviembre",
+    id: "covenas-noviembre",
     mes: "noviembre",
     tipo: "terrestre",
-    titulo: "Playa Hawai 2X",
-    fechas: ["Noviembre 22"],
-    precio: 300000,
-    imagen: "/Noviembre2026/hawaii.jpg",
+    titulo: "Coveñas e Isla Múcura",
+    fechas: ["Noviembre 27 al 2 Diciembre"],
+    precio: 999000,
+    imagen: "/Noviembre2026/covenas.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Playa Hawai 2X",
+      "Hola Conexiones360, quiero información del plan Coveñas e Isla Múcura",
   },
               {
     id: "costacaribe-noviembre",
@@ -1223,6 +1261,28 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Ukumarí + Consotá",
   },
+                {
+    id: "cafam-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Cafam Melgar 2X",
+    fechas: ["Noviembre 29"],
+    precio: 320000,
+    imagen: "/Noviembre2026/cafam.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
+  },
+                  {
+    id: "pisilago-noviembre",
+    mes: "noviembre",
+    tipo: "terrestre",
+    titulo: "Piscilago 2X",
+    fechas: ["Noviembre 29  "],
+    precio: 359000,
+    imagen: "/Noviembre2026/piscilago.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Piscilago 2X",
+  },
 
 // DICIEMBRE
 
@@ -1232,7 +1292,7 @@ export const flyers: FlyerPlan[] = [
     tipo: "terrestre",
     titulo: "Programación Diciembre 2026",
     fechas: ["Diciembre 1 - 31"],
-    precio: 170000,
+    precio: 320000,
     imagen: "/Diciembre2026/lista.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Diciembre 2026",
@@ -1269,18 +1329,7 @@ export const flyers: FlyerPlan[] = [
     imagen: "/Diciembre2026/cafam.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
-  },
-              {
-    id: "costacaribe-diciembre",
-    mes: "diciembre",
-    tipo: "terrestre",
-    titulo: "Costa Caribe",
-    fechas: ["Diciembre 10 al 16"],
-    precio: 1600000,
-    imagen: "/Diciembre2026/costacaribe.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Costa Caribe",
-  },  
+  }, 
               {
     id: "cali-diciembre",
     mes: "diciembre",

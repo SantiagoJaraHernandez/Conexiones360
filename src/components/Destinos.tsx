@@ -34,37 +34,69 @@ const colorClasses = {
   },
 };
 
+// --- Helpers para manejar mes + año como una sola "clave" ordenable ---
+
+// Si un flyer no tiene "año" definido, se asume el año actual.
+// Así no hay que tocar los flyers existentes, solo los que ya
+// pertenecen a un año distinto (ej: enero del próximo año).
+function getAno(f: FlyerPlan, anoActual: number): number {
+  return f.año ?? anoActual;
+}
+
+// Convierte mes+año en un número comparable: ej. 2026-09 -> 2026*12+8
+function clave(mes: Mes, año: number): number {
+  return año * 12 + mesesOrdenados.indexOf(mes);
+}
+
+type MesVisible = {
+  mes: Mes;
+  año: number;
+  key: string; // "mes-año", único aunque se repita el nombre del mes
+  clave: number;
+};
+
 export default function CatalogoFlyers() {
   const [tipoActivo, setTipoActivo] =
     useState<"terrestre" | "aereo">("terrestre");
 
-  const [mesActivo, setMesActivo] = useState<Mes | null>(null);
+  const [mesActivoKey, setMesActivoKey] = useState<string | null>(null);
 
-  const mesActualIndex = new Date().getMonth();
+  const hoy = new Date();
+  const anoActual = hoy.getFullYear();
+  const mesActualIndex = hoy.getMonth();
+  const claveActual = clave(mesesOrdenados[mesActualIndex], anoActual);
 
-  const mesesVisibles = mesesOrdenados.filter((mes, index) => {
-    if (index < mesActualIndex) return false;
-
-    return flyers.some(
-      f => f.tipo === "terrestre" && f.mes === mes
-    );
-  });
+  // Deduplicamos por "mes-año" y ordenamos cronológicamente real
+  // (esto es lo que permite que enero del año que viene aparezca
+  // DESPUÉS de diciembre de este año, en vez de desaparecer)
+  const mesesVisibles: MesVisible[] = Array.from(
+    new Map(
+      flyers
+        .filter(f => f.tipo === "terrestre")
+        .map(f => {
+          const año = getAno(f, anoActual);
+          const key = `${f.mes}-${año}`;
+          return [key, { mes: f.mes, año, key, clave: clave(f.mes, año) }];
+        })
+    ).values()
+  )
+    .filter(m => m.clave >= claveActual)
+    .sort((a, b) => a.clave - b.clave);
 
   useEffect(() => {
-    if (!mesActivo && mesesVisibles.length) {
-      setMesActivo(mesesVisibles[0]);
+    if (!mesActivoKey && mesesVisibles.length) {
+      setMesActivoKey(mesesVisibles[0].key);
     }
-  }, [mesActivo, mesesVisibles]);
+  }, [mesActivoKey, mesesVisibles]);
 
   const filtrados =
     tipoActivo === "aereo"
       ? flyers.filter(f => f.tipo === "aereo")
       : flyers.filter(f => {
           if (f.tipo !== "terrestre") return false;
-          if (f.mes !== mesActivo) return false;
-
-          const indexMesFlyer = mesesOrdenados.indexOf(f.mes);
-          return indexMesFlyer >= mesActualIndex;
+          const año = getAno(f, anoActual);
+          const key = `${f.mes}-${año}`;
+          return key === mesActivoKey;
         });
 
   return (
@@ -102,17 +134,18 @@ export default function CatalogoFlyers() {
             animate={{ opacity: 1, y: 0 }}
             className="flex flex-wrap justify-center gap-3 mb-14"
           >
-            {mesesVisibles.map(mes => (
+            {mesesVisibles.map(m => (
               <button
-                key={mes}
-                onClick={() => setMesActivo(mes)}
+                key={m.key}
+                onClick={() => setMesActivoKey(m.key)}
                 className={`px-4 py-2 rounded-full font-bold capitalize transition-all ${
-                  mesActivo === mes
+                  mesActivoKey === m.key
                     ? "bg-blue-600 text-white scale-105"
                     : "bg-white text-blue-600 shadow hover:scale-105"
                 }`}
               >
-                {mes}
+                {m.mes}
+                {m.año !== anoActual ? ` ${m.año}` : ""}
               </button>
             ))}
           </motion.div>
@@ -121,7 +154,7 @@ export default function CatalogoFlyers() {
         {/* GRID */}
         <AnimatePresence mode="wait">
           <motion.div
-            key={`${tipoActivo}-${mesActivo}`}
+            key={`${tipoActivo}-${mesActivoKey}`}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
