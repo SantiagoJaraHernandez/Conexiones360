@@ -192,7 +192,7 @@ export const flyers: FlyerPlan[] = [
     precio: 680000,
     imagen: "/Enero2027/lajas.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Enero 2027",
+      "Hola Conexiones360, quiero información del plan Santuario de las lajas - Enero 2027",
   },
       {
     id: "guatape-enero",
@@ -204,7 +204,55 @@ export const flyers: FlyerPlan[] = [
     precio: 999000,
     imagen: "/Enero2027/guatape.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Enero 2027",
+      "Hola Conexiones360, quiero información del plan Guatape + Hacienda Nápoles - Enero 2027",
+  },
+        {
+    id: "costacaribe-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Costa Caribe",
+    fechas: ["Enero 15 al 20"],
+    precio: 1268000,
+    imagen: "/Enero2027/caribe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Costa Caribe - Enero 2027",
+  },
+        {
+    id: "ejecafe-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Eje Cafetero",
+    fechas: ["Enero 15 al 17"],
+    precio: 750000,
+    imagen: "/Enero2027/ejecafe.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Eje Cafetero - Enero 2027",
+  },
+        {
+    id: "bugaycali-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Buga + Cali + Lago Calima",
+    fechas: ["Enero 22 al 24"],
+    precio: 700000,
+    imagen: "/Enero2027/buga.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Buga + Cali + Lago Calima - Enero 2027",
+  },
+        {
+    id: "jaimeduque-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Parque Jaime Duque",
+    fechas: ["Enero 23"],
+    precio: 380000,
+    imagen: "/Enero2027/duque.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Parque Jaime Duque - Enero 2027",
   },
       {
     id: "nevado-enero",
@@ -216,7 +264,7 @@ export const flyers: FlyerPlan[] = [
     precio: 380000,
     imagen: "/Enero2027/nevado.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Enero 2027",
+      "Hola Conexiones360, quiero información del plan Nevado del Ruiz - Enero 2027",
   },
       {
     id: "zipaquiraboyaca-enero",
@@ -228,7 +276,19 @@ export const flyers: FlyerPlan[] = [
     precio: 750000,
     imagen: "/Enero2027/boyaca.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Enero 2027",
+      "Hola Conexiones360, quiero información del plan Villa de leyva y Zipaquirá - Enero 2027",
+  },
+        {
+    id: "guatapeynapoles-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Hacienda Nápoles + Santorini",
+    fechas: ["Enero 29 al 31"],
+    precio: 720000,
+    imagen: "/Enero2027/napoles.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Hacienda Nápoles - Enero 2027",
   },
 // FEBRERO
   {
