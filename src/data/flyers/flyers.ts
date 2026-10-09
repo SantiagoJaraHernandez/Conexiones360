@@ -182,6 +182,18 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Enero 2027",
   },
+      {
+    id: "carnaval-enero",
+    mes: "enero",
+    año: 2027,
+    tipo: "terrestre",
+    titulo: "Carnaval de Blancos y Negros",
+    fechas: ["Enero 3 al 7"],
+    precio: 980000,
+    imagen: "/Enero2027/lajas.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Carnaval de Blancos y Negros - Enero 2027",
+  },
     {
     id: "santuariolajas-enero",
     mes: "enero",
