@@ -190,7 +190,7 @@ export const flyers: FlyerPlan[] = [
     titulo: "Carnaval de Blancos y Negros",
     fechas: ["Enero 3 al 7"],
     precio: 980000,
-    imagen: "/Enero2027/lajas.jpg",
+    imagen: "/Enero2027/carnaval.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Carnaval de Blancos y Negros - Enero 2027",
   },
