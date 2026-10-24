@@ -1368,6 +1368,17 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   }, 
+                {
+    id: "cancun-diciembre",
+    mes: "diciembre",
+    tipo: "terrestre",
+    titulo: "Excursión Cancún",
+    fechas: ["Diciembre 13 al 17"],
+    precio: 3500000,
+    imagen: "/Diciembre2026/cancun.jpg",
+    whatsappBase:
+      "Hola Conexiones360, quiero información del plan Excursión Cancún",
+  },
               {
     id: "murillo-diciembre",
     mes: "diciembre",
