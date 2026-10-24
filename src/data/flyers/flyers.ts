@@ -1266,17 +1266,6 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Nevado del Ruiz",
   },
-              {
-    id: "guatavita-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Guatavita y Parque Jaime Duque",
-    fechas: ["Noviembre 6 al 8"],
-    precio: 630000,
-    imagen: "/Noviembre2026/guatavita.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Guatavita y Parque Jaime Duque",
-  },
                 {
     id: "ejecafetero-noviembre",
     mes: "noviembre",
@@ -1332,17 +1321,6 @@ export const flyers: FlyerPlan[] = [
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   },
-                  {
-    id: "pisilago-noviembre",
-    mes: "noviembre",
-    tipo: "terrestre",
-    titulo: "Piscilago 2X",
-    fechas: ["Noviembre 29  "],
-    precio: 359000,
-    imagen: "/Noviembre2026/piscilago.jpg",
-    whatsappBase:
-      "Hola Conexiones360, quiero información del plan Piscilago 2X",
-  },
 
 // DICIEMBRE
 
@@ -1380,26 +1358,26 @@ export const flyers: FlyerPlan[] = [
       "Hola Conexiones360, quiero información del plan Boyacá",
   }, 
                 {
-    id: "cafam-diciembre",
+    id: "medellin-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
-    titulo: "Cafam Melgar 2X",
-    fechas: ["Diciembre 8"],
+    titulo: "Medellín y Costa Caribe",
+    fechas: ["Diciembre 9 al 17"],
     precio: 320000,
-    imagen: "/Diciembre2026/cafam.jpg",
+    imagen: "/Diciembre2026/ccaribem.jpg",
     whatsappBase:
       "Hola Conexiones360, quiero información del plan Cafam Melgar 2X",
   }, 
               {
-    id: "cali-diciembre",
+    id: "murillo-diciembre",
     mes: "diciembre",
     tipo: "terrestre",
-    titulo: "Cali, Lago Calima y Buga",
-    fechas: ["Diciembre 11 al 13"],
-    precio: 650000,
-    imagen: "/Diciembre2026/calilago.jpg",
+    titulo: "Murillo y Nevado del Ruiz",
+    fechas: ["Diciembre 20"],
+    precio: 350000,
+    imagen: "/Diciembre2026/murillo.jpg",
     whatsappBase:
-      "Hola Conexiones360, quiero información del plan Cali, Lago Calima y Buga",
+      "Hola Conexiones360, quiero información del plan Murillo y Nevado del Ruiz",
   },
                 {
     id: "AlumbradoMedellin-diciembre",
